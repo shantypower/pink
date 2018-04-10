@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анастасия Назарова](https://up.htmlacademy.ru/adaptive/14/user/618819).
-* Наставник: `Неизвестно`.
+* Наставник: [Филипп Шамсиев](https://up.htmlacademy.ru/adaptive/14/user/70260).
 
 ---
 
