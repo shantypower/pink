@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+
+    <header class="page__header">
+      <a class="page__header__logo" href="index.html">PINK</a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html"> Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="photo.html"> Фотографии</a></li>
+          <li class="main-nav__item main-nav__item--current"><a class="main-nav__link"> Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive"> HTML Academy</a></li>
+        </ul>
+      </nav>
+      <div class="header__bg">
+        <h1 class="visually-hidden">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <img src="#" width="" height="" alt="Фото приложения">
+      </div>
+    </header>
+
+    <div class="site__wrapper">
+      <main class="competition">
+        <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        <form  class="competition__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="filters-group input-block">
+            <p class="input-block__item">
+              <label class="input-block__label" for="surname-field">Фамилия:</label>
+              <input type="text" class="input-block__input" name="surname" id="surname-field" placeholder="Укажите фамилию *" required>
+            </p>
+            <p class="input-block__item">
+              <label class="input-block__label" for="name-field">Имя:</label>
+              <input type="text" class="input-block__input" name="name" id="name-field" placeholder="Введите ваше имя *" required>
+            </p>
+            <p class="input-block__item">
+              <label class="input-block__label" for="patronymic-field">Отчество:</label>
+              <input type="text" class="input-block__input" name="
+            patronymic" id="patronymic-field" placeholder="Ну и отчество тоже">
+            </p>
+          </fieldset>
+          <fieldset class="filters-group checkbox-block">
+            <h2 class="filters-group__title">Ваши безбашенные достижения в путешествии</h2>
+            <ul class="checkbox-block__list">
+                <li class="checkbox-block__item">
+                    <input class="checkbox-block__checkbox" type="checkbox" name="selfie" id="selfie-field" checked>
+                    <label for="selfie-field">Сделал селфи с акулой</label>
+                </li>
+                <li class="checkbox-block__item">
+                    <input class="checkbox-block__checkbox" type="checkbox" name="beach" id="beach-field" checked>
+                    <label for="beach-field">Обгорел на пляже</label>
+                </li>
+                <li class="checkbox-block__item">
+                    <input class="checkbox-block__checkbox" type="checkbox" name="cinema-star" id="cinema-star-field">
+                    <label for="cinema-star-field">Видел Чака Норриса</label>
+                </li>
+                <li class="checkbox-block__item">
+                    <input class="checkbox-block__checkbox" type="checkbox" name="souvenir" id="souvenir-field">
+                    <label for="souvenir-field">Накупил сувениров</label>
+                </li>
+                <li class="checkbox-block__item">
+                    <input class="checkbox-block__checkbox" type="checkbox" name="tower" id="tower-field" checked>
+                    <label for="tower-field">Удержал башню</label>
+                </li>
+                <li class="checkbox-block__item">
+                    <input class="checkbox-block__checkbox" type="checkbox" name="hotel" id="hotel-field">
+                    <label for="hotel-field">Разгромил отель</label>
+                </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filters-group input-block">
+            <p class="input-block__item">
+              <label class="input-block__label" for="phone-field">Номер телефона</label>
+              <input type="text" class="input-block__input" name="phone" id="phone-field" placeholder="Номер, пожалуйста">
+            </p>
+            <p class="input-block__item">
+              <label class="input-block__label" for="email-field">адрес почты</label>
+              <input type="email" class="input-block__input" name="email" id="email-field" placeholder="Введите почту *" required>
+            </p>
+          </fieldset>
+          <fieldset class="filters-group radiobutton-block">
+            <h2 class="filters-group__title">С каким приложением путешествовали?</h2>
+            <ul class="radiobutton-block__list">
+              <li class="radiobutton-block__item">
+                <input class="radiobutton-block__radiobutton" type="radio" name="phone-type" id="radio1" checked>
+                <label for="radio1">Pink для iOS</label>
+              </li>
+              <li class="checkbox-block__item">
+                <input class="radiobutton-block__radiobutton" type="radio" name="phone-type" id="radio2">
+                <label for="radio2">Pink на Android</label>
+              </li>
+              <li class="radiobutton-block__item">
+                <input class="radiobutton-block__radiobutton" type="radio" name="phone-type" id="radio3">
+                <label for="radio3">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filters-group">
+            <h2 class="filters-group__title">Опишите свои эмоции</h2>
+            <textarea name="emotions" id="emotions-field" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <button class="form__btn btn" type="submit">Отправить форму</button>
+        </form>
+        <small class="stats__legend stats__legend--top">
+            <sup>*</sup> — обязательные поля
+        </small>
+      </main>
+    </div>
+
+    <footer class="page__footer">
+      <h2 class="visually-hidden">Мы в соцсетях</h2>
+      <a class="page-footer__logo" href="index.html"></a>
+      <ul class="social__list">
+        <li class="social__item social__item--twitter">
+          <a class="social__link" href="#">Мы в twitter</a>
+        </li>
+        <li class="social__item social__item--facebook">
+          <a class="social__link" href="#">Мы в vk</a>
+        </li>
+        <li class="social__item social__item--youtube">
+          <a class="social__link" href="#">Мы на youtube</a>
+        </li>
+      </ul>
+      <div class="footer__copyright">
+        <p class="footer__text">Разработано</p>
+        <a href="https://htmlacademy.ru/intensive/adaptive"><img src="#" alt="Логотип htmlacademy"></a>
+      </div> 
+    </footer>
+  </body>
+</html>
