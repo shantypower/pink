@@ -17,6 +17,7 @@
           <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive"> HTML Academy</a></li>
         </ul>
       </nav>
+      <div class="header__bg"><img src="#" width="" height="" alt="Фото приложения"></div>
     </header>
 
     <div class="site__wrapper">
@@ -24,7 +25,6 @@
         <h1 class="visually-hidden">Главная страница сайта приложения Pink</h1>
         <article class="intro">
           <h2 class="visually-hidden">Скачать приложение</h2>
-          <img src="#" alt="Фото приложения">
           <a href="#">Скачать приложение</a>
           <ul class="intro__list">
             <li class="intro__item"><a class="intro__link intro__link--apple" href="#">Apple</a></li>
@@ -75,64 +75,36 @@
         <section class="price">
           <h2 class="visually-hidden">Тарифы</h2>
           <div class="price__wrapper slider">
-            <ul class="price__list slider__list">
-              <li class="price__item slider__item tarif">
-                <h3 class="tarif__name">База<span class="tarif__price">1,99 USD</span>
-                </h3>
-                <table>
-                  <tr>
-                    <td class="option">Розовый фильтр</td>
-                    <td class="value">да</td>
-                  </tr>
-                  <tr>
-                    <td class="option">Смайлики</td>
-                    <td class="value">нет</td>
-                  </tr>
-                  <tr>
-                    <td class="option">Комментарии</td>
-                    <td class="value">нет</td>
-                  </tr>
-                </table>
-              </li>
-              <li class="price__item slider__item tarif">
-                <h3 class="tarif__name">Стандарт
-                  <span class="tarif__price">3,99 USD</span>
-                </h3>
-                <table>
-                    <tr>
-                      <td class="option">Розовый фильтр</td>
-                      <td class="value">да</td>
-                    </tr>
-                    <tr>
-                      <td class="option">Смайлики</td>
-                      <td class="value">да</td>
-                    </tr>
-                    <tr>
-                      <td class="option">Комментарии</td>
-                      <td class="value">нет</td>
-                    </tr>
-                  </table>
-              </li>
-              <li class="price__item slider__item tarif">
-                <h3 class="tarif__name">Анлим
-                  <span class="tarif__price">9,99 USD</span>
-                </h3>
-                <table>
-                    <tr>
-                      <td class="option">Розовый фильтр</td>
-                      <td class="value">да</td>
-                    </tr>
-                    <tr>
-                      <td class="option">Смайлики</td>
-                      <td class="value">да</td>
-                    </tr>
-                    <tr>
-                      <td class="option">Комментарии</td>
-                      <td class="value">да</td>
-                    </tr>
-                  </table>
-              </li>
-            </ul>
+            <table class="price__list table">
+              <thead class="price__head">
+                <tr>
+                  <th class="tarif tarif--empty"></th>
+                  <th class="tarif">База<span class="tarif__price">1,99 USD</span></th>
+                  <th class="tarif">Стандарт<span class="tarif__price">3,99 USD</span></th>
+                  <th class="tarif">Анлим<span class="tarif__price">9,99 USD</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="value">Розовый фильтр</td>
+                  <td class="value value--yes">да</td>
+                  <td class="value value--yes">да</td>
+                  <td class="value value--no">да</td>
+                </tr>
+                <tr>
+                  <td class="value">Смайлики</td>
+                  <td class="value value--no">нет</td>
+                  <td class="value value--yes">да</td>
+                  <td class="value value--yes">да</td>
+                </tr>
+                <tr>
+                  <td class="value">Комментарии</td>
+                  <td class="value value--no">нет</td>
+                  <td class="value value--no">нет</td>
+                  <td class="value value--yes">да</td>
+                </tr>
+              </tbody>
+            </table>
             <p class="price__toggles slider__toggles">
               <button class="slider__toggle" type="button">1</button>
               <button class="slider__toggle" type="button">2</button>
