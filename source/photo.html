@@ -6,19 +6,21 @@
   </head>
   <body>
 
-    <header class="page__header">
-      <a class="page__header__logo" href="index.html">PINK</a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <header class="header">
+      <div class="header__top">
+        <a class="header__logo">PINK</a>
+        <button class="header__button" type="button">Открыть меню</button>
+        </div>
+      <nav class="header__nav main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html"> Главная</a>
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link"> Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="photo.html"> Фотографии</a>
           </li>
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link"> Конкурс</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html"> Конкурс</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive"> HTML Academy</a>
@@ -26,29 +28,30 @@
         </ul>
       </nav>
       <div class="header__bg">
-        <h1 class="visually-hidden">Фотографии пользователей</h1>
+        <h1 class="header__title">Фотографии пользователей</h1>
       </div>
     </header>
 
     <main class="content">
       <section class="best-photo">
-        <p class="best-photo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        <img src="" width="" height="" alt="">
+        <h2 class="best-photo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+        <img src="#" width="320" height="137" alt="Панорама дня">
         <div class="best-photo__wrapper">
           <article class="user-photo">
-            <h2>Анна<time>(5 минут назад)</time></h2>
+            <h3>Анна<span>(5 минут назад)</span></h3>
             <p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <footer class="user-photo__footer">Нравится: 215</footer>
           </article> 
         </div>
       </section>
       <section class="photo">
+        <h2 class="visually-hidden">Недавно добавленные фото пользователей</h2>
         <div class="photo__wrapper">
           <ul class="photo__list">
             <li class="photo__item">
               <article class="user-photo">
-                <img src="" width="" height="" alt="">
-                <h2 class="user-photo__title">Левон<time class="user-photo__time">(5 часов назад)</time></h2>
+                <img src="#" width="280" height="180" alt="">
+                <h3 class="user-photo__title">Левон<span class="user-photo__span">(5 часов назад)</span></h3>
                 <p class="user-photo__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                 <footer class="user-photo__footer">
                   Нравится: 356
@@ -57,8 +60,8 @@
             </li>
             <li class="photo__item">
               <article class="user-photo">
-                <img src="" width="" height="" alt="">
-                <h2 class="user-photo__title">Антон<time class="user-photo__time">(12 часов назад)</time></h2>
+                <img src="#" width="280" height="180" alt="">
+                <h3 class="user-photo__title">Антон<span class="user-photo__span">(12 часов назад)</span></h3>
                 <p class="user-photo__description">Соседи будут рады!</p>
                 <footer class="user-photo__footer">
                   Нравится: 666
@@ -67,8 +70,8 @@
             </li>
             <li class="photo__item">
               <article class="user-photo">
-                <img src="" width="" height="" alt="">
-                <h2 class="user-photo__title">Борис<time class="user-photo__time">(20 часов назад)</time></h2>
+                <img src="#" width="280" height="180" alt="">
+                <h3 class="user-photo__title">Борис<span class="user-photo__span">(20 часов назад)</span></h3>
                   <p class="user-photo__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
                   <footer class="user-photo__footer">
                   Нравится: 215
@@ -77,8 +80,8 @@
             </li>
             <li class="photo__item">
               <article class="user-photo">
-                <img src="" width="" height="" alt="">
-                <h2 class="user-photo__title">Сергей<time class="user-photo__time">(25 часов назад)</time></h2>
+                <img src="#" width="280" height="180" alt="">
+                <h3 class="user-photo__title">Сергей<span class="user-photo__span">(25 часов назад)</span></h3>
                 <p class="user-photo__description">Самая кубанская в мире!</p>
                 <footer class="user-photo__footer">
                   Нравится: 4
@@ -87,8 +90,8 @@
             </li>
             <li class="photo__item">
               <article class="user-photo">
-                <img src="" width="" height="" alt="">
-                <h2 class="user-photo__title">Максим<time class="user-photo__time">(40 часов назад)</time></h2>
+                <img src="#" width="280" height="180" alt="">
+                <h3 class="user-photo__title">Максим<span class="user-photo__span">(40 часов назад)</span></h3>
                 <p class="user-photo__description">Где снег-то?</p>
                 <footer class="user-photo__footer">
                   Нравится: 150
@@ -97,8 +100,8 @@
             </li>
             <li class="photo__item">
               <article class="user-photo">
-                <img src="" width="" height="" alt="">
-                <h2 class="user-photo__title">Надежда<time class="user-photo__time">(45 часов назад)</time></h2>
+                <img src="#" width="280" height="180" alt="">
+                <h3 class="user-photo__title">Надежда<span class="user-photo__span">(45 часов назад)</span></h3>
                 <p class="user-photo__description">Всем GM и взаимные лайки!</p>
                 <footer class="user-photo__footer">
                   Нравится: 2560
@@ -107,36 +110,38 @@
             </li>
           </ul>
           <section class="photo-upload">
-            <p class="photo-upload__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+            <h2 class="photo-upload__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
             <form action="echo" method="post">
-              <img src="" width="" height="" alt="">
+              <img src="#" width="280" height="180" alt="">
               <div class="photo-upload__tools"></div>
-              <button type="submit">Запостить</button>
-              <button type="reset">Отмена</button>
+              <!--инструменты редактирования фото-->
+              <button class="photo-upload__btn" type="submit">Запостить</button>
+              <button class="photo-upload__btn" type="reset">Отмена</button>
             </form>
           </section>
         </div>
       </section>
     </main>
 
-    <footer class="page__footer">
+    <footer class="footer">
       <h2 class="visually-hidden">Мы в соцсетях</h2>
-      <a class="page-footer__logo" href="index.html"></a>
-      <ul class="social__list">
-        <li class="social__item social__item--twitter">
-          <a class="social__link" href="#">Мы в twitter</a>
+      <a class="footer__logo" href="index.html"></a>
+      <ul class="footer__social-list">
+        <li class="footer__social-item social-item--twitter">
+          <a class="footer__social-link" href="#">Мы в twitter</a>
         </li>
-        <li class="social__item social__item--facebook">
-          <a class="social__link" href="#">Мы в vk</a>
+        <li class="footer__social-item social-item--facebook">
+          <a class="footer__social-link" href="#">Мы в vk</a>
         </li>
-        <li class="social__item social__item--youtube">
-          <a class="social__link" href="#">Мы на youtube</a>
+        <li class="footer__social-item social-item--youtube">
+          <a class="footer__social-link" href="#">Мы на youtube</a>
         </li>
       </ul>
       <div class="footer__copyright">
         <p class="footer__text">Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive"><img src="#" alt="Логотип htmlacademy"></a>
+        <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="#" alt="Логотип htmlacademy"></a>
       </div> 
     </footer>
+
   </body>
 </html>
