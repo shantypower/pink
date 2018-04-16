@@ -6,18 +6,28 @@
   </head>
   <body>
 
-    <header class="page__header">
-      <a class="page__header__logo">PINK</a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <header class="header">
+      <div class="header__top">
+        <a class="header__logo">PINK</a>
+        <button class="header__button" type="button">Открыть меню</button>
+      </div>
+      <nav class="header__nav main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current"><a class="main-nav__link"> Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="photo.html"> Фотографии</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="form.html"> Конкурс</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive"> HTML Academy</a></li>
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link"> Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html"> Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html"> Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive"> HTML Academy</a>
+          </li>
         </ul>
       </nav>
-      <div class="header__bg"><img src="#" width="" height="" alt="Фото приложения"></div>
+      <div class="header__bg"></div>
     </header>
 
     <div class="site__wrapper">
@@ -25,11 +35,17 @@
         <h1 class="visually-hidden">Главная страница сайта приложения Pink</h1>
         <article class="intro">
           <h2 class="visually-hidden">Скачать приложение</h2>
-          <a href="#">Скачать приложение</a>
+          <a class="intro__btn btn" href="#">Скачать приложение</a>
           <ul class="intro__list">
-            <li class="intro__item"><a class="intro__link intro__link--apple" href="#">Apple</a></li>
-            <li class="intro__item"><a class="intro__link intro__link--android" href="#">Android</a></li>
-            <li class="intro__item"><a class="intro__link intro__link--microsoft" href="#">Microsoft</a></li>
+            <li class="intro__item">
+              <a class="intro__link intro__link--apple" href="#">Apple</a>
+            </li>
+            <li class="intro__item">
+              <a class="intro__link intro__link--android" href="#">Android</a>
+            </li>
+            <li class="intro__item">
+              <a class="intro__link intro__link--microsoft" href="#">Microsoft</a>
+            </li>
           </ul>
           <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </article>
@@ -58,12 +74,14 @@
         <section class="review">
           <div class="review__wrapper slider">
             <h2 class="visually-hidden">Отзывы пользователей</h2>
-            <div class="review__list slider__list">
-              <blockquoute class="review__item slider__item">
-                <cite class="review title">Николай Петров</cite>
-                <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              </blockquoute>
-            </div>
+            <dl class="review__list slider__list">
+              <dt class="review title">Николай Петров</dt>
+              <dd class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</dd>
+              <dt class="review title">Николай Иванов</dt>
+              <dd class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</dd>
+              <dt class="review title">Николай Сsection</dt>
+              <dd class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»<dd>
+            </dl>
             <p class="review__toggles slider__toggles">
               <button class="slider__toggle" type="button">1</button>
               <button class="slider__toggle" type="button">2</button>
@@ -116,23 +134,24 @@
       </main>
     </div>
 
-    <footer class="page__footer">
-      <h2 class="footer__title">Остались вопросы? Свяжитесь с нами!</h2>
-      <ul class="footer__list">
-        <li class="footer__item">
-          <h3 class="footer__title">Звоните:</h3>
-          <p class="footer__text">+7 (812) 555-66-66</p>
+    <section class="contacts">
+      <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <h3 class="contacts__title">Звоните:</h3>
+          <p class="contacts__text">+7 (812) 555-66-66</p>
         </li>
-        <li class="footer__item">
-          <h3 class="footer__title">Пишите:</h3>
-          <p class="footer__text">mail@htmlacademy.ru</p>
+        <li class="contacts__item">
+          <h3 class="contacts__title">Пишите:</h3>
+          <p class="contacts__text">mail@htmlacademy.ru</p>
         </li>
-        <li class="footer__item">
-          <h3 class="footer__title">Приезжайте в гости:</h3>
-          <p class="footer__text">ул. Большая Конюшенная, 19/8</p>
+        <li class="contacts__item">
+          <h3 class="contacts__title">Приезжайте в гости:</h3>
+          <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
         </li>
       </ul>
-      <div class="map"><img src="#" width="" height="" alt="Расположение на карте: ул. Большая Конюшенная, 19/8"></div>
-    </footer>
+      <div class="map"><img src="#" alt="Расположение на карте: ул. Большая Конюшенная, 19/8"></div>
+    </section>
+
   </body>
 </html>
