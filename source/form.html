@@ -13,14 +13,14 @@
       </div>
       <nav class="header__nav main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link"> Главная</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html"> Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="photo.html"> Фотографии</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html"> Конкурс</a>
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link"> Конкурс</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive"> HTML Academy</a>
@@ -32,8 +32,8 @@
       </div>
     </header>
 
-    <div class="site__wrapper">
-      <main class="competition">
+    <main class="competition">
+      <div class="competition__wrapper">
 
         <section class="competition__content">
           <h2 class="competition__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h2>
@@ -49,69 +49,68 @@
               </p>
               <p class="input-block__item">
                 <label class="input-block__text" for="patronymic-field">Отчество:</label>
-                <input type="text" class="input-block__input" name="
-              patronymic" id="patronymic-field" placeholder="Ну и отчество тоже">
+                <input type="text" class="input-block__input" name="patronymic" id="patronymic-field" placeholder="Ну и отчество тоже">
               </p>
             </fieldset>
-            <fieldset class="filters-group checkbox-block">
+            <fieldset class="filters-group input-block">
               <h3 class="filters-group__title">Ваши безбашенные достижения в путешествии</h3>
-              <ul class="checkbox-block__list">
-                <li class="checkbox-block__item">
-                  <input class="checkbox-block__checkbox" type="checkbox" name="selfie" id="selfie-field" checked>
-                  <label class="checkbox-block__text" for="selfie-field">Сделал селфи с акулой</label>
+              <ul class="input-block__list">
+                <li class="input-block__item">
+                  <input class="input-block__input input-block__input--checkbox input-block__input--" type="checkbox" name="selfie" id="selfie-field" checked>
+                  <label class="input-block__text" for="selfie-field">Сделал селфи с акулой</label>
                 </li>
-                <li class="checkbox-block__item">
-                  <input class="checkbox-block__checkbox" type="checkbox" name="beach" id="beach-field" checked>
-                  <label class="checkbox-block__text" for="beach-field">Обгорел на пляже</label>
+                <li class="input-block__item">
+                  <input class="input-block__input input-block__input--checkbox input-block__input--" type="checkbox" name="beach" id="beach-field" checked>
+                  <label class="input-block__text" for="beach-field">Обгорел на пляже</label>
                 </li>
-                <li class="checkbox-block__item">
-                  <input class="checkbox-block__checkbox" type="checkbox" name="cinema-star" id="cinema-star-field">
-                  <label class="checkbox-block__text" for="cinema-star-field">Видел Чака Норриса</label>
+                <li class="input-block__item">
+                  <input class="input-block__input input-block__input--checkbox input-block__input--" type="checkbox" name="cinema-star" id="cinema-star-field">
+                  <label class="input-block__text" for="cinema-star-field">Видел Чака Норриса</label>
                 </li>
-                <li class="checkbox-block__item">
-                  <input class="checkbox-block__checkbox" type="checkbox" name="souvenir" id="souvenir-field">
-                  <label class="checkbox-block__text" for="souvenir-field">Накупил сувениров</label>
+                <li class="input-block__item">
+                  <input class="input-block__input input-block__input--checkbox input-block__input--" type="checkbox" name="souvenir" id="souvenir-field">
+                  <label class="input-block__text" for="souvenir-field">Накупил сувениров</label>
                 </li>
-                <li class="checkbox-block__item">
-                  <input class="checkbox-block__checkbox" type="checkbox" name="tower" id="tower-field" checked>
-                  <label class="checkbox-block__text" for="tower-field">Удержал башню</label>
+                <li class="input-block__item">
+                  <input class="input-block__input input-block__input--checkbox input-block__input--" type="checkbox" name="tower" id="tower-field" checked>
+                  <label class="input-block__text" for="tower-field">Удержал башню</label>
                 </li>
-                <li class="checkbox-block__item">
-                  <input class="checkbox-block__checkbox" type="checkbox" name="hotel" id="hotel-field">
-                  <label class="checkbox-block__text" for="hotel-field">Разгромил отель</label>
+                <li class="input-block__item">
+                  <input class="input-block__input input-block__input--checkbox input-block__input--" type="checkbox" name="hotel" id="hotel-field">
+                  <label class="input-block__text" for="hotel-field">Разгромил отель</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="filters-group input-block">
               <p class="input-block__item">
                 <label class="input-block__text" for="phone-field">Номер телефона</label>
-                <input type="text" class="input-block__input" name="phone" id="phone-field" placeholder="Номер, пожалуйста">
+                <input type="tel" class="input-block__input" name="phone" id="phone-field" placeholder="Номер, пожалуйста" pattern="\+7\-[0-9]{3}-[0-9]{3}-[0-9]{4}">
               </p>
               <p class="input-block__item">
                 <label class="input-block__text" for="email-field">Адрес почты</label>
                 <input type="email" class="input-block__input" name="email" id="email-field" placeholder="Введите почту *" required>
               </p>
             </fieldset>
-            <fieldset class="filters-group radiobutton-block">
+            <fieldset class="filters-group input-block">
               <h3 class="filters-group__title">С каким приложением путешествовали?</h3>
-              <ul class="radiobutton-block__list">
-                <li class="radiobutton-block__item">
-                  <input class="radiobutton-block__radiobutton" type="radio" name="phone-type" id="radio1" checked>
-                  <label class="radiobutton-block__text" for="radio1">Pink для iOS</label>
+              <ul class="input-block__list">
+                <li class="input-block__item">
+                  <input class="input-block__input input-block__input--radiobutton" type="radio" name="phone-type" id="radio1" checked>
+                  <label class="input-block__text" for="radio1">Pink для iOS</label>
                 </li>
-                <li class="radiobutton-block__item">
-                  <input class="radiobutton-block__radiobutton" type="radio" name="phone-type" id="radio2">
-                  <label class="radiobutton-block__text" for="radio2">Pink на Android</label>
+                <li class="input-block__item">
+                  <input class="input-block__input input-block__input--radiobutton" type="radio" name="phone-type" id="radio2">
+                  <label class="input-block__text" for="radio2">Pink на Android</label>
                 </li>
-                <li class="radiobutton-block__item">
-                  <input class="radiobutton-block__radiobutton" type="radio" name="phone-type" id="radio3">
-                  <label class="radiobutton-block__text" for="radio3">Windows Phone</label>
+                <li class="input-block__item">
+                  <input class="input-block__input input-block__input--radiobutton" type="radio" name="phone-type" id="radio3">
+                  <label class="input-block__text" for="radio3">Windows Phone</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filters-group emotions">
+            <fieldset class="filters-group input-block">
               <h3 class="filters-group__title">Опишите свои эмоции</h3>
-              <textarea class="emotions__text-field" name="emotions" id="emotions-field" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <textarea class="input-block__input input-block__input--textarea" name="emotions" id="emotions-field" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
             <button class="competition__btn btn" type="submit">Отправить форму</button>
           </form>
@@ -119,31 +118,33 @@
             <sup>*</sup> — обязательные поля
           </small>
         </section>
+
         <div class="pop-up">
           <h2 class="pop-up__title">Что-то пошло не так!</h2>
           <p class="pop-up__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <button class="pop-up__btn btn" type="submit">ok</button>
+          <button class="pop-up__btn btn" type="button">ok</button>
         </div>
+
         <div class="pop-up">
           <h2 class="pop-up__title">Ваша заявка отправлена</h2>
-          <p class="pop-up__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и 
-              оповестим вас.</p>
-          <button class="pop-up__btn btn" type="submit">Закрыть окно</button>
+          <p class="pop-up__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+          <button class="pop-up__btn btn" type="button">Закрыть окно</button>
         </div>
-      </main>
-    </div>
+      </div>
+    </main>
+
 
     <footer class="footer">
       <h2 class="visually-hidden">Мы в соцсетях</h2>
       <a class="footer__logo" href="index.html"></a>
       <ul class="footer__social-list">
-        <li class="footer__social-item social-item--twitter">
+        <li class="footer__social-item footer__social-item--twitter">
           <a class="footer__social-link" href="#">Мы в twitter</a>
         </li>
-        <li class="footer__social-item social-item--facebook">
+        <li class="footer__social-item footer__social-item--facebook">
           <a class="footer__social-link" href="#">Мы в vk</a>
         </li>
-        <li class="footer__social-item social-item--youtube">
+        <li class="footer__social-item footer__social-item--youtube">
           <a class="footer__social-link" href="#">Мы на youtube</a>
         </li>
       </ul>
