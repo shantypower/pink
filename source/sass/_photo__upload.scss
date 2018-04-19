@@ -1,0 +1,28 @@
+.photo-upload {
+  background-color: #ffffff;
+}
+
+.photo-upload__btn {
+  color:#d22856;
+  border: 3px solid #d22856;
+  background-color: transparent;
+}
+
+.photo-upload__btn--reset {
+  color:rgba(40, 54, 69, 0.1);
+  border: 3px solid rgba(40, 54, 69, 0.1);
+}
+
+.photo-upload__form {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+.photo-upload__btn-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
