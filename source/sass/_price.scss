@@ -1,0 +1,40 @@
+.price__list {
+  border-collapse: collapse;
+}
+
+.tariff {
+  min-width: 280px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background-color: #283645;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-right: 2px solid #e5e5e5;
+  .tariff__price {
+    font-size: 24px;
+    font-weight: lighter;
+  }
+}
+
+.tariff--empty {
+  background-color: transparent;
+}
+
+.value {
+  color: #283645;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  border: 2px solid #e5e5e5;
+  padding: 15px 24px;
+}
+.row:first-of-type .value{
+  border-top-color: transparent;
+}
+
+
+
