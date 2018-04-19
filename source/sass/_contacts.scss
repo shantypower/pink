@@ -1,0 +1,47 @@
+.contacts__header {
+  color: #283645;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.contacts__title {
+  color: #283645;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contacts__list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.contacts__text {
+  color: #d22856;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.contacts__triangle {
+  position: relative;
+}
+
+.contacts__svg {
+  position: absolute;
+  top: 0px;
+  left: -50%;
+  z-index: 1;
+}
+
+.map {
+  position: absolute;
+  top: 0px;
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-size: 100% auto,320px auto;
+  background-position: 50% 0,50% 0;
+}
