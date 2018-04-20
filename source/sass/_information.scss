@@ -15,15 +15,17 @@
 
   background-color: $grey;
 
-  .information__title{
+  .information__title {
     margin: 0;
     margin-bottom: 8px;
+
     @include font-set(18px, 30px, bold, $black, center);
   }
 
   .information__text {
     margin: 0;
     margin-bottom: 26px;
+
     @include font-set(15px, 25px, lighter, $darkgrey, center);
   }
 }

@@ -22,6 +22,7 @@
   background-color: $white;
   padding-left: 20px;
   padding-right: 20px;
+
   .input-block__text {
     @include font-set(14px, 30px, normal, $red, left);
     text-transform: uppercase;
@@ -47,7 +48,9 @@
 
 .filters-group__title {
   margin: 0px;
+
   @include font-set(14px, 18px, normal, $red, center);
+
   text-transform: uppercase;
 }
 
@@ -66,6 +69,7 @@
   min-width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
+
   @include font-set(18px, 30px, bold, $white, center);
   text-transform: uppercase;
   border: none;
