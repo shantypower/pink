@@ -1,37 +1,31 @@
 .information {
   padding: 43px 20px;
-  background-color: #ffffff;
-  font-family: "OpenSans", Arial, Helvetica, sans-serif;
-  text-align: center;
+  background-color: $white;
 }
 
 .information__promo-text {
   margin: 0;
   margin-bottom: 30px;
-  font-size: 24px;
-  font-weight: lighter;
-  line-height: 28px;
-  color: #283645;
+  @include font-set(24px, 28px, lighter, $darkgrey, center);
 }
 
 .information__list {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
+  @include list-reset;
+  background-color: $grey;
   .information__title{
     margin: 0;
     margin-bottom: 8px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #000000;
-
+    @include font-set(18px, 30px, bold, $black, center);
   }
+  
   .information__text {
     margin: 0;
     margin-bottom: 26px;
-    color: #283645;
-    font-size: 15px;
-    line-height: 25px;
-    font-weight: lighter;
+    @include font-set(15px, 25px, lighter, $darkgrey, center);
   }
+}
+
+.information__image {
+  min-height: 330px;
+  background: url("../img/iphone-screen-mobile@1x.png") no-repeat center $grey;
 }

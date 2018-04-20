@@ -1,29 +1,19 @@
 .contacts__header {
-  color: #283645;
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: lighter;
-  text-align: center;
+  @include font-set(24px, 30px, lighter,$darkgrey, center);
+  color: $darkgrey;
 }
 
 .contacts__title {
-  color: #283645;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
+  @include font-set(18px, 30px, bold, $darkgrey, center);
 }
 
 .contacts__list {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
+  @include list-reset;
   text-align: center;
 }
 
 .contacts__text {
-  color: #d22856;
-  font-size: 24px;
-  font-weight: lighter;
+  @include font-set(24px, 36px, lighter, $red, center);
 }
 
 .contacts__triangle {

@@ -1,13 +1,9 @@
 .competition__content {
-  font-family: "OpenSans", Arial, Helvetica, sans-serif;
+  @include font-set;
 }
 
 .competition__text {
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: normal;
-  text-align: center;
-  color: #283645;
+  @include font-set(14px, 30px, normal, $darkgrey, center);
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -19,53 +15,45 @@
 }
 
 .input-block__list {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
+  @include list-reset;
 }
 
 .input-block:nth-child(2n-1) {
-  background-color: #ffffff;
+  background-color: $white;
   padding-left: 20px;
   padding-right: 20px;
   .input-block__text {
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: normal;
+    @include font-set(14px, 30px, normal, $red, left);
     text-transform: uppercase;
-    color: #d22856;
   }
 }
-/*
+
 .input-block__item--input {
   display: flex;
   flex-direction: column;
-}*/
+}
 
 .input-block:nth-child(2n) {
-  background-color: #f2f2f2;
+  background-color: $grey;
 }
 
 .input-block__input {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: normal;
-  color: #283645;
+  @include font-set(18px, 30px, normal, $darkgrey, left);
   box-sizing: border-box;
-  width: 100%;
-  border: 2px solid #e5e5e5;
+  border: 2px solid $lightgrey;
   border-radius: 2px;
   margin-bottom: 16px;
 }
 
 .filters-group__title {
   margin: 0px;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: normal;
-  color: #d22856;
+
+  @include font-set(14px, 18px, normal, $red, center);
   text-transform: uppercase;
-  text-align: center;
+}
+
+.input-block__text {
+  @include font-set(18px, 30px, 500, $darkgrey, center);
 }
 
 .input-block__input--textarea {
@@ -79,24 +67,18 @@
   min-width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 18px;
-  line-height: 30px;
+  @include font-set(18px, 30px, bold, $white, center);
   text-transform: uppercase;
   border: 0;
   border-radius: 2px;
-  color: #ffffff;
-  background-color: #2aab6d;
+  background-color: $green;
   cursor: pointer;
 }
 .competition__legend {
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: normal;
-  color: #283645;
+  @include font-set(14px, 30px, normal, $darkgrey, center);
   text-transform: uppercase;
-  text-align: center;
 }
 
 .competition__footnote {
-  color: #d22856;
+  color: $red;
 }

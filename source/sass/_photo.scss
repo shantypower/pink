@@ -5,29 +5,20 @@
 
 .photo__text,
 .photo-upload__text {
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: normal;
-  color: #283645;
-  text-align: center;
+  @include font-set(14px, 30px,normal,$darkgrey, center);
 }
 
 .user-photo__info {
-  text-align: left;
-  background-color: #f2f2f2;
+  background-color: $grey;
 }
 
 .photo__list {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
+  @include list-reset;
 }
 
 .user-photo__title {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: bold;
-  color: #283645;
+  margin: 0;
+  @include font-set(14px, 24px, bold, $darkgrey, left);
 }
 
 .user-photo__span {
@@ -37,17 +28,11 @@
 }
 
 .user-photo__description {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: normal;
-  color: #283645;
+  @include font-set(14px, 24px, normal, $darkgrey, left);
 }
 
 .user-photo__footer {
-  font-size: 12px;
-  line-height: 24px;
-  font-weight: normal;
-  color: #d22856;
+  @include font-set(12px, 24px, normal, $red, left);
   text-transform: uppercase;
 }
 

@@ -5,40 +5,29 @@
 
 .btn {
   display: block;
-  font-family: "OpenSans", Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 18px;
-  text-align: center;
+  @include font-set(18px, 18px, bold, $white, center);
   border-radius: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
 .intro__btn {
-  color: #ffffff;
-  border: 3px solid #ffffff;
+  border: 3px solid $white;
 }
 
 .intro__list {
   display: flex;
   justify-content: center;
 
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
+  @include list-reset;
 }
 
 .intro__link {
-  color: #ffffff;
+  color:$white;
 }
 
 .intro__description {
   margin: 0;
-  font-family: "OpenSans", Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: lighter;
-  line-height: 24px;
-  color: #ffffff;
-  text-align: center;
+
+  @include font-set(14px, 24px, lighter, $white, center);
 }

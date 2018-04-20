@@ -1,7 +1,7 @@
 .header__top {
   display: flex;
   justify-content: flex-start;
-  background-color: #283645; 
+  background-color: $darkgrey; 
   padding: 16px 20px;
 }
 
@@ -13,32 +13,24 @@ margin-left: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
+  @include list-reset;
 }
 
 .main-nav__link {
   display: block;
-  color: #ffffff;
+  @include font-set(18px, 32px, bold, $white, center);
+  color: $white;
   text-transform: uppercase;
-  font-family: "OpenSans", Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: bold;
-  text-align: center;
   padding: 16px 0px;
   width: 100%;
-  background-color: #283645;
+  background-color: $darkgrey;
 }
 
 .header__bg {
   min-height: 462px;
-  background: url("../source/img/bg-back-mobile@1x.jpg") no-repeat center;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center;
 }
 
 .header__title {
-  font-size: 24px;
-  font-weight: lighter;
-  text-align: center;
+  @include font-set(24px, 36px, lighter, $white, center);
 }

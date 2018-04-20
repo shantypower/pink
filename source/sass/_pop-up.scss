@@ -1,17 +1,19 @@
-.pop-up {
-  text-align: center;
+.pop-up__title {
+  @include font-set(18px, 24px, bold, $black, center);
 }
 
-.pop-up__title {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
-  color: #000000;
+.competition__legend {
+  display: block;
+}
+
+.pop-up__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 165px;
+  background-color: $grey;
 }
 
 .pop-up__text {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: normal;
-  color: #283645;
+  @include font-set(14px, 30px, normal, $darkgrey, center);
 }

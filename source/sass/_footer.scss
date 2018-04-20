@@ -9,9 +9,7 @@
 
 .footer__social-list {
   display: flex;
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
+  @include list-reset;
 }
 
 .footer__copyright {
@@ -23,9 +21,6 @@
 .footer__text {
   margin: 0;
   padding-right: 15px;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: normal;
-  color: #283645;
+  @include font-set(14px, 18px, normal, $darkgrey, left);
   vertical-align: middle;
 }
