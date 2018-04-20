@@ -47,7 +47,6 @@
 
 .filters-group__title {
   margin: 0px;
-
   @include font-set(14px, 18px, normal, $red, center);
   text-transform: uppercase;
 }
@@ -69,11 +68,12 @@
   padding-bottom: 20px;
   @include font-set(18px, 30px, bold, $white, center);
   text-transform: uppercase;
-  border: 0;
+  border: none;
   border-radius: 2px;
   background-color: $green;
   cursor: pointer;
 }
+
 .competition__legend {
   @include font-set(14px, 30px, normal, $darkgrey, center);
   text-transform: uppercase;

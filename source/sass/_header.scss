@@ -6,19 +6,22 @@
 }
 
 .header__button {
-margin-left: auto;
+  margin-left: auto;
 }
 
 .main-nav__list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   @include list-reset;
 }
 
 .main-nav__link {
   display: block;
+
   @include font-set(18px, 32px, bold, $white, center);
+
   color: $white;
   text-transform: uppercase;
   padding: 16px 0px;

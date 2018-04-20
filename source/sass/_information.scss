@@ -6,12 +6,15 @@
 .information__promo-text {
   margin: 0;
   margin-bottom: 30px;
+
   @include font-set(24px, 28px, lighter, $darkgrey, center);
 }
 
 .information__list {
   @include list-reset;
+
   background-color: $grey;
+
   .information__title{
     margin: 0;
     margin-bottom: 8px;

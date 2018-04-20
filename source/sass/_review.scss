@@ -1,5 +1,5 @@
 .review__text {
-  margin: 0px;
+  margin: 0;
   margin-top: 10px;
   margin-bottom: 26px;
 
@@ -9,5 +9,6 @@
 .review__title {
   display: block;
   font-style: inherit;
+
   @include font-set(18px, 30px, bold, $black, center);
 }

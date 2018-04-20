@@ -1,15 +1,15 @@
 .photo-upload {
-  background-color:$white;
+  background-color: $white;
 }
 
 .photo-upload__btn {
-  color:$red;
+  color: $red;
   border: 3px solid $red;
   background-color: transparent;
 }
 
 .photo-upload__btn--reset {
-  color:rgba(40, 54, 69, 0.1);
+  color: rgba(40, 54, 69, 0.1);
   border: 3px solid rgba(40, 54, 69, 0.1);
 }
 
@@ -22,5 +22,6 @@
 .photo-upload__btn-list {
   display: flex;
   justify-content: space-around;
+
   @include list-reset;
 }

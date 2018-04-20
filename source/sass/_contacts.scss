@@ -22,7 +22,7 @@
 
 .contacts__svg {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: -50%;
   z-index: 1;
 }
@@ -31,7 +31,4 @@
   position: absolute;
   top: 0px;
   min-height: 200px;
-  background-repeat: no-repeat;
-  background-size: 100% auto,320px auto;
-  background-position: 50% 0,50% 0;
 }

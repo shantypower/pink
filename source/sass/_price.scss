@@ -7,7 +7,9 @@
   padding-top: 18px;
   padding-bottom: 18px;
   background-color: $darkgrey;
+
   @include font-set(18px, 30px, bold, $white, center);
+
   text-transform: uppercase;
   border-right: 2px solid $lightgrey;
   .tariff__price {
@@ -27,7 +29,7 @@
   padding: 15px 24px;
 }
 
-.row:first-of-type .value{
+.row:first-of-type .value {
   border-top-color: transparent;
 }
 

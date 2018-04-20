@@ -18,6 +18,7 @@
 
 .user-photo__title {
   margin: 0;
+
   @include font-set(14px, 24px, bold, $darkgrey, left);
 }
 
