@@ -9,7 +9,8 @@
 .photo-upload__btn {
   padding-top: 15px;
   padding-bottom: 15px;
-  color: $red;
+
+  @include font-set(18px, 18px, bold, $red, center);
   border: 3px solid $red;
   border-radius: 50px;
   background-color: transparent;
