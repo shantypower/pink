@@ -46,7 +46,7 @@
         <h1 class="visually-hidden">Главная страница сайта приложения Pink</h1>
         <article class="intro">
           <h2 class="visually-hidden">Скачать приложение</h2>
-          <a class="intro__btn btn" href="#">Скачать приложение</a>
+          <a class="intro__btn intro__btn--white" href="#">Скачать приложение</a>
           <ul class="intro__list">
             <li class="intro__item">
               <a class="intro__link intro__link--apple" href="#">Apple</a>
@@ -62,23 +62,25 @@
         </article>
 
         <section class="information">
-          <h2 class="visually-hidden">Информация о приложении</h2>
-          <p class="information__promo-text">Устали от серости мегаполиса?</p>
-          <p class="information__promo-text">Нам есть, что вам  предложить!</p>
-          <ul class="information__list">
-            <li class="information__item">
-              <h3 class="information__title">Поднимает настроение</h3>
-              <p class="information__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="information__item">
-              <h3 class="information__title">Меняет мир вокруг</h3>
-              <p class="information__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="information__item">
-              <h3 class="information__title">Заводит новых друзей</h3>
-              <p class="information__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
+            <h2 class="visually-hidden">Информация о приложении</h2>
+            <p class="information__promo-text">Устали от серости мегаполиса?</p>
+            <p class="information__promo-text">Нам есть, что вам  предложить!</p>
+            <div class="information__wrapper">
+              <ul class="information__list">
+                <li class="information__item">
+                  <h3 class="information__title">Поднимает настроение</h3>
+                  <p class="information__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                </li>
+                <li class="information__item">
+                  <h3 class="information__title">Меняет мир вокруг</h3>
+                  <p class="information__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                </li>
+                <li class="information__item">
+                  <h3 class="information__title">Заводит новых друзей</h3>
+                  <p class="information__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                </li>
+              </ul>
+            </div>
           <div class="information__image"></div>
         </section>
 
@@ -153,25 +155,27 @@
 
     <section class="contacts">
       <h2 class="contacts__header">Остались вопросы? Свяжитесь с нами!</h2>
-      <ul class="contacts__list">
-        <li class="contacts__item">
-          <h3 class="contacts__title">Звоните:</h3>
-          <p class="contacts__text">+7 (812) 555-66-66</p>
-        </li>
-        <li class="contacts__item">
-          <h3 class="contacts__title">Пишите:</h3>
-          <p class="contacts__text">mail@htmlacademy.ru</p>
-        </li>
-        <li class="contacts__item">
-          <h3 class="contacts__title">Приезжайте в гости:</h3>
-          <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
-        </li>
-      </ul>
+      <div class="contacts__wrapper">
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <h3 class="contacts__title">Звоните:</h3>
+            <p class="contacts__text">+7 (812) 555-66-66</p>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__title">Пишите:</h3>
+            <p class="contacts__text">mail@htmlacademy.ru</p>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__title">Приезжайте в гости:</h3>
+            <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
+          </li>
+        </ul>
+      </div>
       <div class="contacts__triangle">
         <svg class="contacts__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.28px" height="61.905px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve">
           <polygon fill="#000000" points="297.64,61.905 0,0 595.28,0 "/>
         </svg>
-        <div class="map"><img src="img/bg-map-mobile@1x.png" alt="Расположение на карте: ул. Большая Конюшенная, 19/8"></div>
+        <div class="contacts__map"><img src="img/bg-map-mobile@1x.png" alt="Расположение на карте: ул. Большая Конюшенная, 19/8"></div>
       </div>
     </section>
 

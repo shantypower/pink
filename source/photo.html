@@ -42,16 +42,16 @@
       </div>
     </header>
 
-    <main class="photo">
+    <main class="photo photo">
       <h2 class="photo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
       <section class="photo__content">
         <h2 class="visually-hidden">Недавно добавленные фото пользователей</h2>
         <ul class="photo__list">
           <li class="photo__item">
-            <article class="user-photo">
-              <div class="user-photo__user-img user-photo__user-img--wide">
-                <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
-              </div>
+            <div class="user-photo__user-img user-photo__user-img--wide">
+              <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+            </div>
+            <article class="user-photo user-photo--wrapper">
               <div class="user-photo__info">
                 <p class="user-photo__title">Анна<span class="user-photo__span">(5 минут назад)</span></p>
                 <p class="user-photo__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
@@ -62,7 +62,7 @@
               </div>
             </article>
           </li>
-          <li class="photo__item">
+          <li class="photo__item photo__item--wrapper">
             <article class="user-photo">
               <div class="user-photo__user-img">
                 <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="">
@@ -77,7 +77,7 @@
               </div>
             </article>
           </li>
-          <li class="photo__item">
+          <li class="photo__item photo__item--wrapper">
             <article class="user-photo">
               <div class="user-photo__user-img">
                 <img src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="">
@@ -92,7 +92,7 @@
               </div>
             </article>
           </li>
-          <li class="photo__item">
+          <li class="photo__item photo__item--wrapper">
             <article class="user-photo">
               <div class="user-photo__user-img">
                 <img src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="">
@@ -107,7 +107,7 @@
               </div>
             </article>
           </li>
-          <li class="photo__item">
+          <li class="photo__item photo__item--wrapper">
             <article class="user-photo">
               <div class="user-photo__user-img">
                 <img src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="">
@@ -122,7 +122,7 @@
               </div>
             </article>
           </li>
-          <li class="photo__item">
+          <li class="photo__item photo__item--wrapper">
             <article class="user-photo">
               <div class="user-photo__user-img">
                 <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="">
@@ -137,7 +137,7 @@
               </div>
             </article>
           </li>
-          <li class="photo__item">
+          <li class="photo__item photo__item--wrapper">
             <article class="user-photo">
               <div class="user-photo__user-img">
                 <img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="">
@@ -178,8 +178,8 @@
               </div>
             </div>
           </div>
-          <button class="photo-upload__btn btn" type="submit">Запостить</button>
-          <button class="photo-upload__btn--reset btn" type="reset">Отмена</button>
+          <button class="photo-upload__btn" type="submit">Запостить</button>
+          <button class="photo-upload__btn photo-upload__btn--reset" type="reset">Отмена</button>
         </form>
       </section>
     </main>
