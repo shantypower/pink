@@ -1,0 +1,35 @@
+.photo-upload {
+  background-color: $white;
+}
+
+.photo-upload__img {
+  text-align: center;
+}
+
+.photo-upload__btn {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  @include font-set(18px, 18px, bold, $red, center);
+  border: 3px solid $red;
+  border-radius: 50px;
+  background-color: transparent;
+}
+
+.photo-upload__btn--reset {
+  color: rgba(40, 54, 69, 0.1);
+  border: 3px solid rgba(40, 54, 69, 0.1);
+}
+
+.photo-upload__form {
+  display: flex;
+  flex-direction: column;
+  background-color: $grey;
+}
+
+.photo-upload__btn-list {
+  display: flex;
+  justify-content: space-around;
+
+  @include list-reset;
+}

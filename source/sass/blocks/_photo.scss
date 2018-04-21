@@ -1,0 +1,13 @@
+.photo__item--wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.photo__text,
+.photo-upload__text {
+  @include font-set(14px, 30px,normal,$darkgrey, center);
+}
+
+.photo__list {
+  @include list-reset;
+}
