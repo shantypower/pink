@@ -22,14 +22,12 @@
 }
 
 .competition__legend {
+  display: block;
+
   @include font-set(14px, 30px, normal, $darkgrey, center);
   text-transform: uppercase;
 }
 
 .competition__footnote {
   color: $red;
-}
-
-.competition__legend {
-  display: block;
 }
