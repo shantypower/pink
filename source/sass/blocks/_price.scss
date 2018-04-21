@@ -2,7 +2,7 @@
   border-collapse: collapse;
 }
 
-.tariff {
+.price__tariff {
   min-width: 280px;
   padding-top: 18px;
   padding-bottom: 18px;
@@ -12,25 +12,25 @@
 
   text-transform: uppercase;
   border-right: 2px solid $lightgrey;
-
-  .tariff__price {
-    font-size: 24px;
-    font-weight: lighter;
-  }
 }
 
-.tariff--empty {
+.price__cost {
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.price__tariff--empty {
   background-color: transparent;
 }
 
-.value {
+.price__value {
   @include font-set(14px, 30px, normal, $darkgrey, left);
   text-transform: uppercase;
   border: 2px solid $lightgrey;
   padding: 15px 24px;
 }
 
-.row:first-of-type .value {
+.price__row:first-of-type .value {
   border-top-color: transparent;
 }
 
