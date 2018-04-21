@@ -1,0 +1,14 @@
+.filters-group {
+  border: none;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.filters-group__title {
+  margin: 0;
+
+  @include font-set(14px, 18px, normal, $red, center);
+
+  text-transform: uppercase;
+}
+

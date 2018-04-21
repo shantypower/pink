@@ -1,0 +1,29 @@
+.pop-up__title {
+  @include font-set(18px, 24px, bold, $black, center);
+}
+
+.pop-up__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 165px;
+  background-color: $grey;
+}
+
+.pop-up__text {
+  @include font-set(14px, 30px, normal, $darkgrey, center);
+}
+
+.pop-up__btn {
+  min-width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @include font-set(18px, 30px, bold, $white, center);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+  background-color: $green;
+  cursor: pointer;
+}
+

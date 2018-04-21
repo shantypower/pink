@@ -1,0 +1,40 @@
+.contacts__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contacts__header {
+  @include font-set(24px, 30px, lighter,$darkgrey, center);
+  color: $darkgrey;
+}
+
+.contacts__title {
+  @include font-set(18px, 30px, bold, $darkgrey, center);
+}
+
+.contacts__list {
+  @include list-reset;
+  text-align: center;
+}
+
+.contacts__text {
+  @include font-set(24px, 36px, lighter, $red, center);
+}
+
+.contacts__triangle {
+  position: relative;
+}
+
+.contacts__svg {
+  position: absolute;
+  top: 0;
+  left: -50%;
+  z-index: 1;
+}
+
+.contacts__map {
+  position: absolute;
+
+  top: 0;
+  min-height: 200px;
+}

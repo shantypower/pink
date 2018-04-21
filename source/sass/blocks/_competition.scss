@@ -1,0 +1,35 @@
+.competition__content {
+  @include font-set;
+}
+
+.competition__text {
+  @include font-set(14px, 30px, normal, $darkgrey, center);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.competition__btn {
+  min-width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @include font-set(18px, 30px, bold, $white, center);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+  background-color: $green;
+  cursor: pointer;
+}
+
+.competition__legend {
+  @include font-set(14px, 30px, normal, $darkgrey, center);
+  text-transform: uppercase;
+}
+
+.competition__footnote {
+  color: $red;
+}
+
+.competition__legend {
+  display: block;
+}
