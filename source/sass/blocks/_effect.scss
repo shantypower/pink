@@ -1,0 +1,24 @@
+.effect {
+  display: none;
+}
+
+.effect__container {
+  display: flex;
+}
+
+.effect__image {
+  min-width: 300px;
+  background: url("/source/img/")
+}
+
+@media (min-width: $tablet-width) {
+  .effect {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect {
+    background-color: $grey;
+  }
+}

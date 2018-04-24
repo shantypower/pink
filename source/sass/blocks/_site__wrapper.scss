@@ -1,0 +1,17 @@
+.site__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .site__wrapper {
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site__wrapper {
+    width: 1200px;
+  }
+}
+
