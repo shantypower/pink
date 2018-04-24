@@ -16,5 +16,21 @@
 
   padding: 16px 0;
   width: 100%;
-  background-color: $darkgrey;
+}
+
+@media (min-width: 660px) {
+  .main-nav__list {
+
+  }
+}
+
+@media (min-width:1200px) {
+  .main-nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: none;
+  }
+  .main-nav__item {
+    margin-left: 80px;
+  }
 }
