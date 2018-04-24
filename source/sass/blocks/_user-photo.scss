@@ -1,6 +1,10 @@
-.user-photo--wrapper {
+.user-photo__wrapper {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.user-photo__container {
+  text-align: center;
 }
 
 .user-photo__info {
@@ -30,4 +34,20 @@
 
 .user-photo__counter {
   margin-left: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .user-photo__img {
+    width: 100%;
+  }
+
+  .user-photo__user-img--wide {
+    background: url("../img/panorama-tablet.jpg") no-repeat center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-photo__user-img--wide {
+    background: url("../img/panorama-desktop.jpg") no-repeat center;
+  }
 }
