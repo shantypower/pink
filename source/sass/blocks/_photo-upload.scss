@@ -29,7 +29,22 @@
 
 .photo-upload__btn-list {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
 
   @include list-reset;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-upload__form {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .photo-upload__tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 410px;
+  }
 }
