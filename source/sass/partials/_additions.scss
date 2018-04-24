@@ -1,7 +1,6 @@
 body {
   padding: 0;
-  width: 320px;
-  margin: 0 auto;
+  margin: 0;
 
   @include font-set(18px, 32px, normal, $black, left);
 }
