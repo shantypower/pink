@@ -1,6 +1,4 @@
-.review {
 
-}
 
 .review__wrapper {
   width: 280px;
@@ -16,6 +14,7 @@
   position: absolute;
   top: 0;
   left: 0;
+
   display: flex;
   flex-direction: column;
 }
@@ -39,6 +38,7 @@
 .review__title {
   display: block;
   margin: 0;
+
   font-style: inherit;
 
   @include font-set(18px, 30px, bold, $black, center);
@@ -61,6 +61,7 @@
   }
   .review__about {
     display: block;
+
     @include font-set(14px, 30px, lighter, $darkgrey, center);
   }
 
@@ -75,10 +76,10 @@
   .review__about {
     order: 3;
   }
- }
+}
 
- @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .review__wrapper {
     width: 690px;
   }
- }
+}

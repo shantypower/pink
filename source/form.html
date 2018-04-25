@@ -9,8 +9,8 @@
   <body>
 
     <header class="header">
-      <div class="header__wrapper">
-        <div class="header__top-wrapper container">
+      <div class="header__top-wrapper">
+        <div class="header__container">
           <div class="header__top">
             <a class="header__logo">
               <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
@@ -23,140 +23,160 @@
               </svg>
             </a>
             <button class="header__button" type="button">Открыть меню</button>
-         </div>
-
-         <nav class="header__nav main-nav">
-            <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--current">
-                <a class="main-nav__link" href="index.html"> Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="photo.html"> Фотографии</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link"> Конкурс</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive"> HTML Academy</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <article class="intro">
-        <div class="container">
-          <div class="intro__wrapper">
-            <h1 class="intro__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
           </div>
         </div>
+        <nav class="header__nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link" href="index.html"> Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html"> Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link"> Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive"> HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <article class="header__title-box">
+        <h1 class="header__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </article>
     </header>
 
     <main class="competition">
       <div class="competition__wrapper">
 
-        <section class="competition__content">
+        <section class="competition__content container">
           <h2 class="competition__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h2>
           <form  class="competition__form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="filters-group input-block">
-              <p class="input-block__item input-block__item--input">
-                <label class="input-block__text" for="surname-field">Фамилия:</label>
-                <input type="text" class="input-block__input" name="surname" id="surname-field" placeholder="Укажите фамилию *" required>
-              </p>
-              <p class="input-block__item  input-block__item--input">
-                <label class="input-block__text" for="name-field">Имя:</label>
-                <input type="text" class="input-block__input" name="name" id="name-field" placeholder="Введите ваше имя *" required>
-              </p>
-              <p class="input-block__item input-block__item--input">
-                <label class="input-block__text" for="patronymic-field">Отчество:</label>
-                <input type="text" class="input-block__input" name="patronymic" id="patronymic-field" placeholder="Ну и отчество тоже">
-              </p>
+
+            <fieldset class="filters-group  filters-group__fullname input-block">
+              <div class="filters-group__narrow">
+                <p class="input-block__item input-block__item--input">
+                  <label class="input-block__text" for="surname-field">Фамилия:</label>
+                  <input type="text" class="input-block__input" name="surname" id="surname-field" placeholder="Укажите фамилию *" required>
+                </p>
+                <p class="input-block__item  input-block__item--input">
+                  <label class="input-block__text" for="name-field">Имя:</label>
+                  <input type="text" class="input-block__input" name="name" id="name-field" placeholder="Введите ваше имя *" required>
+                </p>
+                <p class="input-block__item input-block__item--input">
+                  <label class="input-block__text" for="patronymic-field">Отчество:</label>
+                  <input type="text" class="input-block__input" name="patronymic" id="patronymic-field" placeholder="Ну и отчество тоже">
+                </p>
+              </div>
             </fieldset>
-            <fieldset class="filters-group input-block">
-              <h3 class="filters-group__title">Ваши безбашенные достижения в путешествии</h3>
-              <ul class="input-block__list">
-                <li class="input-block__item">
-                  <input class="input-block__input input-block__input--checkbox" type="checkbox" name="selfie" id="selfie-field" checked>
-                  <label class="input-block__text" for="selfie-field">Сделал селфи с акулой</label>
-                </li>
-                <li class="input-block__item">
-                  <input class="input-block__input input-block__input--checkbox" type="checkbox" name="beach" id="beach-field" checked>
-                  <label class="input-block__text" for="beach-field">Обгорел на пляже</label>
-                </li>
-                <li class="input-block__item">
-                  <input class="input-block__input input-block__input--checkbox" type="checkbox" name="cinema-star" id="cinema-star-field">
-                  <label class="input-block__text" for="cinema-star-field">Видел Чака Норриса</label>
-                </li>
-                <li class="input-block__item">
-                  <input class="input-block__input input-block__input--checkbox" type="checkbox" name="souvenir" id="souvenir-field">
-                  <label class="input-block__text" for="souvenir-field">Накупил сувениров</label>
-                </li>
-                <li class="input-block__item">
-                  <input class="input-block__input input-block__input--checkbox" type="checkbox" name="tower" id="tower-field" checked>
-                  <label class="input-block__text" for="tower-field">Удержал башню</label>
-                </li>
-                <li class="input-block__item">
-                  <input class="input-block__input input-block__input--checkbox" type="checkbox" name="hotel" id="hotel-field">
-                  <label class="input-block__text" for="hotel-field">Разгромил отель</label>
-                </li>
-              </ul>
+
+            <fieldset class="filters-group filters-group__achievements input-block">
+              <legend class="filters-group__title">Ваши безбашенные достижения в путешествии</legend>
+              <div class="filters-group__wide">
+                <ul class="input-block__list">
+                  <li class="input-block__item input-block__selfie">
+                    <input class="input-block__input input-block__input--checkbox" type="checkbox" name="selfie" id="selfie-field" checked>
+                    <label class="input-block__text" for="selfie-field">Сделал селфи с акулой</label>
+                  </li>
+                  <li class="input-block__item input-block__beach">
+                    <input class="input-block__input input-block__input--checkbox" type="checkbox" name="beach" id="beach-field" checked>
+                    <label class="input-block__text" for="beach-field">Обгорел на пляже</label>
+                  </li>
+                  <li class="input-block__item input-block__chuck">
+                    <input class="input-block__input input-block__input--checkbox" type="checkbox" name="cinema-star" id="cinema-star-field">
+                    <label class="input-block__text" for="cinema-star-field">Видел Чака Норриса</label>
+                  </li>
+                  <li class="input-block__item input-block__souvenir">
+                    <input class="input-block__input input-block__input--checkbox" type="checkbox" name="souvenir" id="souvenir-field">
+                    <label class="input-block__text" for="souvenir-field">Накупил сувениров</label>
+                  </li>
+                  <li class="input-block__item input-block__tower">
+                    <input class="input-block__input input-block__input--checkbox" type="checkbox" name="tower" id="tower-field" checked>
+                    <label class="input-block__text" for="tower-field">Удержал башню</label>
+                  </li>
+                  <li class="input-block__item input-block__hotel">
+                    <input class="input-block__input input-block__input--checkbox" type="checkbox" name="hotel" id="hotel-field">
+                    <label class="input-block__text" for="hotel-field">Разгромил отель</label>
+                  </li>
+                </ul>
+              </div>
             </fieldset>
-            <fieldset class="filters-group input-block">
-              <p class="input-block__item input-block__item--input">
-                <label class="input-block__text" for="phone-field">Номер телефона</label>
-                <input type="tel" class="input-block__input" name="phone" id="phone-field" placeholder="Номер, пожалуйста" pattern="\+7\-[0-9]{3}-[0-9]{3}-[0-9]{4}">
-              </p>
-              <p class="input-block__item input-block__item--input">
-                <label class="input-block__text" for="email-field">Адрес почты</label>
-                <input type="email" class="input-block__input" name="email" id="email-field" placeholder="Введите почту *" required>
-              </p>
+
+            <fieldset class="filters-group filters-group__contacts input-block">
+              <legend class="filters-group__title">Контактная информация</legend>
+              <div class="filters-group__wide">
+                <div class="filters-group__contact-info">
+                  <p class="input-block__item input-block__item--input">
+                    <label class="input-block__text" for="phone-field">Номер телефона</label>
+                    <input type="tel" class="input-block__input" name="phone" id="phone-field" placeholder="Номер, пожалуйста" pattern="\+7\-[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                  </p>
+                  <p class="input-block__item input-block__item--input">
+                    <label class="input-block__text" for="email-field">Адрес почты</label>
+                    <input type="email" class="input-block__input" name="email" id="email-field" placeholder="Введите почту *" required>
+                  </p>
+                </div>
+              </div>
             </fieldset>
-            <fieldset class="filters-group input-block">
-              <h3 class="filters-group__title">С каким приложением путешествовали?</h3>
-              <ul class="input-block__list">
-                <li class="input-block__item">
-                  <input class="input-block__input input-block__input--radiobutton" type="radio" name="phone-type" id="radio1" checked>
-                  <label class="input-block__text" for="radio1">Pink для iOS</label>
-                </li>
-                <li class="input-block__item">
-                  <input class="input-block__input input-block__input--radiobutton" type="radio" name="phone-type" id="radio2">
-                  <label class="input-block__text" for="radio2">Pink на Android</label>
-                </li>
-                <li class="input-block__item">
-                  <input class="input-block__input input-block__input--radiobutton" type="radio" name="phone-type" id="radio3">
-                  <label class="input-block__text" for="radio3">Windows Phone</label>
-                </li>
-              </ul>
+
+            <fieldset class="filters-group filters-group__platform input-block">
+              <legend class="filters-group__title">С каким приложением путешествовали?</legend>
+              <div class="filters-group__narrow">
+                <ul class="input-block__list">
+                  <li class="input-block__item">
+                    <input class="input-block__input input-block__input--radiobutton" type="radio" name="phone-type" id="radio1" checked>
+                    <label class="input-block__text" for="radio1">Pink для iOS</label>
+                  </li>
+                  <li class="input-block__item">
+                    <input class="input-block__input input-block__input--radiobutton" type="radio" name="phone-type" id="radio2">
+                    <label class="input-block__text" for="radio2">Pink на Android</label>
+                  </li>
+                  <li class="input-block__item">
+                    <input class="input-block__input input-block__input--radiobutton" type="radio" name="phone-type" id="radio3">
+                    <label class="input-block__text" for="radio3">Windows Phone</label>
+                  </li>
+                </ul>
+              </div>
             </fieldset>
-            <fieldset class="filters-group input-block">
-              <h3 class="filters-group__title">Опишите свои эмоции</h3>
-              <textarea class="input-block__input input-block__input--textarea" name="emotions" id="emotions-field" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+
+            <fieldset class="filters-group filters-group__emotions input-block">
+              <legend class="filters-group__title">Опишите свои эмоции</legend>
+              <div class="filters-group__wide">
+                <textarea class="input-block__input input-block__input--textarea" name="emotions" id="emotions-field" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </div>
             </fieldset>
-            <button class="competition__btn btn" type="submit">Отправить форму</button>
+
+            <div class="competition__btn-box competition__container">
+              <button class="competition__btn btn" type="submit">Отправить форму</button>
+              <small class="competition__legend">
+                <sup class="competition__footnote">*</sup> — обязательные поля
+              </small>
+            </div>
+
           </form>
-          <small class="competition__legend">
-            <sup class="competition__footnote">*</sup> — обязательные поля
-          </small>
         </section>
 
-        <div class="pop-up">
+
+        <div class="pop-up pop-up__error">
           <h2 class="pop-up__title">Что-то пошло не так!</h2>
           <p class="pop-up__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
           <button class="pop-up__btn btn" type="button">ok</button>
         </div>
 
-        <div class="pop-up">
+        <div class="pop-up pop-up__ok">
           <h2 class="pop-up__title">Ваша заявка отправлена</h2>
           <p class="pop-up__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
           <div class="pop-up__button-wrapper">
-            <button class="pop-up__btn btn" type="button">Закрыть окно</button>
+            <button class="pop-up__btn pop-up__btn--close" type="button">Закрыть окно</button>
           </div>
         </div>
+
       </div>
     </main>
 
 
-    <footer class="footer footer__main-page container">
+    <footer class="footer footer container">
       <h2 class="visually-hidden">Мы в соцсетях</h2>
       <a class="footer__logo" href="index.html">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">

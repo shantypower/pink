@@ -9,8 +9,8 @@
   <body>
 
     <header class="header">
-      <div class="header__wrapper">
-        <div class="header__top-wrapper container">
+      <div class="header__top-wrapper">
+        <div class="header__container">
           <div class="header__top">
             <a class="header__logo">
               <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
@@ -24,47 +24,40 @@
             </a>
             <button class="header__button" type="button">Открыть меню</button>
           </div>
-
-          <nav class="header__nav main-nav">
-            <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--current">
-                <a class="main-nav__link" href="index.html"> Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link"> Фотографии</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="form.html"> Конкурс</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive"> HTML Academy</a>
-              </li>
-            </ul>
-          </nav>
         </div>
+        <nav class="header__nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link" href="index.html"> Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link"> Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html"> Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive"> HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <article class="intro">
-        <div class="container">
-          <div class="intro__wrapper">
-            <h1 class="intro__text">Фотографии пользователей</h1>
-          </div>
-        </div>
+
+      <article class="header__title-box">
+        <h1 class="header__text">Фотографии пользователей</h1>
       </article>
     </header>
 
     <main class="photo">
-      <h2 class="photo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
-
-
-        <h2 class="visually-hidden">Недавно добавленные фото пользователей</h2>
-        <div class="photo__best">
-          <div class="user-photo__user-img user-photo__user-img--wide">
-            <img class="user-photo__img" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
-          </div>
+      <h1 class="photo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+      <div class="photo__best">
+        <div class="user-photo__user-img user-photo__user-img--wide">
+          <img class="user-photo__img" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
         </div>
+      </div>
 
-        <div class="container">
-          <section class="photo__content">
+      <div class="container">
+        <section class="photo__content">
           <article class="user-photo user-photo--wrapper">
             <div class="user-photo__info">
               <p class="user-photo__title">Анна<span class="user-photo__span">(5 минут назад)</span></p>
@@ -179,31 +172,36 @@
             <div class="photo-upload__tools">
               <ul class="photo-upload__btn-list">
                 <li class="photo-upload__btn-item">
-                  <button class="photo-upload__btn" type="button"></button>
+                  <button class="photo-upload__tool" type="button"></button>
+                  <div class="photo-upload__range-scale">
+                    <div class="photo-upload__toggle"></div>
+                  </div>
                 </li>
                 <li class="photo-upload__btn-item">
-                  <button class="photo-upload__btn" type="button"></button>
+                  <button class="photo-upload__tool" type="button"></button>
+                  <div class="photo-upload__range-scale">
+                    <div class="photo-upload__toggle"></div>
+                  </div>
                 </li>
                 <li class="photo-upload__btn-item">
-                  <button class="photo-upload__btn" type="button"></button>
+                  <button class="photo-upload__tool" type="button"></button>
+                  <div class="photo-upload__range-scale">
+                    <div class="photo-upload__toggle"></div>
+                  </div>
                 </li>
               </ul>
-              <div class="photo-upload__range">
-                <div class="photo-upload__range-scale">
-                  <div class="photo-upload__toggle"></div>
-                </div>
+              <div class="photo-upload__btn-wrapper">
+                <button class="photo-upload__btn" type="submit">Запостить</button>
+                <button class="photo-upload__btn photo-upload__btn--reset" type="reset">Отмена</button>
               </div>
-              <button class="photo-upload__btn" type="submit">Запостить</button>
-            <button class="photo-upload__btn photo-upload__btn--reset" type="reset">Отмена</button>
             </div>
-
           </form>
         </section>
       </div>
 
     </main>
 
-    <footer class="footer footer__main-page container">
+    <footer class="footer footer container">
       <h2 class="visually-hidden">Мы в соцсетях</h2>
       <a class="footer__logo" href="index.html">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">

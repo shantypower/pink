@@ -8,29 +8,33 @@
 
 .main-nav__link {
   display: block;
-
-  @include font-set(18px, 32px, bold, $white, center);
+  width: 100%;
+  padding: 16px 0;
 
   color: $white;
   text-transform: uppercase;
 
-  padding: 16px 0;
-  width: 100%;
+  @include font-set(18px, 32px, bold, $white, center);
 }
 
-@media (min-width: 660px) {
-  .main-nav__list {
+@media (min-width: $tablet-width) {
 
-  }
 }
 
-@media (min-width:1200px) {
+@media (min-width: $desktop-width) {
   .main-nav__list {
     flex-direction: row;
     justify-content: space-between;
+
     text-transform: none;
   }
   .main-nav__item {
     margin-left: 80px;
+  }
+
+  .main-nav__link {
+    text-transform: inherit;
+
+    @include font-set(18px, 18px, 400, $white, center);
   }
 }
