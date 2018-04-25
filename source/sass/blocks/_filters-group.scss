@@ -40,6 +40,7 @@
   .filters-group__contact-info {
     display: block;
   }
+
   .filters-group__fullname {
     order: 1;
   }
@@ -50,6 +51,7 @@
 
   .filters-group__contacts {
     order: 3;
+    
     .input-block__item {
       flex-direction: column-reverse;
     }

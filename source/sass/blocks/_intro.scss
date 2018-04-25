@@ -43,6 +43,7 @@
 
     @include font-set(40px, 48px, lighter, $white, center);
   }
+
   .intro__wrapper {
     width: 300px;
     margin-top: 0;
@@ -51,7 +52,4 @@
 
     background-color: rgba(29, 38, 49, 0);
   }
-}
-
-@media (min-width: $desktop-width) {
 }

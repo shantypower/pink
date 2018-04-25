@@ -59,8 +59,6 @@
   .review__wrapper {
     width: 620px;
   }
-  .review__about {
-    display: block;
 
     @include font-set(14px, 30px, lighter, $darkgrey, center);
   }
@@ -74,6 +72,7 @@
   }
 
   .review__about {
+    display: block;
     order: 3;
   }
 }

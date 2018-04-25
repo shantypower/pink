@@ -17,10 +17,6 @@
   @include font-set(18px, 32px, bold, $white, center);
 }
 
-@media (min-width: $tablet-width) {
-
-}
-
 @media (min-width: $desktop-width) {
   .main-nav__list {
     flex-direction: row;
@@ -28,6 +24,7 @@
 
     text-transform: none;
   }
+  
   .main-nav__item {
     margin-left: 80px;
   }
