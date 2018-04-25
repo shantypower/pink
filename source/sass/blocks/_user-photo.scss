@@ -45,10 +45,6 @@
   .user-photo__user-img--wide {
     background: url("../img/panorama-tablet.jpg") no-repeat center;
   }
-
-  .user-photo__img {
-    z-index: 0;
-  }
 }
 
 @media (min-width: $desktop-width) {
