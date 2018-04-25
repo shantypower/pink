@@ -44,8 +44,7 @@
   }
 }
 
-@media (min-width: $desktop-width)
- {
+@media (min-width: $desktop-width) {
   .information__flex-container {
     display: flex;
     flex-direction: column-reverse;
