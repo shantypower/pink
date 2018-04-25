@@ -60,9 +60,6 @@
     width: 620px;
   }
 
-    @include font-set(14px, 30px, lighter, $darkgrey, center);
-  }
-
   .review__text {
     order: 1;
   }
