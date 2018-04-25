@@ -2,6 +2,10 @@
   background-color: $white;
 }
 
+.photo-upload__text {
+  @include font-set(14px, 30px,normal,$darkgrey, center);
+}
+
 .photo-upload__img {
   text-align: center;
 }

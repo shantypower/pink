@@ -2,8 +2,7 @@
   margin: 0 auto;
 }
 
-.photo__text,
-.photo-upload__text {
+.photo__text {
   @include font-set(14px, 30px,normal,$darkgrey, center);
 }
 

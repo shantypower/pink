@@ -10,4 +10,4 @@ npm-debug.*
 source/css/*.css
 Thumbs.db
 desktop.ini
-.vscode/*.json
+.vscode/
