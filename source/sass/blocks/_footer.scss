@@ -1,6 +1,9 @@
 .footer {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 35px 20px;
 }
 
 .footer__logo {
@@ -16,13 +19,29 @@
 .footer__copyright {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
+
 
 .footer__text {
   margin: 0;
   padding-right: 15px;
 
-  @include font-set(14px, 18px, normal, $darkgrey, left);
   vertical-align: middle;
+
+  @include font-set(14px, 18px, normal, $darkgrey, left);
+}
+
+.footer__main-page {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__main-page,
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+  }
 }

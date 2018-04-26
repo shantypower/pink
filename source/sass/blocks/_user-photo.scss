@@ -1,6 +1,10 @@
-.user-photo--wrapper {
-  padding-left: 20px;
+.user-photo__wrapper {
   padding-right: 20px;
+  padding-left: 20px;
+}
+
+.user-photo__container {
+  text-align: center;
 }
 
 .user-photo__info {
@@ -14,9 +18,9 @@
 }
 
 .user-photo__span {
-  text-transform: uppercase;
-  font-size: 12px;
   font-weight: normal;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .user-photo__description {
@@ -24,10 +28,27 @@
 }
 
 .user-photo__footer {
-  @include font-set(12px, 24px, normal, $red, left);
   text-transform: uppercase;
+
+  @include font-set(12px, 24px, normal, $red, left);
 }
 
 .user-photo__counter {
   margin-left: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .user-photo__img {
+    width: 100%;
+  }
+
+  .user-photo__user-img--wide {
+    background: url("../img/panorama-tablet.jpg") no-repeat center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-photo__user-img--wide {
+    background: url("../img/panorama-desktop.jpg") no-repeat center;
+  }
 }

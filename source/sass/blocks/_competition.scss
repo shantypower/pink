@@ -1,33 +1,104 @@
+.competition {
+  position: relative;
+}
+
 .competition__content {
-  @include font-set;
+  margin: 0 auto;
+}
+
+.competition__form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 320px;
+}
+
+.competition__container {
+  padding: 0 20px;
 }
 
 .competition__text {
-  @include font-set(14px, 30px, normal, $darkgrey, center);
+  margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 50px;
+
+  @include font-set(14px, 30px, normal, $darkgrey, center);
 }
 
 .competition__btn {
-  min-width: 100%;
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
 
-  @include font-set(18px, 30px, bold, $white, center);
   text-transform: uppercase;
+
+  background-color: $green;
   border: none;
   border-radius: 2px;
-  background-color: $green;
   cursor: pointer;
+
+  @include font-set(18px, 30px, bold, $white, center);
+}
+
+.competition__btn-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .competition__legend {
   display: block;
 
-  @include font-set(14px, 30px, normal, $darkgrey, center);
   text-transform: uppercase;
+
+  @include font-set(14px, 30px, normal, $darkgrey, center);
 }
 
 .competition__footnote {
   color: $red;
+}
+
+@media (min-width: $tablet-width) {
+  .competition__form {
+    width: 620px;
+  }
+
+  .competition__text {
+    width: 500px;
+
+    @include font-set(18px, 30px, normal, $darkgrey, center);
+  }
+
+  .competition__btn-box {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    order: 6;
+    width: 620px;
+  }
+
+  .competition__btn {
+    width: 300px;
+  }
+
+  .competition__container {
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .competition__text {
+    width: 770px;
+  }
+
+  .competition__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 940px;
+  }
+
+  .competition__btn-box {
+    width: 940px;
+  }
 }

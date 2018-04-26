@@ -1,5 +1,14 @@
+.price {
+  background-color: $grey;
+}
+
+.price__wrapper {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
 .price__list {
-  border-collapse: collapse;
+  margin-left: -584px;
 }
 
 .price__tariff {
@@ -35,5 +44,25 @@
 }
 
 .price__toggles {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
   background-color: $grey;
+}
+
+@media (min-width: $tablet-width) {
+  .price__list {
+    margin-left: -400px;
+  }
+
+  .price__wrapper {
+    overflow: visible;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price__list {
+    margin-left: -90px;
+  }
 }

@@ -1,13 +1,23 @@
-.photo__item--wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
+.photo {
+  margin: 0 auto;
 }
 
-.photo__text,
-.photo-upload__text {
+.photo__text {
   @include font-set(14px, 30px,normal,$darkgrey, center);
 }
 
 .photo__list {
   @include list-reset;
+}
+
+@media (min-width: $tablet-width) {
+  .photo__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .photo__item {
+    width: 300px;
+  }
 }
