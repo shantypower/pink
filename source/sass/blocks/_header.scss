@@ -146,7 +146,7 @@
 
   .header__bg {
     position: initial;
-    margin-bottom: -525px;
+    margin-bottom: -528px;
     height: 653px;
     background: url("../img/back-tablet@1x.jpg") no-repeat center;
     background-size: 100% auto;
@@ -169,9 +169,9 @@
 
 @media (min-width: $desktop-width) {
   .header {
-    height: 653px;
+    height: 854px;
     background: url("../img/back-desktop.jpg") no-repeat center;
-    background-size: 100% auto;
+    background-size: cover;
   }
 
   .header__logo-container {
@@ -179,8 +179,19 @@
   }
 
   .header__bg {
-    margin-bottom: -539px;
+    margin-bottom: -544px;
     background-image: none;
+    z-index: 1;
+  }
+
+  .header__bg::before {
+    top: 210px;
+    right: 1px;
+    width: 1050px;
+    height: 645px;
+    background: url("../img/iphone-hand-desktop@1x.png") no-repeat center;
+
+    transform: scale(1);
   }
 
   .header__button {
@@ -197,6 +208,10 @@
 
   .header__logo {
     width: 150px;
+  }
+
+  .header__logo-container {
+    border: none;
   }
 
   .header__nav,
