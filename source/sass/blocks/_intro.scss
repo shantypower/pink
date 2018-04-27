@@ -28,6 +28,16 @@
   @include font-set(18px, 18px, bold, $white, center);
 }
 
+.intro__btn--white:hover {
+  background-color: $white;
+  color: $red;
+}
+
+.intro__btn--white:active {
+  background-color: $white;
+  color: rgba(210, 80, 46, 0.3);
+}
+
 .intro__list {
   position: relative;
   display: flex;
@@ -115,10 +125,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .intro {
-    z-index: 1;
-  }
-
   .intro__wrapper {
     margin-left: 111px;
     margin-top: 2px;

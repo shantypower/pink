@@ -57,4 +57,16 @@
   .main-nav__item {
     border: none;
   }
+
+  .main-nav__link:hover[href] {
+    color: $red;
+  }
+
+  .main-nav__link:active[href] {
+    color: #6c7681;
+  }
+
+  .main-nav__link--current {
+    border-bottom: 2px solid $white;
+  }
 }

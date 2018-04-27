@@ -5,14 +5,30 @@
   background-size: 100% auto;
 }
 
-.header__bg {
+.header--short {
+  height: 365px;
+}
+
+.header__logo:hover[href] .header__svg{
+  fill: $red;
+}
+
+.header__logo:active[href] .header__svg{
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+.header__bg,
+.header__title-box {
   position: relative;
   height: 431px;
 
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
   background-position: -15px -36px;
   background-size: 104%;
-  z-index: 0;
+}
+
+.header__title-box {
+  height: 204px;
 }
 
 .header__bg::before {
@@ -57,14 +73,14 @@
   border: none;
 
 }
-/*
+
 .header__nav--closed {
     display: none;
 }
 
-.header__nav--opened {
+header__nav--nojs .header__nav--opened {
   display: block;
-}*/
+}
 
 .header__nav--closed .header__button::before {
   content: "";
@@ -126,12 +142,18 @@
 
 .header__text {
   @include font-set(24px, 30px, lighter, $white, center);
+  margin: 0 auto;
+  padding-top: 62px;
+  width: 300px;
 }
 
 @media (min-width: $tablet-width) {
   .header {
     height: 984px;
-    z-index: 0;
+  }
+
+  .header--short {
+    height: 694px;
   }
 
   .header__logo-container {
@@ -144,17 +166,23 @@
     top: 55px;
   }
 
-  .header__bg {
+  .header__bg,
+  .header__title-box {
     position: initial;
     margin-bottom: -528px;
     height: 653px;
     background: url("../img/back-tablet@1x.jpg") no-repeat center;
     background-size: 100% auto;
-    z-index: -1;
+  }
+
+  .header__title-box {
+    height: 364px;
   }
 
   .header__text {
-    @include font-set(50px, 50px, lighter, $white, center);
+    @include font-set(50px, 59px, lighter, $white, center);
+    width: 475px;
+    padding-top: 106px;
   }
 
   .header__bg::before {
@@ -162,7 +190,6 @@
     right: -1px;
     width: 660px;
     height: 545px;
-    z-index: 1;
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat center;
   }
 }
@@ -174,14 +201,24 @@
     background-size: cover;
   }
 
+  .header--short {
+    height: 694px;
+  }
+
   .header__logo-container {
     width: 335px;
   }
 
-  .header__bg {
+  .header__bg,
+  .header__title-box {
     margin-bottom: -544px;
     background-image: none;
-    z-index: 1;
+  }
+
+  .header__text {
+    width: 800px;
+    padding-top: 65px;
+    margin: 0 auto;
   }
 
   .header__bg::before {
@@ -190,8 +227,7 @@
     width: 1050px;
     height: 645px;
     background: url("../img/iphone-hand-desktop@1x.png") no-repeat center;
-
-    transform: scale(1);
+    z-index: 0;
   }
 
   .header__button {
