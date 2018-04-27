@@ -1,16 +1,99 @@
 .header {
   min-height: 462px;
+  background-color: $deepgrey;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat center #1d2631;
   background-size: 100% auto;
 }
 
-.header__container {
+.header__wrapper {
   padding: 0 20px;
 }
 
-.header__nav {
+.header__logo-container {
+  position: relative;
   background-color: $darkgrey;
+}
+
+.header__nav {
   width: 100%;
+  background-color: $darkgrey;
+}
+
+.header__button {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  z-index: 2;
+
+  display: block;
+  width: 50px;
+  height: 24px;
+
+  font-size: 0;
+  background-color: $darkgrey;
+  cursor: pointer;
+  border: none;
+
+}
+/*
+.header__nav--closed {
+    display: none;
+}
+
+.header__nav--opened {
+  display: block;
+}*/
+
+.header__nav--closed .header__button::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: -42px;
+
+  width: 50px;
+  height: 4px;
+
+  background-color: #ffffff;
+  box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+}
+
+.header__nav--closed .header__button:active::before {
+  background-color: rgba(210, 80, 46, 0.3);
+  box-shadow: 0 8px 0 0 rgba(210, 80, 46, 0.3), 0 16px 0 0 rgba(210, 80, 46, 0.3);
+}
+
+.header__nav--opened .header__button {
+  top: 0;
+  right: 0;
+
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 13px;
+    right: 20px;
+
+    width: 29px;
+    height: 5px;
+
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(210, 80, 46, 0.3);
+  }
 }
 
 .header__wrapper {
@@ -18,11 +101,6 @@
   flex-direction: column;
   align-content: center;
   padding: 16px 20px;
-}
-
-.header__top {
-  display: flex;
-  justify-content: space-between;
 }
 
 .header__text {
@@ -48,10 +126,6 @@
     background-size: 100% auto;
   }
 
-  .header__nav {
-    background-color: transparent;
-  }
-
   .header__button {
     display: none;
   }
@@ -65,13 +139,5 @@
 
   .header__logo {
     width: 150px;
-  }
-
-  .header__container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    width: 960px;
   }
 }
