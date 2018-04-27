@@ -6,25 +6,65 @@
 }
 
 .intro__wrapper {
-  margin-top: 335px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 214px;
+  margin-top: 28px;
+  padding-bottom: 30px;
 }
 
 .intro__btn--white {
-  display: block;
+  align-self: stretch;
   padding-top: 15px;
   padding-bottom: 15px;
 
   border: 3px solid $white;
   border-radius: 50px;
 
-  @include font-set(18px, 18px, lighter, $white, center);
+  @include font-set(18px, 18px, bold, $white, center);
 }
 
 .intro__list {
+  position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 207px;
 
   @include list-reset;
+}
+
+.intro__link {
+  font-size: 0px;
+}
+
+.intro__link--apple,
+.intro__link--android,
+.intro__link--microsoft {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  outline: inherit;
+}
+
+.intro__link--apple {
+  width: 46px;
+  height: 57px;
+  background-image: url("../img/logo-apple.svg");
+}
+
+.intro__link--android {
+  width: 46px;
+  height: 57px;
+  background-image: url("../img/logo-android.svg");
+}
+
+.intro__link--microsoft {
+  width: 46px;
+  height: 57px;
+  background-image: url("../img/logo-microsoft.svg");
 }
 
 .intro__link {
@@ -40,16 +80,54 @@
 @media (min-width: $tablet-width) {
   .intro__title {
     display: block;
+    padding-left: 139px;
+    margin-bottom: 55px;
+    width: 245px;
 
-    @include font-set(40px, 48px, lighter, $white, center);
+    @include font-set(50px, 59px, lighter, $white, center);
   }
 
   .intro__wrapper {
+    display: block;
     width: 300px;
+    min-height: 391px;
     margin-top: 0;
     margin-left: 0;
-    padding: 40px 95px;
-
+    padding-left: 20px;
     background-color: rgba(29, 38, 49, 0);
+  }
+
+  .intro__btn--white {
+    display: block;
+    margin-bottom: 44px;
+  }
+
+  .intro__list {
+    padding-left: 45px;
+    padding-bottom: 38px;
+  }
+
+  .intro__description {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__wrapper {
+    margin-left: 111px;
+  }
+
+  .intro__title {
+    padding-left: 28px;
+    margin-bottom: 53px;
+  }
+
+  .intro__btn--white {
+    font-size: 21px;
+    margin-bottom: 66px;
+  }
+
+  .intro__list {
+    margin-bottom: 18px;
   }
 }

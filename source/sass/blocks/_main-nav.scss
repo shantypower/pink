@@ -8,7 +8,7 @@
 
 .main-nav__item {
   border-top: 1px solid #485461;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid $black;
   z-index: 1;
 }
 
@@ -24,11 +24,20 @@
   @include font-set(18px, 32px, bold, $white, center);
 }
 
+.main-nav__link:hover[href] {
+  color: $red;
+}
+
+.main-nav__link:active[href] {
+  color: rgba(210, 80, 46, 0.3);
+}
+
 @media (min-width: $desktop-width) {
   .main-nav__list {
     flex-direction: row;
     justify-content: space-between;
-
+    align-items: center;
+    padding-top: 32px;
     text-transform: none;
   }
 
@@ -38,7 +47,14 @@
 
   .main-nav__link {
     text-transform: inherit;
+    background-color: transparent;
 
     @include font-set(18px, 18px, 400, $white, center);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__item {
+    border: none;
   }
 }
