@@ -1,47 +1,106 @@
-.information__wrapper {
-  background-color: $grey;
+.information {
+  position: relative;
+  background-color: #f2f2f2
 }
 
-.information__promo-text {
-  margin: 0;
-  margin-bottom: 30px;
+.information__wrapper::before {
+  position: absolute;
+  content: "";
 
-  @include font-set(24px, 28px, lighter, $darkgrey, center);
+  top: -42px;
+  left: 0;
+
+  height: 42px;
+  width: 100%;
+
+  background-image: linear-gradient(174deg, $white 50%, $white 50%, $grey 50%, $grey 50%);
+
 }
 
 .information__list {
   @include list-reset;
+  padding-top: 42px;
+}
 
-  .information__title {
-    margin: 0;
-    margin-bottom: 8px;
+.information__title {
+  margin: 0;
+  margin-bottom: 8px;
 
-    @include font-set(18px, 30px, bold, $black, center);
-  }
+  @include font-set(18px, 30px, bold, $black, center);
+}
 
-  .information__text {
-    margin: 0;
-    margin-bottom: 26px;
+.information__text {
+  margin: 0;
 
-    @include font-set(15px, 25px, lighter, $darkgrey, center);
-  }
+  @include font-set(15px, 25px, 500, $darkgrey, center);
+}
+
+.information__flex-container {
+  padding-bottom: 320px;
+}
+
+.information__item {
+  margin-bottom: 32px;
+}
+
+.information__title-1::after {
+  position: absolute;
+  content: "";
+  bottom: -12px;
+  left: 82px;
+  width: 157px;
+  height: 320px;
+  z-index: 0;
+  background: url("../img/iphone-screen-mobile@1x.png") no-repeat center;
 }
 
 .information__image:first-child {
   min-height: 330px;
-  background: url("../img/iphone-screen-mobile@1x.png") no-repeat center $grey;
+  background: url("../img/iphone-screen-mobile@1x.png") no-repeat center;
 }
 
 @media (min-width: $tablet-width) {
+  .information__wrapper::before {
+    top: -8px;
+
+    height: 60px;
+    width: 100%;
+    background-image: linear-gradient(176deg, $white 50%, $white 50%, $grey 50%, $grey 50%);
+    z-index: 0;
+  }
+
+  .information__title-1::after {
+    top: -40px;
+    left: 19px;
+    width: 268px;
+    height: 547px;
+    z-index: 0;
+    background: url("../img/iphone-screen-tablet@1x.png") no-repeat center;
+  }
+
   .information__flex-container {
     display: flex;
     flex-direction: row-reverse;
+    padding-top: 67px;
+    padding-left: 308px;
   }
 
-  .information__image:first-child {
-    min-height: 558px;
-    width: 310px;
-    background: url("../img/iphone-screen-tablet@1x.png") no-repeat center $grey;
+  .information__title,
+  .information__text {
+    text-align: left;
+  }
+
+  .information__text {
+    font-size: 14.5px;
+    line-height: 24.6px;
+  }
+
+  .information__list {
+    padding-top: 0;
+  }
+
+  .iformation__img-box {
+    z-index: 5;
   }
 }
 
@@ -49,29 +108,83 @@
   .information__flex-container {
     display: flex;
     flex-direction: column-reverse;
+    padding-left: 0;
+    padding-bottom: 0;
   }
 
-  .information__image:first-child {
-    min-height: 382px;
-    width: 182px;
+  .information__item {
+    margin: 0 auto;
+    padding-top: 55px;
+    background-color: $grey;
+  }
+
+  .information__title-1::after {
+    top: 2px;
+    left: 181px;
+    height: 382px;
+    width: 192px;
+    z-index: -1;
     background: url("../img/iphone-screen-desktop1@1x.png") no-repeat center;
   }
+  .information__item-2::after,
+  .information__item-3::after {
+    position: absolute;
+    content: "";
+    top: 2px;
+    z-index: -1;
 
-  .information__image:nth-child(2) {
-    width: 182px;
-    min-height: 382px;
+    width: 192px;
+    height: 382px;
+  }
+
+  .information__item-2::after {
+    left: 504px;
     background: url("../img/iphone-screen-desktop2@1x.png") no-repeat center;
   }
 
-  .information__image:nth-child(3) {
-    width: 182px;
-    min-height: 382px;
-    background: url("../img/iphone-screen-desktop3@1x.png") no-repeat center $grey;
+  .information__item-3::after {
+    left: 824px;
+    background: url("../img/iphone-screen-desktop3@1x.png") no-repeat center;
   }
 
   .iformation__img-box,
   .information__list {
     display: flex;
     justify-content: space-around;
+  }
+
+  .information__wrapper {
+    margin: 0 auto;
+  }
+
+  .information__wrapper::before {
+    top: 0px;
+
+    height: 96px;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .information__list {
+    padding-top: 235px;
+    z-index: 1;
+  }
+
+  .information__title {
+    margin: 0 auto;
+    margin-bottom: 22px;
+    width: 228px;
+    font-size: 30px;
+    line-height: 33px;
+  }
+  .information__text {
+    width: 250px;
+    font-size: 19px;
+    line-height: 30px;
+  }
+
+  .information__title,
+  .information__text {
+    text-align: center;
   }
 }
