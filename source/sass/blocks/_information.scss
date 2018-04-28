@@ -60,6 +60,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .information {
+    margin-bottom: 108px;
+  }
+
   .information__wrapper::before {
     top: -8px;
 
@@ -70,7 +74,7 @@
   }
 
   .information__title-1::after {
-    top: -40px;
+    top: -1px;
     left: 19px;
     width: 268px;
     height: 547px;
@@ -83,6 +87,7 @@
     flex-direction: row-reverse;
     padding-top: 67px;
     padding-left: 308px;
+    padding-bottom: 0;
   }
 
   .information__title,
@@ -176,15 +181,13 @@
     width: 228px;
     font-size: 30px;
     line-height: 33px;
+    text-align: center;
   }
   .information__text {
     width: 250px;
     font-size: 19px;
     line-height: 30px;
-  }
-
-  .information__title,
-  .information__text {
     text-align: center;
   }
+
 }
