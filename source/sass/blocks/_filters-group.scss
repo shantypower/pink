@@ -22,7 +22,7 @@
 
   text-transform: uppercase;
 
-  @include font-set(14px, 18px, normal, $red, center);
+  @include font-set(14px, 18px, 700, $red, center);
 }
 
 @media (min-width: $tablet-width) {

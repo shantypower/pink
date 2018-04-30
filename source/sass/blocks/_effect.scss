@@ -23,21 +23,21 @@
   }
 
   .effect__title {
-    @include font-set(30px, 37px, bold, $black, left);
+    @include font-set(30px, 37px, 700, $black, left);
     margin: 0;
     margin-bottom: 9px;
   }
 
   .effect__text {
-    @include font-set(14.5px, 24px, lighter, $darkgrey, left);
+    @include font-set(14.5px, 24px, 400, $darkgrey, left);
     margin: 0;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
     width: 296px;
   }
 
   .effect__link {
     display: block;
-    @include font-set(14.5px, 24px, lighter, $red, left);
+    @include font-set(14.5px, 24px, 400, $red, left);
   }
 
   .effect__link--inderline {
@@ -52,6 +52,9 @@
     width:238px;
     height:276px;
     background: url("/source/img/timer-tablet@1x.png");
+  }
+  .effect__wrap {
+    display: none;
   }
 }
 

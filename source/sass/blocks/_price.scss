@@ -1,5 +1,17 @@
 .price {
+  position: relative;
   background-color: $grey;
+}
+
+.price__wrapper::before {
+    position: absolute;
+    content: "";
+    top: -153px;
+    left: 0;
+    height: 150px;
+    width: 100%;
+    background-image: linear-gradient(176deg, #ffffff 50%, #ffffff 50%, #f2f2f2 50%, #f2f2f2 50%);
+    z-index: 0;
 }
 
 .price__wrapper {
@@ -17,7 +29,7 @@
   padding-bottom: 18px;
   background-color: $darkgrey;
 
-  @include font-set(18px, 30px, bold, $white, center);
+  @include font-set(18px, 30px, 700, $white, center);
 
   text-transform: uppercase;
   border-right: 2px solid $lightgrey;
@@ -25,7 +37,7 @@
 
 .price__cost {
   font-size: 24px;
-  font-weight: lighter;
+  font-weight: 400;
 }
 
 .price__tariff--empty {
@@ -33,7 +45,7 @@
 }
 
 .price__value {
-  @include font-set(14px, 30px, normal, $darkgrey, left);
+  @include font-set(14px, 30px, 700, $darkgrey, left);
   text-transform: uppercase;
   border: 2px solid $lightgrey;
   padding: 15px 24px;
@@ -58,6 +70,11 @@
 
   .price__wrapper {
     overflow: visible;
+  }
+
+  .price__wrapper::before {
+    top: -116px;
+    height: 129px;
   }
 }
 

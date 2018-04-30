@@ -3,7 +3,7 @@
 }
 
 .photo-upload__text {
-  @include font-set(14px, 30px,normal,$darkgrey, center);
+  @include font-set(14px, 30px,700,$darkgrey, center);
 }
 
 .photo-upload__img {
@@ -18,7 +18,7 @@
   border: 3px solid $red;
   border-radius: 50px;
 
-  @include font-set(18px, 18px, bold, $red, center);
+  @include font-set(18px, 18px, 700, $red, center);
 }
 
 .photo-upload__btn--reset {

@@ -14,23 +14,23 @@
 .user-photo__title {
   margin: 0;
 
-  @include font-set(14px, 24px, bold, $darkgrey, left);
+  @include font-set(14px, 24px, 700, $darkgrey, left);
 }
 
 .user-photo__span {
-  font-weight: normal;
+  font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
 }
 
 .user-photo__description {
-  @include font-set(14px, 24px, normal, $darkgrey, left);
+  @include font-set(14px, 24px, 700, $darkgrey, left);
 }
 
 .user-photo__footer {
   text-transform: uppercase;
 
-  @include font-set(12px, 24px, normal, $red, left);
+  @include font-set(12px, 24px, 700, $red, left);
 }
 
 .user-photo__counter {

@@ -78,7 +78,7 @@
     display: none;
 }
 
-header__nav--nojs .header__nav--opened {
+.header__nav--nojs .header__nav--opened {
   display: block;
 }
 
@@ -141,7 +141,7 @@ header__nav--nojs .header__nav--opened {
 }
 
 .header__text {
-  @include font-set(24px, 30px, lighter, $white, center);
+  @include font-set(24px, 30px, 400, $white, center);
   margin: 0 auto;
   padding-top: 62px;
   width: 300px;
@@ -149,7 +149,7 @@ header__nav--nojs .header__nav--opened {
 
 @media (min-width: $tablet-width) {
   .header {
-    height: 984px;
+    min-height: 984px;
   }
 
   .header--short {
@@ -180,7 +180,7 @@ header__nav--nojs .header__nav--opened {
   }
 
   .header__text {
-    @include font-set(50px, 59px, lighter, $white, center);
+    @include font-set(50px, 59px, 400, $white, center);
     width: 475px;
     padding-top: 106px;
   }
@@ -196,7 +196,7 @@ header__nav--nojs .header__nav--opened {
 
 @media (min-width: $desktop-width) {
   .header {
-    height: 854px;
+    min-height: 854px;
     background: url("../img/back-desktop.jpg") no-repeat center;
     background-size: cover;
   }

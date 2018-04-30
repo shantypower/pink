@@ -10,7 +10,7 @@
 
     text-transform: uppercase;
 
-    @include font-set(14px, 30px, normal, $red, left);
+    @include font-set(14px, 30px, 700, $red, left);
   }
 }
 
@@ -30,7 +30,7 @@
   border: 2px solid $lightgrey;
   border-radius: 2px;
 
-  @include font-set(18px, 30px, normal, $darkgrey, left);
+  @include font-set(18px, 30px, 700, $darkgrey, left);
 }
 
 .input-block__text {

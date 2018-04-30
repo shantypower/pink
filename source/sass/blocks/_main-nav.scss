@@ -21,7 +21,7 @@
   background-color: $darkgrey;
   text-transform: uppercase;
 
-  @include font-set(18px, 32px, bold, $white, center);
+  @include font-set(18px, 32px, 700, $white, center);
 }
 
 .main-nav__link:hover[href] {

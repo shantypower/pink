@@ -5,12 +5,13 @@
 .promo__text {
   margin: 0;
   margin-bottom: 30px;
-  @include font-set(24px, 28px, lighter, $darkgrey, center);
+  @include font-set(24px, 28px, 400, $darkgrey, center);
 }
 
 @media (min-width: $tablet-width) {
   .promo {
     padding: 50px 30px;
+    margin-bottom: 47px;
   }
 
   .promo__text:nth-child(2) {
@@ -27,7 +28,7 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    padding: 72px 30px;
+    padding: 68px 30px;
   }
 
   .promo__text:nth-child(2) {

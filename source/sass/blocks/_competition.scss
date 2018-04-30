@@ -22,7 +22,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
-  @include font-set(14px, 30px, normal, $darkgrey, center);
+  @include font-set(14px, 30px, 700, $darkgrey, center);
 }
 
 .competition__btn {
@@ -37,7 +37,7 @@
   border-radius: 2px;
   cursor: pointer;
 
-  @include font-set(18px, 30px, bold, $white, center);
+  @include font-set(18px, 30px, 700, $white, center);
 }
 
 .competition__btn-box {
@@ -51,7 +51,7 @@
 
   text-transform: uppercase;
 
-  @include font-set(14px, 30px, normal, $darkgrey, center);
+  @include font-set(14px, 30px, 700, $darkgrey, center);
 }
 
 .competition__footnote {
@@ -66,7 +66,7 @@
   .competition__text {
     width: 500px;
 
-    @include font-set(18px, 30px, normal, $darkgrey, center);
+    @include font-set(18px, 30px, 700, $darkgrey, center);
   }
 
   .competition__btn-box {

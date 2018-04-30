@@ -1,28 +1,42 @@
 .review {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 130px;
+  z-index: 1;
+  min-height: 317px;
 }
 
 .review__wrapper {
-  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 286px;
   margin: 0 auto;
+  min-height: 300px;
+}
+
+.review__content {
+
 }
 
 .review__list {
-  min-height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 256px;
   overflow: hidden;
 }
 
 .review__item {
-  position: absolute;
-  top: 0;
-  left: 0;
-
   display: flex;
   flex-direction: column;
-}
-
-.review__item--first {
-  position: static;
+  justify-content: space-between;
+  min-height: 223px;
 }
 
 .review__item--second,
@@ -32,18 +46,17 @@
 
 .review__text {
   margin: 0;
-  margin-bottom: 26px;
+  width: 288px;
 
-  @include font-set(18px, 30px, lighter, $darkgrey, center);
+  @include font-set(14px, 30px, 600, $darkgrey, center);
 }
 
 .review__title {
   display: block;
   margin: 0;
-
   font-style: inherit;
 
-  @include font-set(18px, 30px, bold, $black, center);
+  @include font-set(18px, 30px, 700, $black, center);
 }
 
 .review__about {
@@ -53,26 +66,70 @@
 
 .review__toggles {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
+  width: 62px;
 }
+
+
+.review__toggle {
+  padding: 0;
+  width: 0px;
+  height: 0px;
+  font-size: 1px;
+  background-color: rgba($color: $darkgrey, $alpha: 0.3);
+  border: 3px solid rgba($color: $darkgrey, $alpha: 0.3);
+  border-radius: 50%;
+}
+
+.review__toggle--check {
+
+  width: 12px;
+  height: 12px;
+  font-size: 1px;
+  background-color: transparent;
+  border: 3px solid $darkgrey;
+}
+
 
 @media (min-width: $tablet-width) {
   .review__wrapper {
     width: 620px;
+    min-height: 233px;
+  }
+
+  .review__list {
+    min-height: 221px;
   }
 
   .review__text {
     order: 1;
+    width: 650px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .review__content {
+    order: 2;
   }
 
   .review__title {
-    order: 2;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .review__about {
     display: block;
-    order: 3;
+    @include font-set(14px, 30px, 600, $darkgrey, center);
+  }
+
+  .review__item {
+    min-height: 185px;
+  }
+
+  .review {
+    margin-bottom: 11px;
   }
 }
 

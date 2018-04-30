@@ -3,7 +3,7 @@
 }
 
 .photo__text {
-  @include font-set(14px, 30px,normal,$darkgrey, center);
+  @include font-set(14px, 30px,700,$darkgrey, center);
 }
 
 .photo__list {

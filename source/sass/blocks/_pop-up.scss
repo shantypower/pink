@@ -16,7 +16,7 @@
 }
 
 .pop-up__title {
-  @include font-set(18px, 24px, bold, $black, center);
+  @include font-set(18px, 24px, 700, $black, center);
 }
 
 .pop-up__button-wrapper {
@@ -29,7 +29,7 @@
 }
 
 .pop-up__text {
-  @include font-set(14px, 30px, normal, $darkgrey, center);
+  @include font-set(14px, 30px, 700, $darkgrey, center);
 }
 
 .pop-up__btn {
@@ -37,7 +37,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
-  @include font-set(18px, 30px, bold, $white, center);
+  @include font-set(18px, 30px, 700, $white, center);
   text-transform: uppercase;
   border: none;
   border-radius: 2px;
