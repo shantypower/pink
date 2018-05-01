@@ -3,6 +3,10 @@
   background-color: #f2f2f2;
 }
 
+.information__wrapper {
+  margin: 0 auto;
+}
+
 .information::before {
   position: absolute;
   content: "";
@@ -100,16 +104,17 @@
     line-height: 24.6px;
   }
 
-  .iformation__img-box {
-    z-index: 5;
-  }
-
   .information__item {
     width: 302px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .information {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
   .information__flex-container {
     display: flex;
     flex-direction: column-reverse;
@@ -121,58 +126,62 @@
     display: none;
   }
 
-  .information__item {
+  .information__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-top: 0;
     margin: 0 auto;
-    padding-top: 55px;
-    background-color: $grey;
   }
 
-  .information__item-1,
-  .information__item-2,
-  .information__item-3 {
-
+  .information__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 255px;
   }
 
-  .information__item-1 {
-    background: url("../img/iphone-screen-desktop1@1x.png") no-repeat top center;
+  .information__item-1::before,
+  .information__item-2::before,
+  .information__item-3::before {
+    position: absolute;
+    content: "";
+    top: -99px;
+    left: 56px;
+    width: 186px;
+    height: 301px;
+    background-position: center top;
   }
 
-  .information__item-2 {
-    left: 507px;
+
+  .information__item-1::before {
+    background: url("../img/iphone-screen-desktop1@1x.png") no-repeat;
+    background-position: center top;
+  }
+
+  .information__item-2::before {
     background: url("../img/iphone-screen-desktop2@1x.png") no-repeat;
   }
 
-  .information__item-3 {
-    left: 827px;
+  .information__item-3::before {
     background: url("../img/iphone-screen-desktop3@1x.png") no-repeat;
   }
 
-  .iformation__img-box,
-  .information__list {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .information__wrapper {
-    margin: 0 auto;
-  }
-
-  .information__wrapper::before {
-    top: 0px;
-
+  .information::before {
+    top: -110px;
     height: 120px;
     width: 100%;
-    z-index: 0;
   }
 
   .information__list {
     flex-direction: row;
-    padding-top: 176px;
+    justify-content: space-between;
+    padding-top: 0;
     padding-left: 0;
+    width: 942px;
     z-index: 1;
     background-image: none;
   }
@@ -186,7 +195,7 @@
     text-align: center;
   }
   .information__text {
-    width: 209px;
+    width: 241px;
     font-size: 19px;
     line-height: 30px;
     text-align: center;

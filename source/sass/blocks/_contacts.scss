@@ -1,6 +1,7 @@
 .contacts__wrapper {
   padding-right: 20px;
   padding-left: 20px;
+  margin: 0 auto;
 }
 
 .contacts__header {
@@ -8,6 +9,7 @@
 }
 
 .contacts__title {
+  margin: 0;
   @include font-set(18px, 30px, 700, $darkgrey, center);
 }
 
@@ -21,7 +23,7 @@
   width: 240px;
   margin: 0 auto;
 
-  @include font-set(24px, 36px, 400, $red, center);
+  @include font-set(24px, 30px, 400, $red, center);
 }
 
 .contacts__triangle {
@@ -82,4 +84,31 @@
   .contacts__svg {
     display: none;
   }
+
+  .contacts__phone {
+    order: 1;
+  }
+
+  .contacts__mail {
+    order: 3;
+  }
+
+  .contacts__adress {
+    order: 2;
+  }
+
+  .contacts__header {
+    width: 500px;
+    margin-bottom: 55px;
+    font-size: 50px;
+    line-height: 57px;
+  }
+
+  .contacts__title {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+.contacts__item {
+}
 }

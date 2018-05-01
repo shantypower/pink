@@ -16,7 +16,7 @@
 @media (min-width: $tablet-width) {
   .effect {
     display: block;
-    margin-bottom: 126px;
+    margin-bottom: 88px;
   }
   .effect__description {
     padding-left: 308px;
@@ -31,16 +31,17 @@
   .effect__text {
     @include font-set(14.5px, 24px, 400, $darkgrey, left);
     margin: 0;
-    margin-bottom: 9px;
+    margin-bottom: 15px;
     width: 296px;
   }
 
   .effect__link {
     display: block;
-    @include font-set(14.5px, 24px, 400, $red, left);
+    @include font-set(14.5px, 14.5px, 400, $red, left);
   }
 
-  .effect__link--inderline {
+  .effect__link--underline {
+    display: inline-block;
     border-bottom: 1px solid $red;
   }
 
@@ -61,6 +62,11 @@
 @media (min-width: $desktop-width) {
   .effect {
     background-color: $grey;
+    padding-top: 91px;
+  }
+
+  .effect__wrap {
+    display: block;
   }
 
   .effect__container {
@@ -82,13 +88,14 @@
   }
 
   .effect__text {
-    margin-bottom: 33px;
+    margin-bottom: 36px;
     width: 580px;
     font-size: 18.8px;
-    line-height: 29px;
+    line-height: 30px;
   }
 
   .effect__link {
     font-size: 18.8px;
+    line-height: 18.8px;
   }
 }
