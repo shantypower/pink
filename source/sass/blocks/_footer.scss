@@ -43,6 +43,7 @@
   .footer {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
   }
@@ -81,5 +82,14 @@
     &:active {
       border-color: rgba($color: $darkgrey, $alpha: 0.3);
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    min-height: 197px;
+  }
+  .footer__text {
+    font-size: 18px;
   }
 }
