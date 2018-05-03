@@ -1,11 +1,27 @@
 .price {
   position: relative;
   background-color: $grey;
+  padding-bottom: 47px;
+}
+
+.price__list {
+  border-collapse: collapse;
+  border-radius: 2px;
+  transform: translateX(-460px);
 }
 
 .price__head {
-  transform: translateX(-575px);
-}
+   border-right: 2px solid $lightgrey;
+   border-collapse: separate;
+ }
+
+ .price__toggles {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 57px;
+   background-color: $grey;
+ }
 
 .price__wrapper::before {
     position: absolute;
@@ -19,17 +35,23 @@
 }
 
 .price__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 334px;
   overflow: hidden;
   margin: 0 auto;
 }
 
 .price__row {
   font-size: 18px;
-  font-weight: 400px
+  font-weight: 400px;
+  background-color: $white;
 }
 
 .price__tariff {
-  min-width: 280px;
+  position: relative;
+  min-width: 275px;
   padding-top: 18px;
   padding-bottom: 18px;
   background-color: $darkgrey;
@@ -37,7 +59,6 @@
   @include font-set(18px, 30px, 700, $white, center);
 
   text-transform: uppercase;
-  border-right: 2px solid $lightgrey;
 }
 
 .price__cost {
@@ -46,53 +67,180 @@
 }
 
 .price__tariff--empty {
-  background-color: transparent;
+  background-color: $grey;
+}
+
+.price__hit {
+  border-left: 2px solid $lightgrey;
+  border-right: 2px solid $lightgrey;
+}
+
+.price__hit::before,
+.price__hit::after {
+  position: absolute;
+  height: 71px;
+  width: 76px;
+  top: 0px;
+  left: -2px;
+  padding: 0;
+  @include font-set(14px, 14px, 700, $white, center);
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.price__hit::before {
+  content: "";
+  background: url("../img/bg-hit.svg") no-repeat;
+  background-size: 74px 73px;
+  }
+
+.price__hit::after {
+  content: "хит";
+  padding-top: 15px;
+  padding-left: 1px;
+  transform: rotate(-45deg);
+
 }
 
 .price__value {
+  border: 2px solid $lightgrey;
+  font-size: 0px;
+}
+
+.price__value--yes {
+  background: url("../img/icon-yes.svg") no-repeat center right;
+  background-position: 227px 17px;
+  background-size: 34px 22px;
+
+}
+
+.price__value--no {
+  background: url("../img/icon-no.svg") no-repeat center right;
+  background-position: 227px 12px;
+  background-size: 34px 26px;
+}
+
+.price__option {
   @include font-set(14px, 30px, 400, $darkgrey, left);
   text-transform: uppercase;
   border: 2px solid $lightgrey;
-  padding: 15px 24px;
+  padding: 14px 24px;
+  min-width: 133px;
+  transform: translateX(460px);
 }
 
 .price__row:first-of-type .value {
   border-top-color: transparent;
 }
 
-.price__toggles {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-
-  background-color: $grey;
-}
-
-tbody {
-  border-collapse: initial;
-}
-
 @media (min-width: $tablet-width) {
   .price__list {
-    margin-left: -400px;
+    transform: translateX(2px);
+  }
+
+  .price__tariff {
+    font-size: 16px;
+    min-width: 125px;
+    padding-top: 12px;
+    padding-bottom: 6px;
+  }
+
+  .price__cost {
+    font-size: 18px;
+  }
+
+  .price__option {
+    text-transform: none;
+    font-weight: 600;
+    padding: 7px 0px;
+    min-width: 124px;
+    transform: translateX(12px);
+  }
+
+  .price__value--yes {
+    background-position: 62px 12px;
+    background-size: 34px 22px;
+  }
+
+  .price__value--no {
+    background-position: 62px 12px;
+    background-size: 35px 26px;
+  }
+
+  .price__hit::before {
+    background-size: 62px 61px;
+  }
+
+  .price__hit::after {
+    font-weight: 400;
+    padding-top: 5px;
+    padding-left: 4px;
   }
 
   .price__wrapper {
+    min-height: 240px;
     overflow: visible;
   }
 
   .price__wrapper::before {
-    top: -116px;
+    top: -128px;
     height: 129px;
+  }
+
+  .price__toggles {
+    display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .price {
+    padding-bottom: 97px;
+  }
+
   .price__list {
-    margin-left: -90px;
+    transform: translateX(5px);
+  }
+
+  .price__tariff {
+    font-size: 18px;
+    min-width: 232px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+
+  .price__hit::before {
+    background-size: 75px 72px;
+  }
+
+  .price__hit::after {
+    font-size: 14px;
+    line-height: 30px;
+    padding-top: 5px;
+  }
+
+  .price__value--yes {
+    background-position: 100px 19px;
+  }
+
+  .price__value--no {
+    background-position: 100px 16px;
+  }
+
+  .price__option {
+    padding: 14px;
+    min-width: 207px;
+    font-size: 18px;
   }
 
   .price__wrapper::before {
     top: -124px;
+  }
+
+  .price__cost {
+    font-size: 24px;
+  }
+
+  .price__wrapper {
+    display: block;
   }
 }
