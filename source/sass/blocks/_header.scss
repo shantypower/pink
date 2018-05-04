@@ -1,12 +1,9 @@
 .header {
+  padding-bottom: 272px;
   min-height: 462px;
   background-color: $deepgrey;
 
   background-size: 100% auto;
-}
-
-.header--short {
-  height: 365px;
 }
 
 .header__logo:hover[href] .header__svg{
@@ -23,7 +20,7 @@
   height: 431px;
 
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
-  background-position: -15px -36px;
+  background-position: -6px -62px;
   background-size: 104%;
 }
 
@@ -59,13 +56,13 @@
 
 .header__button {
   position: absolute;
-  top: 0;
-  right: -20px;
+  top: 17px;
+  right: 15px;
   z-index: 2;
 
   display: block;
   width: 50px;
-  height: 24px;
+  height: 30px;
 
   font-size: 0;
   background-color: $darkgrey;
@@ -74,20 +71,24 @@
 
 }
 
-.header__nav--closed {
-    display: none;
+.header__nav--closed .main-nav__list {
+  display: none;
 }
 
 .header__nav--nojs .header__nav--opened {
   display: block;
 }
 
+.main-nav--nojs .header__button {
+  display: none;
+}
+
 .header__nav--closed .header__button::before {
   content: "";
 
   position: absolute;
-  top: 0px;
-  left: -42px;
+  top: 7px;
+  left: -3px;
 
   width: 50px;
   height: 4px;
@@ -102,8 +103,8 @@
 }
 
 .header__nav--opened .header__button {
-  top: 0;
-  right: 0;
+  top: 24px;
+  right: 21px;
 
 
   &::before,
@@ -111,8 +112,8 @@
     content: "";
 
     position: absolute;
-    top: 30px;
-    right: 13px;
+    top: 13px;
+    right: 6px;
 
     width: 29px;
     height: 5px;
@@ -138,6 +139,7 @@
   display: flex;
   flex-direction: column;
   align-content: center;
+  min-height: 66px;
 }
 
 .header__text {
@@ -146,6 +148,16 @@
   padding-top: 62px;
   width: 300px;
 }
+
+@media (max-width: $mobile-width-only) {
+  .header__nav--closed .main-nav__item {
+    display: none;
+    &--current {
+      display: block;
+    }
+  }
+}
+
 
 @media (min-width: $tablet-width) {
   .header {
@@ -161,9 +173,24 @@
     padding-top: 44px;
   }
 
+  .header__nav--closed .header__button {
+    top: 42px;
+    right: 23px;
+  }
+
+  .header__nav--closed .header__button::before {
+    top: 3px;
+    left: 6px;
+  }
+
+  .header__nav--opened .header__button {
+    top: 41px;
+    right: 9px;
+
   .header__nav--opened .header__button::before,
   .header__nav--opened .header__button::after {
-    top: 55px;
+    top: 13px;
+    left: 0px;
   }
 
   .header__bg,
@@ -254,5 +281,9 @@
   .header__logo-container {
     background-color: transparent;
   }
-}
 
+  .header__nav--closed .main-nav__list {
+    display: flex;
+  }
+}
+}

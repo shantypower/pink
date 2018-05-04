@@ -1,15 +1,15 @@
 function initialize() {
   var mapCanvas = document.getElementById('map__canvas');
-  var myLatLng = new google.maps.LatLng(59.936148, 30.322917);
+  var myLatLng = new google.maps.LatLng(59.9388916, 30.3234393);
   var mapOptions = {
     center: myLatLng,
-    zoom: 12,
+    zoom: 16.25,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
 disableDefaultUI: true
   }
   var map = new google.maps.Map(mapCanvas, mapOptions);
 
-var image = '../img/icon-map-marker.png';
+var image = 'img/icon-map-marker.svg';
   var beachMarker = new google.maps.Marker({
   position: myLatLng,
   map: map,
