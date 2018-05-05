@@ -1,5 +1,5 @@
 .intro {
-  padding-top: 431px;
+  padding-top: 396px;
 }
 
 .intro__title {
@@ -95,7 +95,7 @@
 
 @media (min-width: $tablet-width) {
   .intro {
-    padding-top: 125px;
+    padding-top: 129px;
   }
   .intro__title {
     display: block;
@@ -132,6 +132,10 @@
 }
 
 @media (min-width: $desktop-width) {
+.intro {
+  padding-top: 108px;
+}
+
   .intro__wrapper {
     margin-left: 111px;
     margin-top: 2px;

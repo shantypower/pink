@@ -32,4 +32,3 @@ google.maps.event.addDomListener(window, 'load', initialize);
       navMain.classList.remove("header__nav--opened");
     }
   });
-

@@ -20,18 +20,16 @@
 
 .footer__copyright {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  width: 123px;
 }
 
 
 .footer__text {
   margin: 0;
-  padding-right: 15px;
 
-  vertical-align: middle;
-
-  @include font-set(14px, 18px, 700, $darkgrey, left);
+  @include font-set(14px, 18px, 400, $darkgrey, left);
 }
 
 .footer__main-page {
@@ -83,9 +81,17 @@
       border-color: rgba($color: $darkgrey, $alpha: 0.3);
     }
   }
+
+  .footer__link {
+    align-self: flex-end;
+  }
 }
 
 @media (min-width: $desktop-width) {
+.footer {
+  padding: 69px 20px;
+}
+
   .footer__text {
     font-size: 18px;
   }

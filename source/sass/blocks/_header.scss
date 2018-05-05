@@ -1,9 +1,11 @@
 .header {
-  padding-bottom: 272px;
-  min-height: 462px;
-  background-color: $deepgrey;
+  background: $deepgrey url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-position: -6px 0px;
+  background-size: 100%;
+}
 
-  background-size: 100% auto;
+.header__logo {
+  display: block;
 }
 
 .header__logo:hover[href] .header__svg{
@@ -17,22 +19,18 @@
 .header__bg,
 .header__title-box {
   position: relative;
-  height: 431px;
 
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
-  background-position: -6px -62px;
-  background-size: 104%;
 }
 
 .header__title-box {
-  height: 204px;
+  min-height: 204px;
 }
 
-.header__bg::before {
+.header__bg::after {
   content: "";
   position: absolute;
-  top: 138px;
-  right: 29px;
+  top: 103px;
+  right: 32px;
   width:320px;
   height: 300px;
   background: url("../img/iphone-hand-mobile@1x.png") no-repeat center;
@@ -40,23 +38,26 @@
 
 .header__logo-container {
   position: relative;
-  padding-top: 22px;
   padding-left: 20px;
-  height: 46px;
-  background-color: $darkgrey;
-  border-bottom: 1px solid #000000;
+  height: 44px;
+  z-index: 1;
+}
+
+.header__logo {
+  z-index: 1;
 }
 
 .header__nav {
+  position: absolute;
+  top: 0;
   width: 100%;
-  background-color: $darkgrey;
+  background-color: transparent;
   margin-bottom: -35px;
-
 }
 
 .header__button {
   position: absolute;
-  top: 17px;
+  top: 14px;
   right: 15px;
   z-index: 2;
 
@@ -65,7 +66,7 @@
   height: 30px;
 
   font-size: 0;
-  background-color: $darkgrey;
+  background-color: transparent;
   cursor: pointer;
   border: none;
 
@@ -139,7 +140,8 @@
   display: flex;
   flex-direction: column;
   align-content: center;
-  min-height: 66px;
+  padding-top: 22px;
+  background-color: rgba(0, 0, 0, 0.3)
 }
 
 .header__text {
@@ -161,16 +163,15 @@
 
 @media (min-width: $tablet-width) {
   .header {
-    min-height: 984px;
-  }
-
-  .header--short {
-    height: 694px;
+    min-height: 730px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    background: url("../img/back-tablet@1x.jpg") no-repeat center;
+    background-size: cover;
   }
 
   .header__logo-container {
     height: 65px;
-    padding-top: 44px;
   }
 
   .header__nav--closed .header__button {
@@ -186,6 +187,7 @@
   .header__nav--opened .header__button {
     top: 41px;
     right: 9px;
+  }
 
   .header__nav--opened .header__button::before,
   .header__nav--opened .header__button::after {
@@ -196,10 +198,8 @@
   .header__bg,
   .header__title-box {
     position: initial;
-    margin-bottom: -528px;
-    height: 653px;
-    background: url("../img/back-tablet@1x.jpg") no-repeat center;
-    background-size: 100% auto;
+    margin-bottom: 0;
+    height: 621px;
   }
 
   .header__title-box {
@@ -212,12 +212,15 @@
     padding-top: 106px;
   }
 
-  .header__bg::before {
-    top: 439px;
-    right: -1px;
+  .header__bg::after {
+    top: 185px;
+    right: -13px;
     width: 660px;
     height: 545px;
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat center;
+  }
+  .header__wrapper {
+    padding-top: 44px;
   }
 }
 
@@ -233,12 +236,10 @@
   }
 
   .header__logo-container {
-    width: 335px;
+    width: 175px;
   }
 
-  .header__bg,
-  .header__title-box {
-    margin-bottom: -544px;
+  .header__bg {
     background-image: none;
   }
 
@@ -248,7 +249,7 @@
     margin: 0 auto;
   }
 
-  .header__bg::before {
+  .header__bg::after {
     top: 210px;
     right: 1px;
     width: 1050px;
@@ -265,25 +266,22 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgba(15, 21, 27, 0.3);
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 0 120px;
+    min-height: 110px;
   }
 
   .header__logo {
     width: 150px;
   }
 
-  .header__logo-container {
-    border: none;
-  }
-
-  .header__nav,
-  .header__logo-container {
-    background-color: transparent;
+  .header__nav {
+    position: relative;
+    align-self: center;
   }
 
   .header__nav--closed .main-nav__list {
     display: flex;
   }
-}
 }
