@@ -23,7 +23,7 @@
 }
 
 .header__title-box {
-  min-height: 204px;
+  min-height: 170px;
 }
 
 .header__bg::after {
@@ -47,12 +47,16 @@
   z-index: 1;
 }
 
-.header__nav {
+.header__nav--closed.header__nav {
   position: absolute;
   top: 0;
   width: 100%;
   background-color: transparent;
   margin-bottom: -35px;
+}
+
+.header__nav--opened .header {
+  background-position-y: -256px;
 }
 
 .header__button {
@@ -69,6 +73,7 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
+  outline: none;
 
 }
 
@@ -147,7 +152,7 @@
 .header__text {
   @include font-set(24px, 30px, 400, $white, center);
   margin: 0 auto;
-  padding-top: 62px;
+  padding-top: 28px;
   width: 300px;
 }
 

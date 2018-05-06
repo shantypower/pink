@@ -6,12 +6,16 @@
   background-color: $white;
 
   .input-block__text {
-    padding: 0 40px;
+    padding: 2px 23px;
 
     text-transform: uppercase;
 
     @include font-set(14px, 30px, 700, $red, left);
   }
+}
+
+.input-block__item {
+  margin: 0;
 }
 
 .input-block__item--input {
@@ -26,11 +30,11 @@
 .input-block__input {
   box-sizing: border-box;
   margin-bottom: 16px;
-
+  padding: 15px 20px;
   border: 2px solid $lightgrey;
   border-radius: 2px;
 
-  @include font-set(18px, 30px, 700, $darkgrey, left);
+  @include font-set(18px, 30px, 600, $darkgrey, left);
 }
 
 .input-block__text {

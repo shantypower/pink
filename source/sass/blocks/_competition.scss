@@ -9,8 +9,8 @@
 .competition__form {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-content: center;
-  width: 320px;
 }
 
 .competition__container {
@@ -19,10 +19,14 @@
 
 .competition__text {
   margin: 0 auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 46px;
+  width: 280px;
 
-  @include font-set(14px, 30px, 700, $darkgrey, center);
+  @include font-set(14px, 30px, 600, $darkgrey, center);
+}
+
+.competition__text--hidden {
+  display: none;
 }
 
 .competition__btn {
@@ -67,6 +71,10 @@
     width: 500px;
 
     @include font-set(18px, 30px, 700, $darkgrey, center);
+  }
+
+  .competition__text--hidden {
+    display: none;
   }
 
   .competition__btn-box {
