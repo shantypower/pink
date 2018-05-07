@@ -4,7 +4,7 @@
 
 .intro__title {
   display: none;
-  margin: 0;
+  margin: 0 auto;
 
   @include font-set(24px, 36px, 400, $white, center);
 }
@@ -100,8 +100,9 @@
   }
   .intro__title {
     display: block;
-    padding-left: 27px;
-    margin-bottom: 29px;
+    margin-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
     width: 245px;
 
     @include font-set(40px, 49px, 400, $white, center);
@@ -109,12 +110,12 @@
 
   .intro__wrapper {
     display: block;
-    width: 300px;
-    min-height: 497px;
-    margin-top: 1px;
-    margin-left: 0;
-    padding-left: 20px;
-    background-color: rgba(29, 38, 49, 0);
+    width: 289px;
+    margin-bottom: 79px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 26px;
+    text-align: center;
   }
 
   .intro__btn--white {
@@ -123,28 +124,29 @@
   }
 
   .intro__list {
-    padding-left: 45px;
-    padding-bottom: 36px;
+    margin-bottom: 35px;
   }
 
   .intro__description {
+    width: 297px;
     font-size: 18px;
   }
 }
 
 @media (min-width: $desktop-width) {
-.intro {
+  .intro {
   padding-top: 108px;
-}
+  }
 
   .intro__wrapper {
     margin-left: 111px;
-    margin-top: 2px;
+    margin-top: 3px;
   }
 
   .intro__title {
-    padding-left: 28px;
     margin-bottom: 53px;
+    padding-left: 24px;
+    padding-right: 24px;
     font-size: 50px;
     line-height: 59px;
   }
@@ -155,6 +157,10 @@
   }
 
   .intro__list {
-    margin-bottom: 20px;
+    margin-bottom: 57px;
+  }
+
+  .intro__description {
+    width: 295px;
   }
 }

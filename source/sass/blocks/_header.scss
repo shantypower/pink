@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: flex-start;
 
-  background: $deepgrey url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background: $deepgrey url("../img/bg-back-mobile@1x.jpg") no-repeat center;
   background-size: 100% auto;
 }
 
@@ -76,10 +76,6 @@
   height: 22.859px;
 }
 
-.header__nav--opened .header {
-  background-position-y: -256px;
-}
-
 .header__button,
 .header__button-not-main-page {
   position: relative;
@@ -105,11 +101,6 @@
   display: none;
 }
 
-.header__top--closed .header__button:active {
-  background-color: rgba(210, 80, 46, 0.3);
-  box-shadow: 0 8px 0 0 rgba(210, 80, 46, 0.3), 0 16px 0 0 rgba(210, 80, 46, 0.3);
-}
-
 .header__top--closed .header__button,
 .header__top--closed .header__button-not-main-page {
   width: 50px;
@@ -128,6 +119,7 @@
 .header__text {
   @include font-set(24px, 30px, 400, $white, center);
   margin: 0 auto;
+  padding-top: 27px;
   width: 300px;
 }
 
@@ -143,102 +135,80 @@
 
 @media (min-width: $tablet-width) {
   .header {
-    min-height: 730px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    background: url("../img/back-tablet@1x.jpg") no-repeat center;
-    background-size: cover;
+    background: url("../img/back-tablet@1x.jpg") no-repeat;
+  background-size: 100% auto;
   }
 
-  .header__logo-container {
-    height: 65px;
+  .header__main-page {
+    background: url("../img/iphone-hand-tablet@1x.png") no-repeat,
+      url("../img/back-tablet@1x.jpg") no-repeat;
+    background-size: 700px 545px, 100% auto;
   }
 
-  .header__nav--closed .header__button {
-    top: 42px;
-    right: 23px;
+  .header:not(.header__main-page) {
+    min-height:394px;
   }
 
-  .header__nav--closed .header__button::before {
-    top: 3px;
-    left: 6px;
+  .header__top {
+    padding: 43px 20px;
   }
 
-  .header__nav--opened .header__button {
-    top: 41px;
-    right: 9px;
-  }
+.header__menu--opened {
+  min-height: 984px;
+  background-position: -21px 440px, 0px 258px;
+}
 
-  .header__nav--opened .header__button::before,
-  .header__nav--opened .header__button::after {
-    top: 13px;
-    left: 0px;
-  }
+.header__menu--closed {
+  min-height: 729px;
+  background-position: -21px 185px, 0px 0px;
+}
 
-  .header__bg,
-  .header__title-box {
-    position: initial;
-    margin-bottom: 0;
-    height: 621px;
-  }
+.header__intro::before {
+  display: none;
+}
 
-  .header__title-box {
-    height: 364px;
-  }
+.header__wrapper {
+  margin-bottom: 63px;
+}
 
   .header__text {
     @include font-set(50px, 59px, 400, $white, center);
     width: 475px;
-    padding-top: 106px;
-  }
-
-  .header__bg::after {
-    top: 185px;
-    right: -13px;
-    width: 660px;
-    height: 545px;
-    background: url("../img/iphone-hand-tablet@1x.png") no-repeat center;
-  }
-  .header__wrapper {
-    padding-top: 44px;
+    padding-top: 7px;
+    padding-bottom: 81px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .header {
-    min-height: 854px;
-    background: url("../img/back-desktop.jpg") no-repeat center;
-    background-size: cover;
+  .header__main-page {
+    min-height: 853px;
+    background: url("../img/iphone-hand-desktop@1x.png")
+      url("../img/back-desktop.jpg") no-repeat center;
+    background-size: 835px 645px, 100% auto;
+    background-position: 248px 209px, 0px -378px;
   }
 
-  .header--short {
-    height: 694px;
+  .header__nav--closed .main-nav__list {
+    display: flex;
+}
+
+  .header__intro {
+    margin-top: 80px;
   }
 
-  .header__logo-container {
-    width: 175px;
-  }
-
-  .header__bg {
-    background-image: none;
+  .header__top {
+    border-bottom: none;
+    background-color: transparent;
   }
 
   .header__text {
     width: 800px;
-    padding-top: 65px;
     margin: 0 auto;
+    padding-top: 2px;
   }
 
-  .header__bg::after {
-    top: 210px;
-    right: 1px;
-    width: 1050px;
-    height: 645px;
-    background: url("../img/iphone-hand-desktop@1x.png") no-repeat center;
-    z-index: 0;
-  }
-
-  .header__button {
+  .header__button,
+  .header__button-not-main-page {
     display: none;
   }
 
@@ -247,9 +217,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.3);
     padding: 0 120px;
-    min-height: 110px;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .header__logo {
@@ -258,10 +227,5 @@
 
   .header__nav {
     position: relative;
-    align-self: center;
-  }
-
-  .header__nav--closed .main-nav__list {
-    display: flex;
   }
 }
