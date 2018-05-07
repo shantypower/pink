@@ -10,21 +10,19 @@
 }
 
 .intro__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 214px;
-  margin-top: 28px;
-  padding-bottom: 30px;
+  padding-top: 28px;
+  padding-bottom: 31px;
   padding-left: 20px;
   padding-right: 20px;
+  text-align: center;
 }
 
 .intro__btn--white {
-  align-self: stretch;
+  display: block;
   padding-top: 15px;
   padding-bottom: 15px;
+  margin-bottom: 32px;
+  width: 100%;
 
   border: 3px solid $white;
   border-radius: 50px;
@@ -45,14 +43,15 @@
 .intro__list {
   position: relative;
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 207px;
+  justify-content: center;
+  align-items: center;
 
   @include list-reset;
+  margin-bottom: 23px;
 }
 
 .intro__link {
+  display: block;
   font-size: 0px;
 }
 
@@ -72,6 +71,8 @@
 }
 
 .intro__link--android {
+  margin-left: 33px;
+  margin-right: 33px;
   width: 46px;
   height: 57px;
   background-image: url("../img/logo-android.svg");
