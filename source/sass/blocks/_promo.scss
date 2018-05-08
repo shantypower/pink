@@ -27,6 +27,11 @@
     margin-bottom: 47px;
   }
 
+
+.promo::after {
+  bottom: -88px;
+}
+
   .promo__text:nth-child(2) {
     padding-left:30px;
     padding-right: 30px;

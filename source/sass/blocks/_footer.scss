@@ -3,17 +3,20 @@
   flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 35px 20px;
+  padding-top: 28px;
+  padding-bottom: 40px;
 }
 
 .footer__logo {
   align-self: center;
+  margin-bottom: 13px;
+  width: 146.3px;
+  height: 40.375px;
 }
 
 .footer__social-list {
   display: flex;
   justify-content: space-between;
-  width: 177px;
 
   @include list-reset;
 }
@@ -22,9 +25,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 123px;
+  width: 150px;
 }
-
 
 .footer__text {
   margin: 0;
@@ -65,6 +67,8 @@
   }
 
   .footer__social-item--facebook {
+    margin-left: 12px;
+    margin-right: 12px;
     background-image: url("../img/icon-facebook.svg");
   }
 
@@ -84,6 +88,13 @@
 
   .footer__link {
     align-self: flex-end;
+    margin-top: 4px;
+    width:26.943px;
+    height: 34.09px;
+  }
+
+  .footer__text {
+    margin-left: 20px;
   }
 }
 
