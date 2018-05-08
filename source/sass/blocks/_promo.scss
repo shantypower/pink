@@ -1,5 +1,18 @@
 .promo {
-  padding: 40px 20px;
+  position: relative;
+  padding: 40px 0;
+}
+
+.promo::after {
+  position: absolute;
+  bottom: -59px;
+  display: block;
+  content: "";
+  height: 94.074px;
+  width: 100%;
+
+  background: url("../img/bg-triangle-white.svg") no-repeat;
+  transform: rotate(180deg);
 }
 
 .promo__text {

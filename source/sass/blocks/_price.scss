@@ -2,12 +2,12 @@
   position: relative;
   background-color: $grey;
   padding-bottom: 47px;
+  z-index: 1;
 }
 
 .price__list {
   border-collapse: collapse;
   border-radius: 2px;
-  transform: translateX(-460px);
 }
 
 .price__head {
@@ -22,17 +22,6 @@
    width: 57px;
    background-color: $grey;
  }
-
-.price__wrapper::before {
-    position: absolute;
-    content: "";
-    top: -151px;
-    left: 0;
-    height: 150px;
-    width: 100%;
-    background-image: linear-gradient(176deg, #ffffff 50%, #ffffff 50%, #f2f2f2 50%, #f2f2f2 50%);
-    z-index: 0;
-}
 
 .price__wrapper {
   display: flex;
@@ -120,13 +109,13 @@
   background-size: 34px 26px;
 }
 
-.price__option {
+.price__option,
+.price__value {
   @include font-set(14px, 30px, 400, $darkgrey, left);
   text-transform: uppercase;
   border: 2px solid $lightgrey;
   padding: 14px 24px;
   min-width: 133px;
-  transform: translateX(460px);
 }
 
 .price__row:first-of-type .value {
@@ -182,11 +171,6 @@
     overflow: visible;
   }
 
-  .price__wrapper::before {
-    top: -128px;
-    height: 129px;
-  }
-
   .price__toggles {
     display: none;
   }
@@ -232,15 +216,7 @@
     font-size: 18px;
   }
 
-  .price__wrapper::before {
-    top: -124px;
-  }
-
   .price__cost {
     font-size: 24px;
-  }
-
-  .price__wrapper {
-    display: block;
   }
 }

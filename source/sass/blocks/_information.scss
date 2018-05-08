@@ -7,28 +7,13 @@
   margin: 0 auto;
 }
 
-.information::before {
-  position: absolute;
-  content: "";
-
-  top: -42px;
-  left: 0;
-
-  height: 42px;
-  width: 100%;
-
-  background-image: linear-gradient(174deg, $white 50%, $white 50%, $grey 50%, $grey 50%);
-
-}
-
 .information__list {
   @include list-reset;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 391px;
-  padding-bottom: 316px;
+  padding-bottom: 290px;
   background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
   background-position: center 429px;
   background-size: 157px auto;
@@ -44,16 +29,16 @@
 .information__text {
   margin: 0;
 
-  @include font-set(14.5px, 25px, 500, $darkgrey, center);
+  @include font-set(14.5px, 24.7px, 500, $darkgrey, center);
 }
 
 .information__container {
   padding-top: 42px;
-  min-height: 707px;
 }
 
 .information__item {
-  width: 255px;
+  width: 267px;
+  margin-bottom: 29px;
 }
 
 @media (min-width: $tablet-width) {
