@@ -99,9 +99,11 @@
 }
 
 @media (min-width: $desktop-width) {
-.footer {
-  padding: 69px 20px;
-}
+  .footer {
+    padding-top: 78px;
+    padding-bottom: 87px;
+    margin: 0 auto;
+  }
 
   .footer__text {
     font-size: 18px;

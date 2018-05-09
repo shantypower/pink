@@ -59,6 +59,10 @@
 }
 
 @media (min-width: $tablet-width) {
+.contacts {
+  padding-top: 46px;
+}
+
   .contacts__map {
     min-height: 374px;
 
@@ -124,6 +128,7 @@
 
   .contacts__phone {
     order: 1;
+    margin-right: 2px;
   }
 
   .contacts__mail {
@@ -132,6 +137,7 @@
 
   .contacts__adress {
     order: 2;
+    margin-right: 3px;
   }
 
   .contacts__header {
@@ -142,7 +148,7 @@
   }
 
   .contacts__title {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     font-size: 18px;
   }
 

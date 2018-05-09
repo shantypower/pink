@@ -47,7 +47,11 @@
 @media (min-width: $desktop-width) {
   .promo {
     padding: 68px 30px;
-    margin-bottom: 108px;
+    margin-bottom: 104px;
+  }
+
+  .promo::after {
+    bottom: -104px;
   }
 
   .promo__text:nth-child(2) {

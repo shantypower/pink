@@ -6,6 +6,7 @@
 }
 
 .price__list {
+  display: block;
   border-collapse: collapse;
   border-radius: 2px;
  }
@@ -27,7 +28,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 334px;
   overflow: hidden;
   margin: 0 auto;
   margin-left: -138%;
@@ -41,12 +41,11 @@
 
 .price__tariff {
   position: relative;
-  min-width: 275px;
   padding-top: 18px;
   padding-bottom: 18px;
   background-color: $darkgrey;
 
-  @include font-set(18px, 30px, 700, $white, center);
+  @include font-set(18px, 29px, 700, $white, center);
 
   text-transform: uppercase;
 }
@@ -57,6 +56,7 @@
 }
 
 .price__tariff--empty {
+  display: block;
   background-color: $grey;
 }
 
@@ -93,6 +93,7 @@
 }
 
 .price__value {
+  padding: 8px 15px;
   border: 2px solid $lightgrey;
   font-size: 0px;
 }
@@ -115,8 +116,6 @@
   @include font-set(14px, 30px, 400, $darkgrey, left);
   text-transform: uppercase;
   border: 2px solid $lightgrey;
-  padding: 14px 24px;
-  min-width: 133px;
 }
 
 .price__row:first-of-type .value {
@@ -124,12 +123,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .price {
+    padding-bottom: 68px;
+  }
 
   .price__tariff {
     font-size: 16px;
-    min-width: 125px;
     padding-top: 12px;
-    padding-bottom: 6px;
+    padding-bottom: 8px;
+    min-width: 151px;
   }
 
   .price__cost {
@@ -139,13 +141,13 @@
   .price__option {
     text-transform: none;
     font-weight: 600;
-    padding: 7px 0px;
-    min-width: 124px;
+    padding: 7px 15px;
+    padding-right: 25px;
   }
 
-.price__option-name {
+  .price__option-name {
   display: none;
-}
+  }
 
   .price__value--yes {
     background-position: 62px 12px;
@@ -168,9 +170,9 @@
   }
 
   .price__wrapper {
-    min-height: 240px;
     overflow: visible;
     margin-left: 3%;
+    margin: 0 auto;
   }
 
   .price__toggles {
@@ -181,17 +183,19 @@
 @media (min-width: $desktop-width) {
   .price {
     padding-bottom: 97px;
+    padding-top: 61px;
   }
 
   .price__list {
-    transform: translateX(5px);
+    margin-left: 1.2%;
   }
 
   .price__tariff {
     font-size: 18px;
-    min-width: 232px;
+    line-height: 31px;
+    min-width: 231px;
     padding-top: 15px;
-    padding-bottom: 20px;
+    padding-bottom: 17px;
   }
 
   .price__hit::before {
@@ -213,12 +217,13 @@
   }
 
   .price__option {
-    padding: 14px;
-    min-width: 207px;
+    padding: 14px 22px;
+    min-width: 188px;
     font-size: 18px;
   }
 
   .price__cost {
     font-size: 24px;
   }
+
 }
