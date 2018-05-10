@@ -111,15 +111,46 @@
 @media (min-width: $tablet-width) {
   .photo-upload__form {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 57px 11px;
   }
 
   .photo-upload__tools {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
-    width: 410px;
+    width: 285px;
   }
+
+  .photo-upload__text {
+    padding: 45px 0px;
+    margin-bottom: 24px;
+    font-size: 18px;
+  }
+
+  .photo-upload__img {
+    width: 300px;
+    height: 400px;
+  }
+
+  .photo-upload__range-scale:nth-child(2), .photo-upload__range-scale:nth-child(3) {
+    display: block;
+}
+  .photo-upload__btn-list {
+    flex-direction: column;
+  }
+
+  .photo-upload__range {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .photo-upload__range-scale {
+    min-width: 202px;
+  }
+
 }
 
 @media (min-width: $desktop-width) {

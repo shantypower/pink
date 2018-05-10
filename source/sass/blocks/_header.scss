@@ -7,10 +7,6 @@
   background-size: 100% auto;
 }
 
-.header__container {
-
-}
-
 .header__menu--closed {
   min-height: 735px;
   background-position: 0 0px;
@@ -140,7 +136,7 @@
 @media (min-width: $tablet-width) {
   .header {
     background: url("../img/back-tablet@1x.jpg") no-repeat;
-  background-size: 100% auto;
+    background-size: 100% auto;
   }
 
   .header__main-page {
@@ -149,8 +145,14 @@
     background-size: 700px 545px, 100% auto;
   }
 
-  .header:not(.header__main-page) {
-    min-height:394px;
+  .header:not(.header__main-page).header__photo-bg--closed{
+    padding-bottom: 60px;
+    background-position: 0 -1px;
+  }
+
+  .header:not(.header__main-page).header__photo-bg--opened {
+    padding-bottom: 59px;
+    background-position: 0 255px;
   }
 
   .header__top {

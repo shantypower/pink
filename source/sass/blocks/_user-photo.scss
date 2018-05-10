@@ -63,6 +63,53 @@
 @media (min-width: $tablet-width) {
   .user-photo__user-img--wide {
     background: url("../img/panorama-tablet.jpg") no-repeat center;
+    min-height: 509px;
+  }
+
+  .user-photo--wide {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 24px 27px;
+    padding-bottom: 13px;
+    margin-bottom: 50px;
+  }
+
+  .user-photo--wide .user-photo__title {
+    order: 1;
+  }
+
+  .user-photo__footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    order: 2;
+  }
+
+  .user-photo--wide .user-photo__description {
+    order: 3
+  }
+
+  .user-photo--wide .user-photo__like {
+    margin-right: 19px;
+  }
+
+   .user-photo__img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .user-photo .user-photo__footer {
+    justify-content: space-between;
+    margin-top: auto;
+  }
+
+  .user-photo__like {
+    margin-left: 0;
+  }
+
+  .user-photo__description {
+    margin-bottom: 12px;
   }
 }
 

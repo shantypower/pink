@@ -1,4 +1,5 @@
 .photo {
+  position: relative;
   margin: 0 auto;
 }
 
@@ -28,13 +29,34 @@
 }
 
 @media (min-width: $tablet-width) {
+  .photo__text {
+    @include font-set(18px, 30px, 600, $darkgrey, center);
+    width: 450px;
+    padding-top: 92px;
+    padding-bottom: 72px;
+  }
+
   .photo__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
+  .photo__list .user-photo__info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    padding-left: 28px;
+    padding-right: 33px;
+    padding-bottom: 23px;
+    min-height: 108px;
+  }
+
   .photo__item {
-    width: 300px;
+    flex-basis: 300px;
+  }
+
+  .photo__best::before {
+    top: 285px;
   }
 }
