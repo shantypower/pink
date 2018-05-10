@@ -3,7 +3,24 @@
 }
 
 .photo__text {
-  @include font-set(14px, 30px,700,$darkgrey, center);
+  @include font-set(14px, 30px, 600, $darkgrey, center);
+  margin: 0 auto;
+  width: 250px;
+  padding: 45px 30px;
+  margin-bottom: 4px;
+}
+
+.photo__best::before {
+  position: absolute;
+  display: block;
+  right: 17px;
+  content: "панорама дня";
+  padding-top: 6px;
+  width: 140px;
+  height: 31px;
+  @include font-set(12px, 24px, 700, $white, center);
+  text-transform: uppercase;
+  background-color: $red;
 }
 
 .photo__list {
