@@ -77,7 +77,7 @@
 
 .photo-upload__range-scale {
   position: relative;
-  width: 240px;
+  min-width: 240px;
   height: 2px;
   background-color: $black;
 }
