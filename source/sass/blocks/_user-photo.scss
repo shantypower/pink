@@ -122,4 +122,19 @@
   .user-photo__user-img--wide {
     background: url("../img/panorama-desktop.jpg") no-repeat center;
   }
+
+  .user-photo--wide {
+    padding-top: 23px;
+    padding-right: 31px;
+    margin-bottom: 15px;
+  }
+
+  .user-photo__description {
+    margin-bottom: 10px;
+}
+
+  .user-photo__img {
+    width: 300px;
+    height: 400px;
+}
 }

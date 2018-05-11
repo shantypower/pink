@@ -122,12 +122,15 @@
 
 @media (min-width: $desktop-width) {
   .footer {
-    padding-top: 78px;
+    width: 940px;
+    padding: 0 130px;
+    padding-top: 98px;
     padding-bottom: 87px;
-    margin: 0 auto;
+    margin: 0;
   }
 
   .footer__text {
     font-size: 18px;
+    padding-left: 0;
   }
 }

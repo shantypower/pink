@@ -60,3 +60,23 @@
     top: 285px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .photo__text {
+    width: 600px;
+    padding-bottom: 82px;
+  }
+
+  .photo__best::before {
+    top: 294px;
+    right: 130px;
+  }
+
+  .photo__content {
+    padding: 0 10px;
+  }
+
+  .photo__item {
+    margin-top: 35px;
+  }
+}
