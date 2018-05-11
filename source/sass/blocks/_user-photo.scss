@@ -12,6 +12,10 @@
   width: 100%;
 }
 
+.user-photo__user-img--wide {
+  width: 100%;
+}
+
 .user-photo__info {
   padding: 18px;
   padding-bottom: 20px;
@@ -64,6 +68,7 @@
   .user-photo__user-img--wide {
     background: url("../img/panorama-tablet.jpg") no-repeat center;
     min-height: 509px;
+    width: 100%;
   }
 
   .user-photo--wide {

@@ -94,6 +94,29 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+
+  .footer__logo {
+    align-self: flex-start;
+    margin-bottom: 0;
+    width: 150px;
+  }
+
+  .footer__social-list {
+    margin-bottom: 0;
+    align-self: flex-end;
+  }
+
+  .footer__copyright {
+    align-self: flex-end;
+    margin-bottom: 5px;
+    width: 150px;
+  }
+
+  .footer__text {
+    padding-left: 22px;
   }
 }
 
