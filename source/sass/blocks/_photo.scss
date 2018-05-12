@@ -11,6 +11,11 @@
   margin-bottom: 4px;
 }
 
+.user-photo__user-img--wide img {
+  width: 100%;
+}
+
+
 .photo__best::before {
   position: absolute;
   display: block;
