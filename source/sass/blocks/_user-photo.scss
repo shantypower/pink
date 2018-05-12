@@ -64,6 +64,13 @@
   margin-left: 5px;
 }
 
+.user-photo__text {
+  @include font-set(14px, 30px,600,$darkgrey, center);
+  margin: 0 auto;
+  padding: 21px 0px;
+  margin-bottom: 21px;
+}
+
 @media (min-width: $tablet-width) {
   .user-photo__user-img--wide {
     background: url("../img/panorama-tablet.jpg") no-repeat center;
@@ -116,6 +123,13 @@
   .user-photo__description {
     margin-bottom: 12px;
   }
+
+  .user-photo__text {
+    padding: 45px 0px;
+    margin-bottom: 24px;
+    font-size: 18px;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
@@ -136,5 +150,10 @@
   .user-photo__img {
     width: 300px;
     height: 400px;
+}
+
+.user-photo__text {
+  padding: 40px 0px;
+  margin-bottom: 26px;
 }
 }
