@@ -4,7 +4,7 @@
   justify-content: flex-start;
   background: $deepgrey url("../img/bg-back-mobile@1x.jpg") no-repeat center;
   background-size: 100% auto;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: &deepgrey;
 }
 
 .header__container {

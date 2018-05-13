@@ -2,25 +2,49 @@
   width: 320px;
   margin: 0;
   padding: 0;
+  padding-top: 33px;
   border: none;
 }
 
-.filters-group__wide,
+.filters-group__wide {
+  padding: 0 20px;
+}
+
 .filters-group__narrow {
   padding: 0 20px;
+}
+
+.input-block__item-checkbox:last-of-type {
+  margin-bottom: 46px;
 }
 
 .filters-group:nth-of-type(2n) {
   background-color: $grey;
 }
 
+.filters-group__contacts .filters-group__title {
+  display: none;
+}
+
 .filters-group__title {
   padding: 0 40px;
+  margin-bottom: 42px;
 
   text-transform: uppercase;
 
-  @include font-set(14px, 18px, 700, $red, center);
+  @include font-set(14px, 18px, 600, $red, center);
 }
+
+.filters-group__platform .filters-group__title {
+  margin-bottom: 37px;
+}
+
+.filters-group__emotions .filters-group__title {
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+
 
 @media (min-width: $tablet-width) {
   .filters-group__wide,

@@ -3,28 +3,43 @@
 }
 
 .input-block:nth-of-type(2n-1) {
+  padding-top: 32px;
+  padding-bottom: 25px;
   background-color: $white;
 
   .input-block__text {
-    padding: 2px 23px;
+    padding: 0px 23px;
+    margin-bottom: 5px;
 
     text-transform: uppercase;
 
-    @include font-set(14px, 30px, 700, $red, left);
+    @include font-set(14px, 30px, 600, $red, left);
   }
 }
 
-.input-block__item {
+.input-block__item-checkbox {
+  position: relative;
   margin: 0;
+  margin-left: 69px;
+  margin-bottom: 50px;
+}
+
+.input-block__item-radio {
+  position: relative;
+  margin: 0;
+  margin-left: 69px;
+  margin-bottom: 44px;
 }
 
 .input-block__item--input {
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 .input-block:nth-of-type(2n) {
   background-color: $grey;
+  padding-top: 25px;
 }
 
 .input-block__input {
@@ -38,16 +53,64 @@
 }
 
 .input-block__text {
-  @include font-set(18px, 30px, 500, $darkgrey, center);
+  @include font-set(18px, 30px, 600, $darkgrey, center);
 }
 
 .input-block__input--textarea {
   width: 100%;
   height: 200px;
-  padding: 12px;
+  padding: 14px 19px;
 
   resize: none;
 }
+
+
+.input-block__checkbox-text::before {
+  position: absolute;
+  left: -69px;
+  top: -3px;
+  content: "";
+  width: 35px;
+  height: 35px;
+  border: 2px solid $lightgrey ;
+  border-radius: 2px;
+  background-color: $white;
+}
+
+.input-block__checkbox-text::after {
+  position: absolute;
+  left: -60px;
+  top: 8px;
+  content: "";
+  width: 22px;
+  height: 16px;
+  background: url("../img/icon-yes.svg") no-repeat center;
+}
+
+.input-block__radio-text::before {
+  position: absolute;
+  left: -69px;
+  top: -3px;
+  content: "";
+  width: 35px;
+  height: 35px;
+  border: 2px solid $lightgrey;
+  border-radius: 50%;
+  background-color: $white;
+}
+
+.input-block__radio-text::after {
+  position: absolute;
+  left: -57px;
+  top: 9px;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: $red;
+}
+
+
 
 @media (min-width: $tablet-width) {
   .input-block__item--input {
