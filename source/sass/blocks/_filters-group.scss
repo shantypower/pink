@@ -53,6 +53,10 @@
     padding: 0 60px;
   }
 
+  .filters-group__narrow {
+    padding-left: 0;
+  }
+
   .filters-group:not(:first-of-type) {
     border: 2px solid $lightgrey;
     border-radius: 2px;

@@ -78,13 +78,15 @@
   }
 
   .competition__text {
+    padding-top: 92px;
+    margin-bottom: 39px;
     width: 500px;
 
-    @include font-set(18px, 30px, 700, $darkgrey, center);
+    @include font-set(18px, 30px, 600, $darkgrey, center);
   }
 
   .competition__text--hidden {
-    display: none;
+    display: block;
   }
 
   .competition__btn-box {
