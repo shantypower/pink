@@ -49,7 +49,22 @@
   border: 2px solid $lightgrey;
   border-radius: 2px;
 
+
   @include font-set(18px, 30px, 600, $darkgrey, left);
+}
+
+.input-block__input:hover {
+  border-color: $darkgrey;
+}
+
+.input-block__input:active,
+.input-block__input:focus {
+  border-color: $red;
+  outline: none;
+}
+
+.input-block__input::placeholder {
+  color: $darkgrey;
 }
 
 .input-block__text {
@@ -72,12 +87,12 @@
   content: "";
   width: 35px;
   height: 35px;
-  border: 2px solid $lightgrey ;
+  border: 2px solid $lightgrey;
   border-radius: 2px;
   background-color: $white;
 }
 
-.input-block__checkbox-text::after {
+.input-block__input--checkbox:checked + .input-block__checkbox-text::after {
   position: absolute;
   left: -60px;
   top: 8px;
@@ -85,6 +100,18 @@
   width: 22px;
   height: 16px;
   background: url("../img/icon-yes.svg") no-repeat center;
+}
+
+.input-block__input--checkbox:hover + .input-block__checkbox-text::before,
+.input-block__input--radiobutton:hover + .input-block__radio-text::before,
+.input-block__input--checkbox:focus + .input-block__checkbox-text::before,
+.input-block__input--radiobutton:focus + .input-block__radio-text::before {
+  border: 2px solid $darkgrey;
+}
+
+.input-block__input--checkbox:active + .input-block__checkbox-text::before,
+.input-block__input--radiobutton:active + .input-block__radio-text::before {
+  border: 2px solid $red;
 }
 
 .input-block__radio-text::before {
@@ -99,7 +126,7 @@
   background-color: $white;
 }
 
-.input-block__radio-text::after {
+.input-block__input--radiobutton:checked + .input-block__radio-text::after {
   position: absolute;
   left: -57px;
   top: 9px;
@@ -109,8 +136,6 @@
   border-radius: 50%;
   background-color: $red;
 }
-
-
 
 @media (min-width: $tablet-width) {
   .input-block__item--input {

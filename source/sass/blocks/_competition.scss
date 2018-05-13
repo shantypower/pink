@@ -47,6 +47,19 @@
   margin-bottom: 15px;
 }
 
+.competition__btn:hover {
+  background-color: #1c9b5e;
+}
+
+.competition__btn:active {
+  color: rgba($color: $white, $alpha: 0.3);
+}
+
+.competition__btn:disabled {
+  background-color: $lightgrey;
+  cursor: default;
+}
+
 .competition__legend {
   display: block;
 

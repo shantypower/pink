@@ -75,7 +75,7 @@
   }
 
   .main-nav__link:active[href] {
-    color: #6c7681;
+    color: rgba($color: $white, $alpha: 0.3);
   }
 
   .main-nav__link--current {

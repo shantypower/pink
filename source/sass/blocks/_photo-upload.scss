@@ -12,18 +12,45 @@
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 13px;
-
-  background-color: transparent;
-  border: 3px solid $red;
   border-radius: 50px;
 
   @include font-set(18px, 18px, 700, $red, center);
 }
 
-.photo-upload__btn--reset {
-  color: rgba(40, 54, 69, 0.1);
+.photo-upload__btn--send {
+  background-color: transparent;
+  border: 3px solid $red;
+}
 
-  border: 3px solid rgba(40, 54, 69, 0.1);
+.photo-upload__btn--send:hover {
+  color: $white;
+  background-color: $red;
+}
+
+.photo-upload__btn:active,
+.photo-upload__btn:focus {
+  color: rgba($color: $white, $alpha: 0.3);
+  background-color: $red;
+  outline: none;
+}
+
+.photo-upload__btn--reset {
+  color: rgba($color: $black, $alpha: 0.1);
+  background-color: transparent;
+  border: 3px solid rgba($color: $black, $alpha: 0.1);
+}
+
+.photo-upload__btn--reset:hover {
+  color: rgba($color: $darkgrey, $alpha: 0.3);
+  border-color: rgba($color: $black, $alpha: 0.3);
+}
+
+.photo-upload__btn--reset:active,
+.photo-upload__btn--reset:focus {
+  color: rgba($color: $white, $alpha: 0.3);
+  border-color: rgba($color: $darkgrey, $alpha: 0.3);
+  background-color: rgba($color: $darkgrey, $alpha: 0.3);
+  outline: none;
 }
 
 .photo-upload__form {
@@ -83,6 +110,10 @@
   border: 2px solid $red;
   border-radius: 50%;
   background-color: $grey;
+}
+
+.photo-upload__toggle:active {
+  background-color: $red;
 }
 
 .photo-upload__range-scale:nth-child(2),
