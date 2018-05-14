@@ -61,15 +61,15 @@
             <fieldset class="filters-group  filters-group__fullname input-block">
               <div class="filters-group__narrow">
                 <p class="input-block__item input-block__item--input">
-                  <label class="input-block__text" for="surname-field">Фамилия:</label>
+                  <label class="input-block__fullname-label" for="surname-field">Фамилия:</label>
                   <input type="text" class="input-block__input" name="surname" id="surname-field" placeholder="Укажите фамилию *" required>
                 </p>
                 <p class="input-block__item  input-block__item--input">
-                  <label class="input-block__text" for="name-field">Имя:</label>
+                  <label class="input-block__fullname-label" for="name-field">Имя:</label>
                   <input type="text" class="input-block__input" name="name" id="name-field" placeholder="Введите ваше имя *" required>
                 </p>
                 <p class="input-block__item input-block__item--input">
-                  <label class="input-block__text" for="patronymic-field">Отчество:</label>
+                  <label class="input-block__fullname-label" for="patronymic-field">Отчество:</label>
                   <input type="text" class="input-block__input" name="patronymic" id="patronymic-field" placeholder="Ну и отчество тоже">
                 </p>
               </div>
@@ -112,12 +112,12 @@
               <div class="filters-group__wide">
                 <div class="filters-group__contact-info">
                   <p class="input-block__item input-block__item--input">
-                    <label class="input-block__text" for="phone-field">Номер телефона</label>
-                    <input type="tel" class="input-block__input" name="phone" id="phone-field" placeholder="Номер, пожалуйста" pattern="\+7\-[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <label class="input-block__contacts-label" for="phone-field">Номер телефона</label>
+                    <input type="tel" class="input-block__input input-block__contacts-input" name="phone" id="phone-field" placeholder="Номер, пожалуйста" pattern="\+7\-[0-9]{3}-[0-9]{3}-[0-9]{4}">
                   </p>
                   <p class="input-block__item input-block__item--input">
-                    <label class="input-block__text" for="email-field">Адрес почты</label>
-                    <input type="email" class="input-block__input" name="email" id="email-field" placeholder="Введите почту *" required>
+                    <label class="input-block__contacts-label" for="email-field">Адрес почты</label>
+                    <input type="email" class="input-block__input input-block__contacts-input" name="email" id="email-field" placeholder="Введите почту *" required>
                   </p>
                 </div>
               </div>

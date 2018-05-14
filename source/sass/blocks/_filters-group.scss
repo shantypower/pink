@@ -1,21 +1,13 @@
 .filters-group {
-  width: 320px;
+  position: relative;
   margin: 0;
   padding: 0;
   padding-top: 33px;
   border: none;
 }
 
-.filters-group__wide {
-  padding: 0 20px;
-}
-
-.filters-group__narrow {
-  padding: 0 20px;
-}
-
-.input-block__item-checkbox:last-of-type {
-  margin-bottom: 46px;
+.filters-group {
+  padding: 25px 20px;
 }
 
 .filters-group:nth-of-type(2n) {
@@ -27,7 +19,7 @@
 }
 
 .filters-group__title {
-  padding: 0 40px;
+  padding: 0 25px;
   margin-bottom: 42px;
 
   text-transform: uppercase;
@@ -44,17 +36,17 @@
   margin-bottom: 16px;
 }
 
-
+.filters-group__achievements,
+.filters-group__platform {
+  margin-bottom: 7px;
+}
 
 @media (min-width: $tablet-width) {
-  .filters-group__wide,
-  .filters-group__narrow {
-    width: 496px;
-    padding: 0 60px;
-  }
-
-  .filters-group__narrow {
-    padding-left: 0;
+  .filters-group {
+    padding: 0;
+    padding-top: 52px;
+    padding-bottom: 40px;
+    margin-bottom: 65px;
   }
 
   .filters-group:not(:first-of-type) {
@@ -66,8 +58,9 @@
     display: block;
   }
 
-  .filters-group__fullname {
+  .filters-group.filters-group__fullname {
     order: 1;
+    padding-bottom: 0px;
   }
 
   .filters-group__platform {
@@ -76,6 +69,10 @@
 
   .filters-group__contacts {
     order: 3;
+    padding-top: 44px;
+    padding-left: 58px;
+    padding-bottom: 20px;
+    padding-right: 58px;
 
     .input-block__item {
       flex-direction: column-reverse;
@@ -89,6 +86,18 @@
   .filters-group__emotions {
     order: 5;
   }
+
+  .filters-group__title {
+    position: absolute;
+    top: -24px;
+    left: 124px;
+    background-color: $white;
+  }
+
+  .filters-group__contacts .filters-group__title {
+    display: block;
+    left: 184px;
+}
 }
 
 @media (min-width: $desktop-width) {
