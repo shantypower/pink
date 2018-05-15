@@ -125,39 +125,63 @@
   }
 
   .filters-group__narrow {
-    width: 348px;
-    padding: 0 60px;
+    width: 432px;
+    padding: 0;
   }
 
   .filters-group__contact-info {
     display: flex;
     justify-content: space-between;
-    width: 820px;
+    width: 821px;
   }
 
   .filters-group:nth-of-type(2n) {
     background-color: $white;
   }
 
-  .filters-group__fullname {
+  .filters-group.filters-group__fullname {
     margin-right: auto;
+    padding-top: 6px;
   }
+
+  .filters-group__platform .filters-group__title {
+    left: 32px;
+  }
+
+  .filters-group__contacts .filters-group__title {
+    left: 346px;
+  }
+
+  .filters-group__achievements .filters-group__title {
+    left: 259px;
+}
+
+.filters-group__emotions .filters-group__title {
+  left: 353px;
+}
 
   .filters-group__contacts {
     flex-grow: 1;
+    padding: 41px 0 7px 0;
   }
 
   .filters-group__achievements {
     flex-grow: 1;
+    padding-bottom: 8px;
   }
 
   .filters-group__emotions {
     flex-grow: 1;
+    padding: 41px 0 18px 0;
   }
 
   .competition__form {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+  }
+
+  .filters-group__contacts .input-block__item {
+    margin-bottom: 0px;
   }
 }

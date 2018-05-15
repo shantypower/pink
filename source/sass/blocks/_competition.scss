@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.competition__legend span {
+  display: none;
+}
+
 .competition__form {
   display: flex;
   flex-direction: column;
@@ -116,7 +120,13 @@
 
 @media (min-width: $desktop-width) {
   .competition__text {
+    margin-bottom: 71px;
     width: 770px;
+  }
+
+
+  .competition__text--hidden {
+    display: inline-block;
   }
 
   .competition__form {
@@ -128,5 +138,24 @@
 
   .competition__btn-box {
     width: 940px;
+    margin-bottom: -62px;
+  }
+
+  .competition__btn {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .competition__legend {
+    display: flex;
+  }
+
+  .competition__legend span {
+  display: flex;
+  }
+
+  .competition__footnote {
+    top: 1.5em;
+    left: -1em;
   }
 }
