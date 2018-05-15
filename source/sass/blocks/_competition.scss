@@ -45,7 +45,7 @@
   flex-direction: column;
   align-items: center;
   padding: 0 20px;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .competition__btn:hover {
@@ -100,10 +100,17 @@
 
   .competition__btn {
     width: 300px;
+    padding-top: 17px;
+    padding-bottom: 17px;
   }
 
   .competition__container {
     padding: 0;
+  }
+
+  .competition__legend {
+    align-self: center;
+    margin-bottom: 32px;
   }
 }
 
