@@ -1,22 +1,33 @@
 .pop-up__ok {
   position: fixed;
   top: 50%;
-  left: 20%;
-  display: none;
+  left: 50%;
+  padding: 25px 0 0 0;
+  margin-left: -160px;
   width: 320px;
+  background-color: $white;
+  box-shadow: 0 7px 15px rgba(0 , 0, 0, 0.15);
+}
+
+.pop-up__ok .pop-up__text {
+  margin-bottom: 30px;
+  padding: 0 20px;
 }
 
 .pop-up__error {
   position: fixed;
-  top: 50%;
+  top: 16%;
   left: 50%;
-  display: none;
   width: 280px;
-  padding: 0 20px;
+  padding: 25px 20px 50px 20px;
+  margin-left: -160px;
+  background-color: $white;
+  box-shadow: 0 7px 15px rgba(0 , 0, 0, 0.15);
 }
 
 .pop-up__title {
   @include font-set(18px, 24px, 700, $black, center);
+  margin-bottom: 26px;
 }
 
 .pop-up__button-wrapper {
@@ -24,18 +35,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 165px;
+  min-height: 163px;
   background-color: $grey;
 }
 
 .pop-up__text {
-  @include font-set(14px, 30px, 700, $darkgrey, center);
+  @include font-set(14px, 24px, 600, $darkgrey, center);
+  margin-bottom: 38px;
+  width: 287px;
 }
 
 .pop-up__btn {
   min-width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   @include font-set(18px, 30px, 700, $white, center);
   text-transform: uppercase;

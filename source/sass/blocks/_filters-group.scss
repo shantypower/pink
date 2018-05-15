@@ -120,7 +120,6 @@
 
 @media (min-width: $desktop-width) {
   .filters-group__wide {
-    width: 820px;
     padding: 0 60px;
   }
 
@@ -154,11 +153,11 @@
 
   .filters-group__achievements .filters-group__title {
     left: 259px;
-}
+  }
 
-.filters-group__emotions .filters-group__title {
-  left: 353px;
-}
+  .filters-group__emotions .filters-group__title {
+    left: 353px;
+  }
 
   .filters-group__contacts {
     flex-grow: 1;
