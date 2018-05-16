@@ -17,6 +17,15 @@
   border-radius: 50%;
 }
 
+.slider__toggle:not(.slider__toggle--check):hover {
+  background-color: rgba($color: $darkgrey, $alpha: 0.6);
+}
+
+.slider__toggle:active,
+.slider__toggle:focus {
+  background-color: rgba($color: $darkgrey, $alpha: 0.1);
+}
+
 .slider__toggle--check {
 
   width: 12px;

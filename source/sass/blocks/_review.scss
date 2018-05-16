@@ -121,9 +121,12 @@
 
 @media (min-width: $desktop-width) {
   .review {
-    padding-top: 96px;
+    padding-top: 184px;
     margin-bottom: 0;
-
+    background-image: url("../img/icon-quotes.svg");
+    background-size: 80px 63px;
+    background-repeat: no-repeat;
+    background-position: 50% 71px;
   }
 
   .review__wrapper {

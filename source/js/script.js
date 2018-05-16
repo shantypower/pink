@@ -50,23 +50,3 @@ if (navToggle) {
     }
   });
 }
-
-if (mainNavToggle) {
-  mainNavToggle.addEventListener("click", function() {
-    if (navMain.classList.contains("header__nav--closed")) {
-      navMain.classList.remove("header__nav--closed");
-      navMain.classList.add("header__nav--opened");
-      headerBg.classList.remove("header__photo-bg--closed");
-      headerBg.classList.add("header__photo-bg--opened");
-      headerTop.classList.remove("header__top--closed");
-      headerTop.classList.add("header__top--opened");
-    } else {
-      navMain.classList.remove("header__nav--opened");
-      navMain.classList.add("header__nav--closed");
-      headerBg.classList.remove("header__photo-bg--opened");
-      headerBg.classList.add("header__photo-bg--closed");
-      headerTop.classList.remove("header__top--opened");
-      headerTop.classList.add("header__top--closed");
-    }
-  });
-}

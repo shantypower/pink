@@ -19,7 +19,7 @@
 .photo__best::before {
   position: absolute;
   display: block;
-  right: 17px;
+  right: 19px;
   content: "панорама дня";
   padding-top: 6px;
   width: 140px;
@@ -69,12 +69,12 @@
 @media (min-width: $desktop-width) {
   .photo__text {
     width: 600px;
-    padding-bottom: 82px;
+    padding-bottom: 84px;
   }
 
   .photo__best::before {
     top: 294px;
-    right: 130px;
+    right: 127px;
   }
 
   .photo__content {

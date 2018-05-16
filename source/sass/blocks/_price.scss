@@ -6,6 +6,10 @@
 }
 
 .price__list {
+  position: relative;
+  left: 50%;
+  margin-left: -570px;
+  margin-bottom: 42px;
   display: block;
   border-collapse: collapse;
   border-radius: 2px;
@@ -30,7 +34,6 @@
   justify-content: space-between;
   overflow: hidden;
   margin: 0 auto;
-  margin-left: -138%;
 }
 
 .price__row {
@@ -41,11 +44,12 @@
 
 .price__tariff {
   position: relative;
+  min-width: 276px;
   padding-top: 18px;
   padding-bottom: 18px;
   background-color: $darkgrey;
 
-  @include font-set(18px, 29px, 700, $white, center);
+  @include font-set(18px, 30px, 700, $white, center);
 
   text-transform: uppercase;
 }
@@ -57,6 +61,7 @@
 
 .price__tariff--empty {
   display: block;
+  min-width: 150px;
   background-color: $grey;
 }
 
@@ -93,7 +98,7 @@
 }
 
 .price__value {
-  padding: 8px 15px;
+  padding: 14px 23px;
   border: 2px solid $lightgrey;
   font-size: 0px;
 }
@@ -124,11 +129,16 @@
 
 @media (min-width: $tablet-width) {
   .price {
-    padding-bottom: 68px;
+    padding-bottom: 27px;
+  }
+
+  .price__list {
+    margin-left: -309px;
   }
 
   .price__tariff {
     font-size: 16px;
+    line-height: 29px;
     padding-top: 12px;
     padding-bottom: 8px;
     min-width: 151px;
@@ -146,7 +156,11 @@
   }
 
   .price__option-name {
-  display: none;
+    visibility: hidden;
+  }
+
+  .price__value {
+    padding: 7px 13px;
   }
 
   .price__value--yes {
@@ -182,12 +196,12 @@
 
 @media (min-width: $desktop-width) {
   .price {
-    padding-bottom: 97px;
+    padding-bottom: 54px;
     padding-top: 61px;
   }
 
   .price__list {
-    margin-left: 1.2%;
+    margin-left: -470px;
   }
 
   .price__tariff {
