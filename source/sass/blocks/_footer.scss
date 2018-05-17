@@ -9,24 +9,24 @@
 
 .footer__logo {
   align-self: center;
-  margin-bottom: 39px;
   width: 146.3px;
   height: 40.375px;
+  margin-bottom: 39px;
 }
 
 .footer__social-list {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 36px;
 
   @include list-reset;
-  margin-bottom: 36px;
 }
 
 .footer__copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 127px
+  min-width: 127px;
 }
 
 .footer__text {
@@ -59,8 +59,9 @@
 }
 
 .footer__social-item--facebook {
-  margin-left: 12px;
   margin-right: 12px;
+  margin-left: 12px;
+
   background-image: url("../img/icon-facebook.svg");
 }
 
@@ -80,9 +81,9 @@
 
 .footer__link {
   align-self: flex-end;
-  margin-top: 4px;
-  width:26.943px;
+  width: 26.943px;
   height: 34.09px;
+  margin-top: 4px;
 }
 
 @media (min-width: $tablet-width) {
@@ -92,9 +93,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 620px;
     margin: 0 auto;
     padding: 38px 20px 38px 20px;
-    width: 620px;
   }
 
   .footer__main-page {
@@ -103,19 +104,19 @@
 
   .footer__logo {
     align-self: flex-start;
-    margin-bottom: 0;
     width: 150px;
+    margin-bottom: 0;
   }
 
   .footer__social-list {
-    margin-bottom: 0;
     align-self: flex-end;
+    margin-bottom: 0;
   }
 
   .footer__copyright {
     align-self: flex-end;
-    margin-bottom: 5px;
     width: 150px;
+    margin-bottom: 5px;
   }
 
   .footer__text {
@@ -126,12 +127,13 @@
 @media (min-width: $desktop-width) {
   .footer {
     width: 940px;
-    padding: 74px 10px 74px 10px;
     margin: 0 auto;
+    padding: 74px 10px 74px 10px;
   }
 
   .footer__text {
-    font-size: 18px;
     padding-left: 0;
+
+    font-size: 18px;
   }
 }

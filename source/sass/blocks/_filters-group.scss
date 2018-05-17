@@ -1,13 +1,10 @@
 .filters-group {
   position: relative;
-  margin: 0;
-  padding: 0;
-  padding-top: 33px;
-  border: none;
-}
 
-.filters-group {
+  margin: 0;
   padding: 25px 20px;
+
+  border: none;
 }
 
 .filters-group:nth-of-type(2n) {
@@ -19,8 +16,8 @@
 }
 
 .filters-group__title {
-  padding: 0 25px;
   margin-bottom: 42px;
+  padding: 0 25px;
 
   text-transform: uppercase;
 
@@ -43,10 +40,8 @@
 
 @media (min-width: $tablet-width) {
   .filters-group {
-    padding: 0;
-   /* padding-top: 49px;
-    padding-bottom: 40px;*/
     margin-bottom: 66px;
+    padding: 0;
   }
 
   .filters-group:not(:first-of-type) {
@@ -60,16 +55,16 @@
 
   .filters-group.filters-group__fullname {
     order: 1;
-    padding-bottom: 0px;
     padding-top: 50px;
+    padding-bottom: 0;
   }
 
   .filters-group__contacts {
     order: 3;
     padding-top: 44px;
-    padding-left: 58px;
-    padding-bottom: 21px;
     padding-right: 58px;
+    padding-bottom: 21px;
+    padding-left: 58px;
 
     .input-block__item {
       flex-direction: column-reverse;
@@ -86,22 +81,26 @@
   .filters-group__title {
     position: absolute;
     top: -24px;
+
     background-color: $white;
   }
 
   .filters-group__contacts .filters-group__title {
-    display: block;
     left: 184px;
-}
+
+    display: block;
+  }
 
   .filters-group__achievements .filters-group__title {
-    display: block;
     left: 97px;
+
+    display: block;
   }
 
   .filters-group__emotions {
     order: 5;
     padding: 44px 58px 26px 58px;
+
     .filters-group__title {
       top: -17px;
       left: 191px;
@@ -112,6 +111,7 @@
     order: 2;
     padding-top: 55px;
     padding-bottom: 38px;
+
     .filters-group__title {
       left: 124px;
     }
@@ -181,6 +181,6 @@
   }
 
   .filters-group__contacts .input-block__item {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }

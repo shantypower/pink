@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
   background: $deepgrey url("../img/bg-back-mobile@1x.jpg") no-repeat;
   background-position: center;
   background-size: 100% auto;
@@ -10,7 +11,7 @@
 .header__main-page {
   background: url("../img/iphone-hand-mobile@1x.png") no-repeat,
     $deepgrey url("../img/bg-back-mobile@1x.jpg") no-repeat;
-  background-position: 0px 29px, center;
+  background-position: 0 29px, center;
   background-size: 257px 288px, 100% auto;
 }
 
@@ -20,29 +21,33 @@
   justify-content: space-between;
   align-items: center;
   width: 280px;
-  padding: 23px 20px;
   margin: 0 auto;
+  padding: 23px 20px;
 }
 
 .header__main-page.header__menu--closed {
   min-height: 735px;
+
   background-position: 0 143px, 0 0;
 }
 
 .header__main-page.header__menu--opened {
   min-height: 993px;
+
   background-position: 0 433px, 0 261px;
   border-bottom: none;
 }
 
 .header__not-main.header__menu--opened {
   min-height: 496px;
+
   background-position: 0 260px;
 }
 
 .header__not-main.header__menu--closed {
   min-height: 240px;
-  background-position: 0 0px;
+
+  background-position: 0 0;
 }
 
 .header__top--opened {
@@ -62,11 +67,11 @@
   display: block;
 }
 
-.header__logo:hover[href] .header__svg{
+.header__logo:hover[href] .header__svg {
   fill: $red;
 }
 
-.header__logo:active[href] .header__svg{
+.header__logo:active[href] .header__svg {
   fill: rgba(255, 255, 255, 0.3);
 }
 
@@ -78,14 +83,16 @@
 .header__button,
 .header__button-not-main-page {
   position: relative;
-  padding: 0;
+
   width: 24px;
   height: 24px;
+  padding: 0;
+
   background: url("../img/icon-menu-cross.svg") no-repeat center;
   background-color: transparent;
-  cursor: pointer;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .header__nav--closed .main-nav__list {
@@ -103,6 +110,7 @@
 .header__top--closed .header__button {
   width: 50px;
   height: 24px;
+
   background: url("../img/icon-menu-burger.svg") no-repeat center;
 }
 
@@ -113,17 +121,12 @@
   align-content: center;
 }
 
-.header__container {
-  width: 280px;
-  padding: 23px 20px;
-  margin: 0 auto;
-}
-
 .header__text {
-  @include font-set(24px, 30px, 400, $white, center);
+  width: 300px;
   margin: 0 auto;
   padding-top: 27px;
-  width: 300px;
+
+  @include font-set(24px, 30px, 400, $white, center);
 }
 
 @media (min-width: $tablet-width) {
@@ -144,27 +147,26 @@
 
   .header:not(.header__main-page) {
     padding-bottom: 60px;
-    background-position: 0 -1px;
-  }
 
-  .header:not(.header__main-page) {
     background-position: 0 255px;
   }
 
   .header__container {
-    padding: 43px 20px;
     width: 620px;
     margin: 0 auto;
+    padding: 43px 20px;
   }
 
   .header__main-page.header__menu--opened {
     min-height: 984px;
-    background-position: -21px 440px, 0px 258px;
+
+    background-position: -21px 440px, 0 258px;
   }
 
   .header__main-page.header__menu--closed {
     min-height: 729px;
-    background-position: -21px 185px, 0px 0px;
+
+    background-position: -21px 185px, 0 0;
   }
 
   .header__intro::before {
@@ -176,20 +178,22 @@
   }
 
   .header__text {
-    @include font-set(50px, 59px, 400, $white, center);
     width: 475px;
     padding-top: 7px;
     padding-bottom: 81px;
+
+    @include font-set(50px, 59px, 400, $white, center);
   }
 }
 
 @media (min-width: $desktop-width) {
   .header__main-page {
     min-height: 853px;
+
     background: url("../img/iphone-hand-desktop@1x.png")
       url("../img/back-desktop.jpg") no-repeat center;
+    background-position: 248px 209px, 0 -378px;
     background-size: 835px 645px, 100% auto;
-    background-position: 248px 209px, 0px -378px;
   }
 
   .header__nav--closed .main-nav__list {
@@ -197,15 +201,15 @@
   }
 
   .header__intro {
-    padding: 0 110px;
+    width: 980px;
     margin: 0 auto;
     margin-top: 80px;
-    width: 980px;
+    padding: 0 110px;
   }
 
   .header__top {
-    border-bottom: none;
     background-color: transparent;
+    border-bottom: none;
   }
 
   .header__text {
@@ -219,7 +223,7 @@
   }
 
   .header__main-page.header__menu--opened {
-    background-position: 248px 209px, 0px -378px;
+    background-position: 248px 209px, 0 -378px;
   }
 
   .header__not-main.header__menu--opened {
@@ -232,9 +236,9 @@
     justify-content: space-between;
     align-items: center;
     width: 940px;
-    padding: 30px 0;
     margin: 0 auto;
     margin-bottom: 2px;
+    padding: 30px 0;
   }
 
   .header__top-box {
@@ -242,8 +246,8 @@
   }
 
   .header__container {
-    padding: 0;
     width: 0;
+    padding: 0;
   }
 
   .header__logo {

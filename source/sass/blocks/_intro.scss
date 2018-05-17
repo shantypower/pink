@@ -11,18 +11,19 @@
 
 .intro__wrapper {
   padding-top: 28px;
+  padding-right: 20px;
   padding-bottom: 31px;
   padding-left: 20px;
-  padding-right: 20px;
+
   text-align: center;
 }
 
 .intro__btn--white {
   display: block;
+  width: 100%;
+  margin-bottom: 32px;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-bottom: 32px;
-  width: 100%;
 
   border: 3px solid $white;
   border-radius: 50px;
@@ -31,34 +32,40 @@
 }
 
 .intro__btn--white:hover {
-  background-color: $white;
   color: $red;
+
+  background-color: $white;
 }
 
 .intro__btn--white:active {
-  background-color: $white;
   color: rgba(210, 80, 46, 0.3);
+
+  background-color: $white;
 }
 
 .intro__list {
   position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 23px;
 
   @include list-reset;
-  margin-bottom: 23px;
 }
 
 .intro__link {
   display: block;
-  font-size: 0px;
+
+  font-size: 0;
+  color: $white;
 }
 
 .intro__link--apple,
 .intro__link--android,
 .intro__link--microsoft {
   display: block;
+
   background-repeat: no-repeat;
   background-position: bottom;
   outline: inherit;
@@ -67,25 +74,24 @@
 .intro__link--apple {
   width: 46px;
   height: 57px;
+
   background-image: url("../img/logo-apple.svg");
 }
 
 .intro__link--android {
-  margin-left: 33px;
-  margin-right: 33px;
   width: 46px;
   height: 57px;
+  margin-right: 33px;
+  margin-left: 33px;
+
   background-image: url("../img/logo-android.svg");
 }
 
 .intro__link--microsoft {
   width: 46px;
   height: 57px;
-  background-image: url("../img/logo-microsoft.svg");
-}
 
-.intro__link {
-  color: $white;
+  background-image: url("../img/logo-microsoft.svg");
 }
 
 .intro__description {
@@ -98,12 +104,13 @@
   .intro {
     padding-top: 129px;
   }
+
   .intro__title {
     display: block;
-    margin-bottom: 30px;
-    padding-left: 25px;
-    padding-right: 25px;
     width: 245px;
+    margin-bottom: 30px;
+    padding-right: 25px;
+    padding-left: 25px;
 
     @include font-set(40px, 49px, 400, $white, center);
   }
@@ -112,9 +119,10 @@
     display: block;
     width: 289px;
     margin-bottom: 79px;
-    padding-left: 22px;
-    padding-right: 22px;
     padding-top: 26px;
+    padding-right: 22px;
+    padding-left: 22px;
+
     text-align: center;
   }
 
@@ -129,31 +137,34 @@
 
   .intro__description {
     width: 297px;
+
     font-size: 18px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .intro {
-  padding-top: 108px;
+    padding-top: 108px;
   }
 
   .intro__wrapper {
-    margin-left: 0;
     margin-top: 3px;
+    margin-left: 0;
   }
 
   .intro__title {
     margin-bottom: 53px;
-    padding-left: 24px;
     padding-right: 24px;
+    padding-left: 24px;
+
     font-size: 50px;
     line-height: 59px;
   }
 
   .intro__btn--white {
-    font-size: 21px;
     margin-bottom: 66px;
+
+    font-size: 21px;
   }
 
   .intro__list {

@@ -2,16 +2,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
   width: 62px;
+  margin: 0 auto;
 }
 
 
 .slider__toggle {
+  width: 0;
+  height: 0;
   padding: 0;
-  width: 0px;
-  height: 0px;
+
   font-size: 1px;
+
   background-color: rgba($color: $darkgrey, $alpha: 0.3);
   border: 3px solid rgba($color: $darkgrey, $alpha: 0.3);
   border-radius: 50%;
@@ -27,10 +29,11 @@
 }
 
 .slider__toggle--check {
-
   width: 12px;
   height: 12px;
+
   font-size: 1px;
+
   background-color: transparent;
   border: 3px solid $darkgrey;
 }

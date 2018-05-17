@@ -18,9 +18,10 @@
 }
 
 .user-photo__info {
+  margin-bottom: 19px;
   padding: 18px;
   padding-bottom: 20px;
-  margin-bottom: 19px;
+
   background-color: $grey;
 }
 
@@ -37,9 +38,10 @@
 }
 
 .user-photo__description {
-  @include font-set(14.5px, 24px, 400, $darkgrey, left);
   margin: 0;
   margin-bottom: 10.5px;
+
+  @include font-set(14.5px, 24px, 400, $darkgrey, left);
 }
 
 .user-photo__footer {
@@ -49,12 +51,13 @@
 }
 
 .user-photo__btn {
-  border: none;
-  outline: none;
-  padding: 0;
   width: 12.545px;
   height: 11.99px;
+  padding: 0;
+
   background: url("../img/icon-heart.svg") no-repeat center;
+  border: none;
+  outline: none;
 }
 
 .user-photo__like {
@@ -66,25 +69,26 @@
 }
 
 .user-photo__text {
-  @include font-set(14px, 30px,600,$darkgrey, center);
   margin: 0 auto;
-  padding: 21px 0px;
   margin-bottom: 21px;
+  padding: 21px 0;
+
+  @include font-set(14px, 30px,600,$darkgrey, center);
 }
 
 @media (min-width: $tablet-width) {
   .user-photo__user-img--wide {
-    min-height: 509px;
     width: 100%;
+    min-height: 509px;
   }
 
   .user-photo--wide {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
     padding: 24px 27px;
     padding-bottom: 13px;
-    margin-bottom: 50px;
   }
 
   .user-photo--wide .user-photo__title {
@@ -99,14 +103,14 @@
   }
 
   .user-photo--wide .user-photo__description {
-    order: 3
+    order: 3;
   }
 
   .user-photo--wide .user-photo__like {
     margin-right: 19px;
   }
 
-   .user-photo__img {
+  .user-photo__img {
     width: 300px;
     height: 300px;
   }
@@ -125,18 +129,18 @@
   }
 
   .user-photo__text {
-    padding: 45px 0px;
     margin-bottom: 24px;
+    padding: 45px 0;
+
     font-size: 18px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
   .user-photo--wide {
+    margin-bottom: 15px;
     padding-top: 23px;
     padding-right: 31px;
-    margin-bottom: 15px;
   }
 
   .user-photo__description {
@@ -154,8 +158,8 @@
   }
 
   .user-photo__text {
-    padding: 40px 0px;
     margin-bottom: 26px;
+    padding: 40px 0;
   }
 
   .user-photo__user-img--wide {
