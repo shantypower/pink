@@ -18,6 +18,7 @@
 .promo__text {
   margin: 0;
   margin-bottom: 30px;
+  padding: 0 20px;
   @include font-set(24px, 28px, 400, $darkgrey, center);
 }
 

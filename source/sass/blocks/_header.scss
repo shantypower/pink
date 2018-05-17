@@ -14,6 +14,11 @@
   background-size: 257px 288px, 100% auto;
 }
 
+.header.header__not-main {
+  min-height: 496px;
+  background-position: 0 260px;
+}
+
 .header__container {
   display: flex;
   flex-direction: row;
@@ -35,12 +40,12 @@
   border-bottom: none;
 }
 
-.header__not-main.header__photo-bg--opened {
+.header__not-main.header__menu--opened {
   min-height: 496px;
   background-position: 0 260px;
 }
 
-.header__not-main.header__photo-bg--closed {
+.header__not-main.header__menu--closed {
   min-height: 240px;
   background-position: 0 0px;
 }
