@@ -27,7 +27,6 @@ var navMain = document.querySelector(".header__nav");
 var navToggle = document.querySelector(".header__button");
 var headerBg = document.querySelector(".header");
 var headerTop = document.querySelector(".header__top");
-var headerNotMain = document.querySelector(".header__not-main");
 
 navMain.classList.remove("header__nav--nojs");
 

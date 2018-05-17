@@ -24,6 +24,26 @@
   margin: 0 auto;
 }
 
+.header__main-page.header__menu--closed {
+  min-height: 735px;
+  background-position: 0 143px, 0 0;
+}
+
+.header__main-page.header__menu--opened {
+  min-height: 993px;
+  background-position: 0 433px, 0 261px;
+  border-bottom: none;
+}
+
+.header__not-main.header__menu--opened {
+  min-height: 496px;
+  background-position: 0 260px;
+}
+
+.header__not-main.header__menu--closed {
+  min-height: 240px;
+  background-position: 0 0px;
+}
 
 .header__top--opened {
   background-color: $darkgrey;
@@ -49,16 +69,6 @@
 .header__logo:active[href] .header__svg{
   fill: rgba(255, 255, 255, 0.3);
 }
-/*
-.header__intro::before {
-  position: relative;
-  display: block;
-  content: "";
-  width:320px;
-  height: 314px;
-  background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
-  background-position: 0px 29px;
-}*/
 
 .header__logo-container {
   width: 74.426px;
@@ -90,8 +100,7 @@
   display: none;
 }
 
-.header__top--closed .header__button,
-.header__top--closed .header__button-not-main-page {
+.header__top--closed .header__button {
   width: 50px;
   height: 24px;
   background: url("../img/icon-menu-burger.svg") no-repeat center;
@@ -127,22 +136,18 @@
     height: 509px;
   }
 
-  .header__photo-bg--opened {
-    min-height: 695px;
-  }
-
   .header__main-page {
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat,
       url("../img/back-tablet@1x.jpg") no-repeat;
     background-size: 700px 545px, 100% auto;
   }
 
-  .header:not(.header__main-page).header__photo-bg--closed{
+  .header:not(.header__main-page) {
     padding-bottom: 60px;
     background-position: 0 -1px;
   }
 
-  .header:not(.header__main-page).header__photo-bg--opened {
+  .header:not(.header__main-page) {
     background-position: 0 255px;
   }
 
@@ -152,12 +157,12 @@
     margin: 0 auto;
   }
 
-  .header__menu--opened {
+  .header__main-page.header__menu--opened {
     min-height: 984px;
     background-position: -21px 440px, 0px 258px;
   }
 
-  .header__menu--closed {
+  .header__main-page.header__menu--closed {
     min-height: 729px;
     background-position: -21px 185px, 0px 0px;
   }
@@ -178,34 +183,6 @@
   }
 }
 
-@media (max-width: $mobile-width-only) {
-  .header__main-page.header__menu--closed {
-    min-height: 735px;
-    background-position: 0 143px, 0 0;
-  }
-
-  .header__main-page.header__menu--opened {
-    min-height: 993px;
-    background-position: 0 433px, 0 261px;
-    border-bottom: none;
-  }
-
-  .header__not-main.header__menu--opened {
-    min-height: 496px;
-    background-position: 0 260px;
-  }
-
-  .header__not-main.header__menu--closed {
-    min-height: 240px;
-    background-position: 0 0px;
-  }
-
-  .header.header__not-main {
-  min-height: 496px;
-  background-position: 0 260px;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .header__main-page {
     min-height: 853px;
@@ -213,12 +190,6 @@
       url("../img/back-desktop.jpg") no-repeat center;
     background-size: 835px 645px, 100% auto;
     background-position: 248px 209px, 0px -378px;
-  }
-
-  .header:not(.header__main-page).header__photo-bg--opened {
-    padding-bottom: 21px;
-    min-height: 0px;
-    background-position: 0 -378px;
   }
 
   .header__nav--closed .main-nav__list {
@@ -243,9 +214,16 @@
     padding-top: 76px;
   }
 
-  .header__button,
-  .header__button-not-main-page {
+  .header__button {
     display: none;
+  }
+
+  .header__main-page.header__menu--opened {
+    background-position: 248px 209px, 0px -378px;
+  }
+
+  .header__not-main.header__menu--opened {
+    background-position: 0 0;
   }
 
   .header__wrapper {
