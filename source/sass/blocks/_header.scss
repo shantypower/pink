@@ -145,16 +145,14 @@
     background-size: 700px 545px, 100% auto;
   }
 
-  .header:not(.header__main-page) {
-    padding-bottom: 60px;
-
-    background-position: 0 255px;
-  }
-
   .header__container {
     width: 620px;
     margin: 0 auto;
     padding: 43px 20px;
+  }
+
+  .header__not-main.header__menu--opened {
+    padding-bottom: 60px;
   }
 
   .header__main-page.header__menu--opened {
