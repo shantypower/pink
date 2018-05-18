@@ -2,38 +2,88 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
-  padding: 35px 20px;
+  padding: 40px 20px;
 }
 
 .footer__logo {
   align-self: center;
+  width: 146.3px;
+  height: 40.375px;
+  margin-bottom: 39px;
 }
 
 .footer__social-list {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
 
   @include list-reset;
 }
 
 .footer__copyright {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  min-width: 127px;
 }
-
 
 .footer__text {
   margin: 0;
-  padding-right: 15px;
 
-  vertical-align: middle;
-
-  @include font-set(14px, 18px, normal, $darkgrey, left);
+  @include font-set(14px, 18px, 400, $darkgrey, left);
 }
 
 .footer__main-page {
   display: none;
+}
+
+.footer__social-item--twitter,
+.footer__social-item--facebook,
+.footer__social-item--youtube {
+  display: block;
+  width: 45px;
+  height: 45px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+  outline: inherit;
+}
+
+
+.footer__social-item--twitter {
+  background-image: url("../img/icon-twitter.svg");
+}
+
+.footer__social-item--facebook {
+  margin-right: 12px;
+  margin-left: 12px;
+
+  background-image: url("../img/icon-facebook.svg");
+}
+
+.footer__social-item--youtube {
+  background-image: url("../img/icon-youtube.svg");
+}
+
+.footer__social-item {
+  &:hover {
+    border-color: $darkgrey;
+  }
+
+  &:active {
+    border-color: rgba($color: $darkgrey, $alpha: 0.3);
+  }
+}
+
+.footer__link {
+  align-self: flex-end;
+  width: 26.943px;
+  height: 34.09px;
+  margin-top: 4px;
 }
 
 @media (min-width: $tablet-width) {
@@ -41,7 +91,49 @@
   .footer {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    width: 620px;
     margin: 0 auto;
+    padding: 38px 20px 38px 20px;
+  }
+
+  .footer__main-page {
+    padding: 26px 20px 38px 20px;
+  }
+
+  .footer__logo {
+    align-self: flex-start;
+    width: 150px;
+    margin-bottom: 0;
+  }
+
+  .footer__social-list {
+    align-self: flex-end;
+    margin-bottom: 0;
+  }
+
+  .footer__copyright {
+    align-self: flex-end;
+    width: 150px;
+    margin-bottom: 5px;
+  }
+
+  .footer__text {
+    padding-left: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    width: 940px;
+    margin: 0 auto;
+    padding: 74px 10px 74px 10px;
+  }
+
+  .footer__text {
+    padding-left: 0;
+
+    font-size: 18px;
   }
 }

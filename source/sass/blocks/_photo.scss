@@ -1,9 +1,38 @@
 .photo {
+  position: relative;
+
   margin: 0 auto;
 }
 
 .photo__text {
-  @include font-set(14px, 30px,normal,$darkgrey, center);
+  width: 250px;
+  margin: 0 auto;
+  margin-bottom: 4px;
+  padding: 45px 30px;
+
+  @include font-set(14px, 30px, 600, $darkgrey, center);
+}
+
+.user-photo__user-img--wide img {
+  width: 100%;
+}
+
+
+.photo__best::before {
+  content: "панорама дня";
+  position: absolute;
+  right: 19px;
+
+  display: block;
+  width: 140px;
+  height: 31px;
+  padding-top: 6px;
+
+  text-transform: uppercase;
+
+  background-color: $red;
+
+  @include font-set(12px, 24px, 700, $white, center);
 }
 
 .photo__list {
@@ -11,13 +40,55 @@
 }
 
 @media (min-width: $tablet-width) {
+  .photo__text {
+    width: 450px;
+    padding-top: 92px;
+    padding-bottom: 72px;
+
+    @include font-set(18px, 30px, 600, $darkgrey, center);
+  }
+
   .photo__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
+  .photo__list .user-photo__info {
+    display: flex;
+    flex-direction: column;
+    min-height: 108px;
+    padding-top: 24px;
+    padding-right: 33px;
+    padding-bottom: 23px;
+    padding-left: 28px;
+  }
+
   .photo__item {
-    width: 300px;
+    flex-basis: 300px;
+  }
+
+  .photo__best::before {
+    top: 285px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__text {
+    width: 600px;
+    padding-bottom: 84px;
+  }
+
+  .photo__best::before {
+    top: 294px;
+    right: 127px;
+  }
+
+  .photo__content {
+    padding: 0 10px;
+  }
+
+  .photo__item {
+    margin-top: 35px;
   }
 }
