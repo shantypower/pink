@@ -5,7 +5,7 @@
   list-style: none;
 }
 
-@mixin font-set($f-s: 18px, $l-h: 30px, $f-w: normal, $text-color: $black, $text-align: left) {
+@mixin font-set($f-s: 18px, $l-h: 30px, $f-w: 700, $text-color: $black, $text-align: left) {
   font-weight: $f-w;
   font-size: $f-s;
   line-height: $l-h;

@@ -3,6 +3,8 @@
 }
 
 .effect__container {
+  position: relative;
+
   display: flex;
 }
 
@@ -15,11 +17,97 @@
 @media (min-width: $tablet-width) {
   .effect {
     display: block;
+    margin-bottom: 88px;
+  }
+
+  .effect__description {
+    padding-left: 329px;
+  }
+
+  .effect__title {
+    margin: 0;
+    margin-bottom: 9px;
+
+    @include font-set(30px, 37px, 700, $black, left);
+  }
+
+  .effect__text {
+    width: 296px;
+    margin: 0;
+    margin-bottom: 15px;
+
+    @include font-set(14.5px, 24px, 400, $darkgrey, left);
+  }
+
+  .effect__link {
+    display: block;
+
+    @include font-set(14.5px, 14.5px, 400, $red, left);
+  }
+
+  .effect__link--underline {
+    display: inline-block;
+
+    border-bottom: 1px solid $red;
+  }
+
+  .effect__title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 238px;
+    height: 276px;
+
+    background: url("/source/img/timer-tablet@1x.png");
+  }
+
+  .effect__wrap {
+    display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .effect {
+    margin-bottom: 0;
+    padding-top: 37px;
+
     background-color: $grey;
+  }
+
+  .effect__wrap {
+    display: block;
+  }
+
+  .effect__container {
+    padding-bottom: 119px;
+  }
+
+  .effect__description {
+    padding-top: 45px;
+    padding-left: 496px;
+  }
+
+  .effect__title {
+    margin-bottom: 22px;
+  }
+
+  .effect__title br,
+  .effect__text br:not(.effect__wrap) {
+    display: none;
+  }
+
+  .effect__text {
+    width: 580px;
+    margin-bottom: 36px;
+
+    font-size: 18.8px;
+    line-height: 30px;
+  }
+
+  .effect__link {
+    font-size: 18.8px;
+    line-height: 18.8px;
   }
 }
