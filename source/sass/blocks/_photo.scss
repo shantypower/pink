@@ -7,13 +7,13 @@
 .photo__text {
   width: 250px;
   margin: 0 auto;
-  margin-bottom: 4px;
   padding: 45px 30px;
 
   @include font-set(14px, 30px, 600, $darkgrey, center);
 }
 
 .user-photo__user-img--wide img {
+  display: block;
   width: 100%;
 }
 

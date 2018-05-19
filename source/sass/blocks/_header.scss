@@ -1,18 +1,11 @@
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
 
-  background: $deepgrey url("../img/bg-back-mobile@1x.jpg") no-repeat;
-  background-position: center;
+  background: $deepgrey url("../img/bg-back-mobile@1x.jpg")no-repeat;
   background-size: 100% auto;
-}
-
-.header__main-page {
-  background: url("../img/iphone-hand-mobile@1x.png") no-repeat,
-    $deepgrey url("../img/bg-back-mobile@1x.jpg") no-repeat;
-  background-position: 0 29px, center;
-  background-size: 257px 288px, 100% auto;
+  background-position-y: 266px;
 }
 
 .header__container {
@@ -27,27 +20,23 @@
 
 .header__main-page.header__menu--closed {
   min-height: 735px;
-
-  background-position: 0 143px, 0 0;
+  background-position-y: top;
 }
 
 .header__main-page.header__menu--opened {
-  min-height: 993px;
-
-  background-position: 0 433px, 0 261px;
+  min-height: 965px;
+  padding-bottom: 29px;
   border-bottom: none;
 }
 
 .header__not-main.header__menu--opened {
   min-height: 496px;
-
-  background-position: 0 260px;
+  background-position-y: 261px;
 }
 
 .header__not-main.header__menu--closed {
   min-height: 240px;
-
-  background-position: 0 0;
+  background-position-y: top;
 }
 
 .header__top--closed {
@@ -62,7 +51,16 @@
 
 .header__intro {
   margin-top: auto;
-  background-color: $deepgrey;
+}
+
+.header__intro::before {
+
+  display: block;
+  content: "";
+  height: 314px;
+  width: 320px;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
+  background-position: left bottom;
 }
 
 .header__logo {
@@ -129,25 +127,17 @@
 .header__text {
   width: 300px;
   margin: 0 auto;
-  padding-top: 27px;
 
   @include font-set(24px, 30px, 400, $white, center);
 }
 
 @media (min-width: $tablet-width) {
   .header {
-    background: url("../img/back-tablet@1x.jpg") no-repeat;
-    background-size: 100% auto;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat top center;
   }
 
   .user-photo__user-img--wide img {
     height: 509px;
-  }
-
-  .header__main-page {
-    background: url("../img/iphone-hand-tablet@1x.png") no-repeat,
-      url("../img/back-tablet@1x.jpg") no-repeat;
-    background-size: 700px 545px, 100% auto;
   }
 
   .header__container {
@@ -156,28 +146,14 @@
     padding: 43px 20px;
   }
 
-  .header__not-main.header__menu--opened {
-    padding-bottom: 60px;
-  }
-
-  .header__main-page.header__menu--opened {
-    min-height: 984px;
-
-    background-position: -21px 440px, 0 258px;
-  }
-
-  .header__main-page.header__menu--closed {
-    min-height: 729px;
-
-    background-position: -21px 185px, 0 0;
-  }
-
   .header__intro::before {
     display: none;
   }
 
   .header__intro {
     background-color: transparent;
+    background: url("../img/iphone-hand-tablet@1x.png") no-repeat;
+    background-position: 50% bottom;
   }
 
   .header__wrapper {
@@ -186,21 +162,23 @@
 
   .header__text {
     width: 475px;
-    padding-top: 7px;
-    padding-bottom: 81px;
 
     @include font-set(50px, 59px, 400, $white, center);
   }
 }
 
 @media (min-width: $desktop-width) {
+  .header {
+    display: block;
+  }
+
+  .header__main-page, .header {
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat top center;
+    background-size: cover;
+  }
+
   .header__main-page {
     min-height: 853px;
-
-    background: url("../img/iphone-hand-desktop@1x.png")
-      url("../img/back-desktop.jpg") no-repeat center;
-    background-position: 248px 209px, 0 -378px;
-    background-size: 835px 645px, 100% auto;
   }
 
   .header__nav--closed .main-nav__list {
@@ -208,10 +186,14 @@
   }
 
   .header__intro {
-    width: 980px;
-    margin: 0 auto;
+    width: 100%;
+    min-height: 664px;
+    box-sizing: border-box;
     margin-top: 80px;
     padding: 0 110px;
+    background: url("../img/iphone-hand-desktop@1x.png") no-repeat;
+    background-size: 1050px 645px;
+    background-position: 95% bottom;
   }
 
   .header__top {
@@ -222,19 +204,21 @@
   .header__text {
     width: 650px;
     margin: 0 auto;
-    padding-top: 76px;
   }
 
   .header__button {
     display: none;
   }
 
-  .header__main-page.header__menu--opened {
-    background-position: 248px 209px, 0 -378px;
+  .header__main-page.header__menu--opened,
+  .header__main-page.header__menu--closed {
+    min-height: 854px;
   }
 
-  .header__not-main.header__menu--opened {
-    background-position: 0 0;
+  .header__not-main.header__menu--opened,
+  .header__not-main.header__menu--closed {
+    min-height: 394px;
+    background-position-y: top;
   }
 
   .header__wrapper {
@@ -244,7 +228,6 @@
     align-items: center;
     width: 940px;
     margin: 0 auto;
-    margin-bottom: 2px;
     padding: 30px 0;
   }
 

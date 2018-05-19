@@ -10,8 +10,6 @@
 
 .effect__image {
   min-width: 300px;
-
-  background: url("/source/img/");
 }
 
 @media (min-width: $tablet-width) {
@@ -60,7 +58,7 @@
     width: 238px;
     height: 276px;
 
-    background: url("/source/img/timer-tablet@1x.png");
+    background: url("../img/timer-tablet@1x.png");
   }
 
   .effect__wrap {
