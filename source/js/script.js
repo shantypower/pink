@@ -29,6 +29,9 @@ var headerBg = document.querySelector(".header");
 var headerTop = document.querySelector(".header__top");
 
 navMain.classList.remove("header__nav--nojs");
+headerTop.classList.remove("header__top--opened");
+headerTop.classList.remove("header__top--nojs");
+navToggle.classList.remove("header__button--hidden");
 
 if (navToggle) {
   navToggle.addEventListener("click", function() {
