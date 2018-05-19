@@ -50,17 +50,19 @@
   background-position: 0 0;
 }
 
-.header__top--opened {
-  background-color: $darkgrey;
-  border-bottom: 1px solid $black;
-}
-
 .header__top--closed {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.header__top--opened,
+.header__top--nojs {
+  background-color: $darkgrey;
+  border-bottom: 1px solid $black;
+}
+
 .header__intro {
   margin-top: auto;
+  background-color: $deepgrey;
 }
 
 .header__logo {
@@ -80,8 +82,7 @@
   height: 22.859px;
 }
 
-.header__button,
-.header__button-not-main-page {
+.header__button {
   position: relative;
 
   width: 24px;
@@ -94,6 +95,10 @@
   outline: none;
   cursor: pointer;
 }
+
+.header__button--hidden {
+  visibility: hidden;
+  }
 
 .header__nav--closed .main-nav__list {
   display: none;
@@ -169,6 +174,10 @@
 
   .header__intro::before {
     display: none;
+  }
+
+  .header__intro {
+    background-color: transparent;
   }
 
   .header__wrapper {
