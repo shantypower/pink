@@ -13,7 +13,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 280px;
   margin: 0 auto;
   padding: 23px 20px;
 }
@@ -24,8 +23,7 @@
 }
 
 .header__main-page.header__menu--opened {
-  min-height: 965px;
-  padding-bottom: 29px;
+  min-height: 992px;
   border-bottom: none;
 }
 
@@ -35,7 +33,7 @@
 }
 
 .header__not-main.header__menu--closed {
-  min-height: 240px;
+  min-height: 239px;
   background-position-y: top;
 }
 
@@ -59,6 +57,7 @@
   content: "";
   height: 314px;
   width: 320px;
+  margin: 0 auto;
   background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
   background-position: left bottom;
 }
@@ -117,11 +116,16 @@
   background: url("../img/icon-menu-burger.svg") no-repeat center;
 }
 
+.header__not-main {
+  justify-content: flex-start;
+}
+
 
 .header__wrapper {
   display: flex;
   flex-direction: column;
   align-content: center;
+  margin-bottom: 28px;
 }
 
 .header__text {
@@ -134,6 +138,11 @@
 @media (min-width: $tablet-width) {
   .header {
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat top center;
+  }
+
+  .header__main-page {
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat top center;
+    background-position: top center;
   }
 
   .user-photo__user-img--wide img {
@@ -153,18 +162,23 @@
   .header__intro {
     background-color: transparent;
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat;
-    background-position: 50% bottom;
+    background-position: 32px bottom;
   }
 
-  .header__wrapper {
-    margin-bottom: 63px;
-  }
-
-  .header__text {
+   .header__text {
     width: 475px;
 
     @include font-set(50px, 59px, 400, $white, center);
   }
+
+  .header__main-page.header__menu--opened {
+    min-height: 984px;
+    background-position-y: 255px;
+  }
+
+  .header__main-page.header__menu--closed {
+    min-height: 728px;
+}
 }
 
 @media (min-width: $desktop-width) {
@@ -186,14 +200,15 @@
   }
 
   .header__intro {
-    width: 100%;
-    min-height: 664px;
     box-sizing: border-box;
+    min-height: 664px;
+    width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
     margin-top: 80px;
-    padding: 0 110px;
     background: url("../img/iphone-hand-desktop@1x.png") no-repeat;
     background-size: 1050px 645px;
-    background-position: 95% bottom;
+    background-position: 146px bottom;
   }
 
   .header__top {
@@ -213,6 +228,7 @@
   .header__main-page.header__menu--opened,
   .header__main-page.header__menu--closed {
     min-height: 854px;
+    background-position: top center;
   }
 
   .header__not-main.header__menu--opened,

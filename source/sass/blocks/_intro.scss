@@ -13,8 +13,14 @@
   padding-top: 28px;
   padding-right: 20px;
   padding-left: 20px;
+  padding-bottom: 29px;
   background-color: $deepgrey;
   text-align: center;
+}
+
+.intro__container {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .intro__btn--white {
@@ -117,14 +123,18 @@
 
   .intro__wrapper {
     display: block;
-    width: 289px;
+    width: 660px;
     margin-bottom: 79px;
-    padding-top: 26px;
     padding-right: 22px;
     padding-left: 22px;
     background-color: transparent;
 
     text-align: center;
+  }
+
+  .intro__container {
+    width: 294px;
+    margin-left: 0;
   }
 
   .intro__btn--white {

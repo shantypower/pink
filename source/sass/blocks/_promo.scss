@@ -50,12 +50,12 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    margin-bottom: 104px;
-    padding: 68px 30px;
+    margin-bottom: 160px;
+    padding: 0;
   }
 
   .promo::after {
-    bottom: -104px;
+    bottom: -165px;
   }
 
   .promo__text:nth-child(2) {
