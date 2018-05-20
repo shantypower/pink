@@ -77,27 +77,19 @@
   outline: inherit;
 }
 
-.intro__link--apple {
+.intro__logo {
   width: 46px;
   height: 57px;
-
-  background-image: url("../img/logo-apple.svg");
 }
 
 .intro__link--android {
-  width: 46px;
-  height: 57px;
   margin-right: 33px;
   margin-left: 33px;
-
-  background-image: url("../img/logo-android.svg");
 }
 
-.intro__link--microsoft {
+.intro__link {
   width: 46px;
   height: 57px;
-
-  background-image: url("../img/logo-microsoft.svg");
 }
 
 .intro__description {

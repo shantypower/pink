@@ -136,13 +136,15 @@
 }
 
 @media (min-width: $tablet-width) {
-  .header {
-    background: url("../img/bg-back-tablet@1x.jpg") no-repeat top center;
-  }
-
+  .header,
   .header__main-page {
-    background: url("../img/bg-back-tablet@1x.jpg") no-repeat top center;
-    background-position: top center;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+    background-position: center 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 2400px auto;
+    }
   }
 
   .user-photo__user-img--wide img {
@@ -187,7 +189,7 @@
   }
 
   .header__main-page, .header {
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat top center;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center 0;
     background-size: cover;
   }
 
