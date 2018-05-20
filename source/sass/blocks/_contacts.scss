@@ -11,8 +11,9 @@
 }
 
 .contacts__header {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 30px;
+  width: 280px;
 
   @include font-set(24px, 29px, 400, $darkgrey , center);
 }
@@ -41,8 +42,10 @@
 }
 
 .contacts__map::before {
-  content: "";
+  display: block;
   position: absolute;
+  content: "";
+
   top: 0;
   left: 0;
   z-index: 2;
@@ -87,7 +90,7 @@
 .contacts__map {
   z-index: 0;
 
-  height: 200px;
+  height: 255px;
 
   background: url("../img/bg-map-mobile@1x.png") no-repeat center;
   background-size: 100% auto;

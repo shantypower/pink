@@ -1,6 +1,6 @@
 .information {
   position: relative;
-
+  padding-top: 49px;
   background-color: #f2f2f2;
 }
 
@@ -34,10 +34,6 @@
   margin: 0;
 
   @include font-set(14.5px, 24.7px, 500, $darkgrey, center);
-}
-
-.information__container {
-  padding-top: 42px;
 }
 
 .information__item {

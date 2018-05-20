@@ -17,9 +17,8 @@
           <div class="header__container">
             <div class="header__logo-container">
               <a class="header__logo" href="index.html">
-                <svg class="header__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859"
-                  xml:space="preserve">
+                <svg class="header__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px"
+                  height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
                   <g>
                     <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"
                     />
@@ -61,218 +60,251 @@
 
   <main class="photo">
     <h2 class="photo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
-      <div class="photo__best">
-        <div class="user-photo__user-img--wide">
-          <img class="user-photo__img--wide" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
-        </div>
+    <div class="photo__best">
+      <div class="user-photo__user-img--wide">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+          <img class="user-photo__img--wide" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg" width="320"
+            height="137" alt="Панорама дня">
+        </picture>
       </div>
+    </div>
 
-      <div class="container">
-        <section class="photo__content">
-          <article class="user-photo user-photo--wrapper">
-            <div class="user-photo__info user-photo--wide">
-              <p class="user-photo__title">Анна
-                <span class="user-photo__span">(5 минут назад)</span>
-              </p>
-              <p class="user-photo__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои
-                вопросы!</p>
-              <footer class="user-photo__footer">
-                <button class="user-photo__btn" type="button"></button>
-                <span class="user-photo__like">Нравится:
-                  <span class="user-photo__counter">215</span>
-                </span>
-              </footer>
-            </div>
-          </article>
-
-          <ul class="photo__list">
-            <li class="photo__item">
-              <article class="user-photo">
-                <div class="user-photo__container">
-                  <img class="user-photo__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="">
-                </div>
-                <div class="user-photo__info user-photo__wrapper">
-                  <p class="user-photo__title">Левон
-                    <span class="user-photo__span">(5 часов назад)</span>
-                  </p>
-                  <p class="user-photo__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                  <footer class="user-photo__footer">
-                    <button class="user-photo__btn" type="button"></button>
-                    <span class="user-photo__like">Нравится:
-                      <span class="user-photo__counter">356</span>
-                    </span>
-                  </footer>
-                </div>
-              </article>
-            </li>
-            <li class="photo__item photo__item--wrapper">
-              <article class="user-photo">
-                <div class="user-photo__container">
-                  <img class="user-photo__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="">
-                </div>
-                <div class="user-photo__info user-photo__wrapper">
-                  <p class="user-photo__title">Антон
-                    <span class="user-photo__span">(12 часов назад)</span>
-                  </p>
-                  <p class="user-photo__description">Соседи будут рады!</p>
-                  <footer class="user-photo__footer">
-                    <button class="user-photo__btn" type="button"></button>
-                    <span class="user-photo__like">Нравится:
-                      <span class="user-photo__counter">666</span>
-                    </span>
-                  </footer>
-                </div>
-              </article>
-            </li>
-            <li class="photo__item photo__item--wrapper">
-              <article class="user-photo">
-                <div class="user-photo__container">
-                  <img class="user-photo__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="">
-                </div>
-                <div class="user-photo__info user-photo__wrapper">
-                  <p class="user-photo__title">Борис
-                    <span class="user-photo__span">(20 часов назад)</span>
-                  </p>
-                  <p class="user-photo__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                  <footer class="user-photo__footer">
-                    <button class="user-photo__btn" type="button"></button>
-                    <span class="user-photo__like">Нравится:
-                      <span class="user-photo__counter">215</span>
-                    </span>
-                  </footer>
-                </div>
-              </article>
-            </li>
-            <li class="photo__item photo__item--wrapper">
-              <article class="user-photo">
-                <div class="user-photo__container">
-                  <img class="user-photo__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="">
-                </div>
-                <div class="user-photo__info user-photo__wrapper">
-                  <p class="user-photo__title">Сергей
-                    <span class="user-photo__span">(25 часов назад)</span>
-                  </p>
-                  <p class="user-photo__description">Самая кубанская в мире!</p>
-                  <footer class="user-photo__footer">
-                    <button class="user-photo__btn" type="button"></button>
-                    <span class="user-photo__like">Нравится:
-                      <span class="user-photo__counter">4</span>
-                    </span>
-                  </footer>
-                </div>
-              </article>
-            </li>
-            <li class="photo__item photo__item--wrapper">
-              <article class="user-photo">
-                <div class="user-photo__container">
-                  <img class="user-photo__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="">
-                </div>
-                <div class="user-photo__info user-photo__wrapper">
-                  <p class="user-photo__title">Максим
-                    <span class="user-photo__span">(40 часов назад)</span>
-                  </p>
-                  <p class="user-photo__description">Где снег-то?</p>
-                  <footer class="user-photo__footer">
-                    <button class="user-photo__btn" type="button"></button>
-                    <span class="user-photo__like">Нравится:
-                      <span class="user-photo__counter">150</span>
-                    </span>
-                  </footer>
-                </div>
-              </article>
-            </li>
-            <li class="photo__item photo__item--wrapper">
-              <article class="user-photo">
-                <div class="user-photo__container">
-                  <img class="user-photo__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="">
-                </div>
-                <div class="user-photo__info user-photo__wrapper">
-                  <p class="user-photo__title">Надежда
-                    <span class="user-photo__span">(45 часов назад)</span>
-                  </p>
-                  <p class="user-photo__description">Всем GM и взаимные лайки!</p>
-                  <footer class="user-photo__footer">
-                    <button class="user-photo__btn" type="button"></button>
-                    <span class="user-photo__like">Нравится:
-                      <span class="user-photo__counter">2560</span>
-                    </span>
-                  </footer>
-                </div>
-              </article>
-            </li>
-          </ul>
-        </section>
-        <h2 class="user-photo__text">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</h2>
-      </div>
-
-      <section class="photo-upload">
-        <form class="photo-upload__form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="photo-upload__img">
-            <img src="img/photo-road-mobile@1x.jpg" width="280" height="180" alt="">
+    <div class="container">
+      <section class="photo__content">
+        <article class="user-photo user-photo--wrapper">
+          <div class="user-photo__info user-photo--wide">
+            <p class="user-photo__title">Анна
+              <span class="user-photo__span">(5 минут назад)</span>
+            </p>
+            <p class="user-photo__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+            </p>
+            <footer class="user-photo__footer">
+              <button class="user-photo__btn" type="button"></button>
+              <span class="user-photo__like">Нравится:
+                <span class="user-photo__counter">215</span>
+              </span>
+            </footer>
           </div>
-          <div class="photo-upload__container">
-            <div class="photo-upload__tools">
-              <ul class="photo-upload__btn-list">
-                <li class="photo-upload__btn-item">
-                  <button class="photo-upload__tool" type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                      x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                      <path fill="none" d="M0,0h48v48H0V0z" />
-                      <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"
-                      />
-                    </svg>
-                  </button>
+        </article>
 
-                </li>
-                <li class="photo-upload__btn-item">
-                  <button class="photo-upload__tool" type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                      x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                      <path fill="none" d="M0,0h48v48H0V0z" />
-                      <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"
-                      />
-                      <rect y="40" width="48" height="3" />
-                    </svg>
-                  </button>
-                </li>
-                <li class="photo-upload__btn-item">
-                  <button class="photo-upload__tool" type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                      x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92"
-                      xml:space="preserve">
-                      <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"
-                      />
-                      <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
-                    </svg>
-                  </button>
-                </li>
-              </ul>
-              <ul class="photo-upload__range">
-                <li class="photo-upload__range-scale">
-                  <div class="photo-upload__toggle photo-upload__toggle-1"></div>
-                </li>
-                <li class="photo-upload__range-scale">
-                  <div class="photo-upload__toggle photo-upload__toggle-2"></div>
-                </li>
-                <li class="photo-upload__range-scale">
-                  <div class="photo-upload__toggle photo-upload__toggle-3"></div>
-                </li>
-              </ul>
-            </div>
-            <div class="photo-upload__btn-wrapper">
-              <button class="photo-upload__btn photo-upload__btn--send" type="submit">Запостить</button>
-              <button class="photo-upload__btn photo-upload__btn--reset" type="reset">Отмена</button>
-            </div>
-          </div>
-        </form>
+        <ul class="photo__list">
+          <li class="photo__item">
+            <article class="user-photo">
+              <div class="user-photo__container">
+                  <picture>
+                      <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                      <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                        <img class="user-photo__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="">
+                    </picture>
+              </div>
+              <div class="user-photo__info user-photo__wrapper">
+                <p class="user-photo__title">Левон
+                  <span class="user-photo__span">(5 часов назад)</span>
+                </p>
+                <p class="user-photo__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <footer class="user-photo__footer">
+                  <button class="user-photo__btn" type="button"></button>
+                  <span class="user-photo__like">Нравится:
+                    <span class="user-photo__counter">356</span>
+                  </span>
+                </footer>
+              </div>
+            </article>
+          </li>
+          <li class="photo__item photo__item--wrapper">
+            <article class="user-photo">
+              <div class="user-photo__container">
+                  <picture>
+                      <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                      <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                        <img class="user-photo__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="">
+                    </picture>
+              </div>
+              <div class="user-photo__info user-photo__wrapper">
+                <p class="user-photo__title">Антон
+                  <span class="user-photo__span">(12 часов назад)</span>
+                </p>
+                <p class="user-photo__description">Соседи будут рады!</p>
+                <footer class="user-photo__footer">
+                  <button class="user-photo__btn" type="button"></button>
+                  <span class="user-photo__like">Нравится:
+                    <span class="user-photo__counter">666</span>
+                  </span>
+                </footer>
+              </div>
+            </article>
+          </li>
+          <li class="photo__item photo__item--wrapper">
+            <article class="user-photo">
+              <div class="user-photo__container">
+                  <picture>
+                      <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                      <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                        <img class="user-photo__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="">
+                    </picture>
+              </div>
+              <div class="user-photo__info user-photo__wrapper">
+                <p class="user-photo__title">Борис
+                  <span class="user-photo__span">(20 часов назад)</span>
+                </p>
+                <p class="user-photo__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <footer class="user-photo__footer">
+                  <button class="user-photo__btn" type="button"></button>
+                  <span class="user-photo__like">Нравится:
+                    <span class="user-photo__counter">215</span>
+                  </span>
+                </footer>
+              </div>
+            </article>
+          </li>
+          <li class="photo__item photo__item--wrapper">
+            <article class="user-photo">
+              <div class="user-photo__container">
+                  <picture>
+                      <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                      <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                        <img class="user-photo__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="">
+                    </picture>
+              </div>
+              <div class="user-photo__info user-photo__wrapper">
+                <p class="user-photo__title">Сергей
+                  <span class="user-photo__span">(25 часов назад)</span>
+                </p>
+                <p class="user-photo__description">Самая кубанская в мире!</p>
+                <footer class="user-photo__footer">
+                  <button class="user-photo__btn" type="button"></button>
+                  <span class="user-photo__like">Нравится:
+                    <span class="user-photo__counter">4</span>
+                  </span>
+                </footer>
+              </div>
+            </article>
+          </li>
+          <li class="photo__item photo__item--wrapper">
+            <article class="user-photo">
+              <div class="user-photo__container">
+                  <picture>
+                      <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                      <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                        <img class="user-photo__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="">
+                    </picture>
+              </div>
+              <div class="user-photo__info user-photo__wrapper">
+                <p class="user-photo__title">Максим
+                  <span class="user-photo__span">(40 часов назад)</span>
+                </p>
+                <p class="user-photo__description">Где снег-то?</p>
+                <footer class="user-photo__footer">
+                  <button class="user-photo__btn" type="button"></button>
+                  <span class="user-photo__like">Нравится:
+                    <span class="user-photo__counter">150</span>
+                  </span>
+                </footer>
+              </div>
+            </article>
+          </li>
+          <li class="photo__item photo__item--wrapper">
+            <article class="user-photo">
+              <div class="user-photo__container">
+                  <picture>
+                      <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                      <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                        <img class="user-photo__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="">
+                    </picture>
+              </div>
+              <div class="user-photo__info user-photo__wrapper">
+                <p class="user-photo__title">Надежда
+                  <span class="user-photo__span">(45 часов назад)</span>
+                </p>
+                <p class="user-photo__description">Всем GM и взаимные лайки!</p>
+                <footer class="user-photo__footer">
+                  <button class="user-photo__btn" type="button"></button>
+                  <span class="user-photo__like">Нравится:
+                    <span class="user-photo__counter">2560</span>
+                  </span>
+                </footer>
+              </div>
+            </article>
+          </li>
+        </ul>
       </section>
+      <h2 class="user-photo__text">Затмите их всех!
+        <br> Выкладывайте все, что накопилось в телефоне!</h2>
+    </div>
+
+    <section class="photo-upload">
+      <form class="photo-upload__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="photo-upload__img">
+            <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                  <img src="img/photo-road-mobile@1x.jpg" width="280" height="180" alt="">
+              </picture>
+
+        </div>
+        <div class="photo-upload__container">
+          <div class="photo-upload__tools">
+            <ul class="photo-upload__btn-list">
+              <li class="photo-upload__btn-item">
+                <button class="photo-upload__tool" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px"
+                    viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="none" d="M0,0h48v48H0V0z" />
+                    <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z" />
+                  </svg>
+                </button>
+
+              </li>
+              <li class="photo-upload__btn-item">
+                <button class="photo-upload__tool" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px"
+                    viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="none" d="M0,0h48v48H0V0z" />
+                    <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"
+                    />
+                    <rect y="40" width="48" height="3" />
+                  </svg>
+                </button>
+              </li>
+              <li class="photo-upload__btn-item">
+                <button class="photo-upload__tool" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px"
+                    viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                    <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"
+                    />
+                    <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
+                  </svg>
+                </button>
+              </li>
+            </ul>
+            <ul class="photo-upload__range">
+              <li class="photo-upload__range-scale">
+                <div class="photo-upload__toggle photo-upload__toggle-1"></div>
+              </li>
+              <li class="photo-upload__range-scale">
+                <div class="photo-upload__toggle photo-upload__toggle-2"></div>
+              </li>
+              <li class="photo-upload__range-scale">
+                <div class="photo-upload__toggle photo-upload__toggle-3"></div>
+              </li>
+            </ul>
+          </div>
+          <div class="photo-upload__btn-wrapper">
+            <button class="photo-upload__btn photo-upload__btn--send" type="submit">Запостить</button>
+            <button class="photo-upload__btn photo-upload__btn--reset" type="reset">Отмена</button>
+          </div>
+        </div>
+      </form>
+    </section>
   </main>
 
   <footer class="footer">
     <h2 class="visually-hidden">Мы в соцсетях</h2>
     <a class="footer__logo" href="index.html">
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px"
+        height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
         <g>
           <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"
           />
@@ -308,8 +340,8 @@
     <div class="footer__copyright">
       <p class="footer__text">Разработано</p>
       <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px"
+          viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
           <path fill="#d22856" d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"
           />
         </svg>
