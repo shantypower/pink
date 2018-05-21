@@ -22,7 +22,7 @@
 .photo__best::before {
   content: "панорама дня";
   position: absolute;
-  right: 19px;
+  right: 17px;
 
   display: block;
   width: 140px;
@@ -83,10 +83,6 @@
   .photo__best::before {
     top: 294px;
     right: 127px;
-  }
-
-  .photo__content {
-    padding: 0 10px;
   }
 
   .photo__item {

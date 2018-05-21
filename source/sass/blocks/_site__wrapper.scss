@@ -1,4 +1,11 @@
 .site__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.site__wrapper--main-page {
   width: 320px;
   margin: 0 auto;
 }
@@ -6,11 +13,21 @@
 @media (min-width: $tablet-width) {
   .site__wrapper {
     width: 660px;
+    padding: 0 20px;
+  }
+
+  .site__wrapper--main-page {
+    width: 660px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .site__wrapper {
+    width: 960px;
+    padding: 0 10px;
+  }
+
+  .site__wrapper--main-page {
     width: 960px;
   }
 }
