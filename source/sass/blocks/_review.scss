@@ -160,7 +160,7 @@
 
   .review__toggle {
     position: absolute;
-    top: 40px;
+    top: 211px;
     z-index: 1;
 
     display: block;
@@ -177,14 +177,26 @@
     border: none;
     outline: none;
     cursor: pointer;
+    .arrow {
+      fill: $darkgrey;
+      opacity: 0.3;
+    }
+    &:hover .arrow {
+      opacity: 0.6;
+    }
+    &:active .arrow {
+      opacity: 0.1;
+    }
   }
 
+
+
   .review__toggle--prev {
-    left: 0;
+    left: -9px;
   }
 
   .review__toggle--next {
-    right: 0;
+    right: -9px;
   }
 
   .review::after {

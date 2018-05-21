@@ -10,6 +10,21 @@
   text-align: center;
 }
 
+.photo-upload__svg {
+  fill: $darkgrey;
+  opacity: 0.3;
+  &:hover {
+    fill: $darkgrey;
+    opacity: 0.5;
+  }
+  &:active {
+    fill: $red;
+    opacity: 1;
+  }
+}
+
+
+
 .photo-upload__btn {
   margin-bottom: 13px;
   padding-top: 15px;
