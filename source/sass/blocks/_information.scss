@@ -1,8 +1,11 @@
 .information {
   position: relative;
   padding-top: 49px;
-  background-color: #f2f2f2;
-}
+  background:#f2f2f2 url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  background-position: 50% 0;
+ }
 
 .information__wrapper {
   margin: 0 auto;

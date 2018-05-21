@@ -3,8 +3,11 @@
   z-index: 1;
 
   padding-bottom: 47px;
-
-  background-color: $grey;
+  padding-top: 94px;
+  background: $grey url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  background-position: 50% 0;
 }
 
 .price__list {
@@ -220,7 +223,7 @@
 
 @media (min-width: $desktop-width) {
   .price {
-    padding-top: 61px;
+    padding-top: 96px;
     padding-bottom: 54px;
   }
 
