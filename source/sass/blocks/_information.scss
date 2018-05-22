@@ -1,6 +1,6 @@
 .information {
   position: relative;
-  padding-top: 49px;
+  padding-top: 82px;
   background:#f2f2f2 url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: 102% auto;
@@ -47,7 +47,7 @@
 @media (min-width: $tablet-width) {
   .information {
     margin-bottom: 95px;
-    padding-top: 20px;
+    padding-top: 70px;
     padding-bottom: 41px;
   }
 
@@ -74,13 +74,13 @@
   .information__container::before {
     content: "";
     position: absolute;
-    top: -47px;
+    top: 3px;
     left: 20px;
 
     width: 265px;
     height: 481px;
 
-    background: url("../img/iphone-screen-tablet@1x.png") no-repeat;
+    background: url("../img/iphone-screen-3-tablet@1x.png") no-repeat;
   }
 
   .information__title,

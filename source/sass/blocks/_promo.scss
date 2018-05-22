@@ -6,7 +6,7 @@
 }
 
 .promo__text {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 29px;
   padding: 0 20px;
 
@@ -16,7 +16,7 @@
 @media (min-width: $tablet-width) {
   .promo {
     margin-bottom: 47px;
-    padding: 50px 30px;
+    padding: 50px 20px;
     padding-bottom: 0;
   }
 
@@ -26,7 +26,7 @@
 
   .promo__text {
     margin-bottom: 0;
-    padding: 0 20px;
+    padding: 0;
     width: 620px;
     text-align: center;
 
@@ -51,7 +51,6 @@
   }
 
   .promo__text {
-    margin: 0 auto;
     width: 750px;
 
     font-size: 50px;

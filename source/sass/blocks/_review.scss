@@ -6,25 +6,12 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 317px;
-  margin-bottom: 83px;
+  margin-bottom: 42px;
   padding-top: 42px;
 }
 
 .review__toggle {
   display: none;
-}
-
-.review::after {
-  content: "";
-  position: absolute;
-  bottom: -307px;
-
-  width: 100%;
-  height: 97px;
-
-  background: url("../img/bg-triangle-white.svg") no-repeat;
-  transform: rotate(180deg);
 }
 
 .review__wrapper {
@@ -117,7 +104,7 @@
   }
 
   .review {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 
   .review::after {

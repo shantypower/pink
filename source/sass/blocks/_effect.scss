@@ -29,6 +29,22 @@
     @include font-set(30px, 37px, 700, $black, left);
   }
 
+  .effect__description::before {
+    position: absolute;
+    top: -36px;
+    left: 21px;
+    padding-top: 144px;
+    content: "24";
+    box-sizing: border-box;
+    width: 238px;
+    height: 276px;
+    background: url("../img/icon-timer.svg") no-repeat center;
+    background-size: 238px 276px;
+
+    @include font-set(94px, 14.5px, 700, $red, center);
+
+  }
+
   .effect__text {
     width: 296px;
     margin: 0;
@@ -47,18 +63,6 @@
     display: inline-block;
 
     border-bottom: 1px solid $red;
-  }
-
-  .effect__title::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 238px;
-    height: 276px;
-
-    background: url("../img/timer-tablet@1x.png");
   }
 
   .effect__wrap {
@@ -89,18 +93,14 @@
   }
 
   .effect__description::before {
-    position: absolute;
+
     top: -45px;
     left: 10px;
     padding-top: 182px;
-    content: "24";
-    box-sizing: border-box;
     width: 298px;
     height: 345px;
-    background: url("../img/icon-timer.svg") no-repeat center;
 
     @include font-set(119px, 14.5px, 700, $red, center);
-
   }
 
   .effect__title {

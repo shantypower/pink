@@ -3,7 +3,7 @@
   z-index: 1;
 
   padding-bottom: 47px;
-  padding-top: 94px;
+  padding-top: 91px;
   background: $grey url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: 101% auto;
@@ -15,7 +15,7 @@
   left: 50%;
 
   display: block;
-  margin-bottom: 42px;
+  margin-bottom: 38px;
   margin-left: -570px;
 
   border-collapse: collapse;
@@ -57,8 +57,8 @@
   position: relative;
 
   min-width: 276px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 16px;
+  padding-bottom: 20px;
 
   text-transform: uppercase;
 
@@ -70,6 +70,7 @@
 .price__cost {
   font-weight: 400;
   font-size: 24px;
+  line-height: 30px;
 }
 
 .price__tariff--empty {
@@ -117,9 +118,7 @@
 }
 
 .price__value {
-  padding: 12px 23px;
-  padding-right: 0;
-
+  padding: 12px 0 12px 23px;
   font-size: 0;
 
   border: 2px solid $lightgrey;
@@ -143,7 +142,7 @@
 .price__option-name {
   display: inline-block;
   vertical-align: middle;
-  min-width: 203px;
+  min-width: 200px;
 }
 
 .price__row:first-of-type .value {
@@ -152,20 +151,27 @@
 
 @media (min-width: $tablet-width) {
   .price {
-    padding-bottom: 27px;
+    padding-top: 88px;
+    padding-bottom: 32px;
   }
 
   .price__list {
-    margin-left: -309px;
+    margin-left: -318px;
   }
 
   .price__tariff {
     min-width: 151px;
     padding-top: 12px;
-    padding-bottom: 8px;
+    padding-bottom: 5px;
 
     font-size: 16px;
-    line-height: 29px;
+    line-height: 30px;
+  }
+
+  .price__icon-yes,
+  .price__icon-no {
+    display: block;
+    margin: 0 auto;
   }
 
   .price__cost {
@@ -181,22 +187,11 @@
   }
 
   .price__option-name {
-    font-size: 0;
-    text-align: justify;
+    display: none;
   }
 
   .price__value {
-    padding: 7px 13px;
-  }
-
-  .price__value--yes {
-    background-position: 62px 12px;
-    background-size: 34px 22px;
-  }
-
-  .price__value--no {
-    background-position: 62px 12px;
-    background-size: 35px 26px;
+    padding: 0 13px;
   }
 
   .price__hit::before {
@@ -249,14 +244,6 @@
 
     font-size: 14px;
     line-height: 30px;
-  }
-
-  .price__value--yes {
-    background-position: 100px 19px;
-  }
-
-  .price__value--no {
-    background-position: 100px 16px;
   }
 
   .price__option {

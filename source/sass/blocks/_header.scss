@@ -101,8 +101,8 @@
 }
 
 .header__logo-container {
-  width: 74.426px;
-  height: 22.859px;
+  width: 75px;
+  height: 22px;
 }
 
 .header__button {
@@ -199,7 +199,7 @@
   .header__container {
     width: 620px;
     margin: 0 auto;
-    padding: 34px 20px 21px 20px;
+    padding: 26px 20px 21px 20px;
   }
 
   .header__intro::before {
@@ -229,7 +229,7 @@
   }
 
   .header__not-main.header__menu--opened {
-    min-height: 703px;
+    min-height: 695px;
   }
 
   .header__not-main.header__menu--closed {

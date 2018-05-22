@@ -25,7 +25,20 @@
   }
 }
 
+.photo-upload__svg-crop {
+  width: 48px;
+  height: 48px;
+}
 
+.photo-upload__svg-fill {
+  width: 48px;
+  height: 43px;
+}
+
+.photo-upload__svg-contrast {
+  width: 32px;
+  height: 32px;
+}
 
 .photo-upload__btn {
   margin-bottom: 13px;
@@ -88,7 +101,7 @@
 
 .photo-upload__tools {
   margin: 0 20px;
-  padding-bottom: 35px;
+  padding-bottom: 34px;
 }
 
 .photo-upload__tool {
@@ -108,24 +121,24 @@
 .photo-upload__btn-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 211px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   margin-right: auto;
   margin-bottom: 28px;
   margin-left: auto;
-
-  @include list-reset;
 }
 
-.photo-upload__btn-item {
-  width: 44px;
+.photo-upload__btn-item:nth-child(2) {
+  margin: 0 40px;
 }
 
 .photo-upload__range-scale {
   position: relative;
-
-  min-width: 240px;
+  width: 240px;
+  margin: 0 auto;
   height: 2px;
 
   background-color: $black;
@@ -191,6 +204,31 @@
     padding-bottom: 0;
   }
 
+  .photo-upload__svg-crop {
+    width: 22px;
+     height: 22px;
+     fill: $red;
+     opacity: 1;
+  }
+
+  .photo-upload__svg-fill {
+    width: 24px;
+    height: 22px;
+    fill: $red;
+    opacity: 1;
+  }
+
+  .photo-upload__svg-contrast {
+    width: 16px;
+    height: 16px;
+    fill: $red;
+    opacity: 1;
+  }
+
+  .photo-upload__btn-item {
+    margin-left: 0;
+  }
+
   .photo-upload__img img {
     display: block;
     width: 300px;
@@ -208,10 +246,19 @@
     display: block;
   }
 
+  .photo-upload__range-scale:nth-child(2) {
+    margin: 43px 0;
+  }
+
   .photo-upload__btn-list {
     flex-direction: column;
     justify-content: space-around;
-    margin: 0;
+    margin-left: 0;
+    width: 24px;
+  }
+
+  .photo-upload__btn-item:nth-child(2) {
+    margin: 22px 0;
   }
 
   .photo-upload__btn {
@@ -221,13 +268,14 @@
   .photo-upload__range {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     min-height: 213px;
+    width: 196px;
     margin: 0;
   }
 
   .photo-upload__range-scale {
-    min-width: 202px;
+    width: 202px;
     margin-right: 4px;
   }
 
