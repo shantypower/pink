@@ -38,6 +38,10 @@
   margin-bottom: 7px;
 }
 
+.filters-group__achievements {
+  padding-bottom: 46px;
+}
+
 @media (min-width: $tablet-width) {
   .filters-group {
     margin-bottom: 66px;
@@ -75,7 +79,7 @@
   .filters-group__achievements {
     order: 4;
     padding-top: 55px;
-    padding-bottom: 31px;
+    padding-bottom: 51px;
   }
 
   .filters-group__title {

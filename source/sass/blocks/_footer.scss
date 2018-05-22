@@ -44,9 +44,10 @@
 .footer__social-list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 36px;
-
-  @include list-reset;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 37px;
 }
 
 .footer__social-link {
@@ -154,7 +155,7 @@
   .footer__copyright {
     align-self: flex-end;
     width: 150px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
   }
 
   .footer__text {
