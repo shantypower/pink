@@ -238,8 +238,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .header {
-    display: block;
+  .header__logo-container {
+    height: 50px;
   }
 
   .header__main-page, .header {
@@ -272,7 +272,7 @@
     margin-top: 80px;
     background: url("../img/iphone-hand-desktop@1x.png") no-repeat;
     background-size: 1050px 645px;
-    background-position: 146px bottom;
+    background-position: 25px bottom;
   }
 
   .header__top {
@@ -308,7 +308,7 @@
     align-items: center;
     width: 940px;
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 27px 0 33px 0;
   }
 
   .header__top-box {

@@ -3,7 +3,7 @@
   padding-top: 49px;
   background:#f2f2f2 url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
-  background-size: 101% auto;
+  background-size: 102% auto;
   background-position: 50% 0;
  }
 
@@ -107,7 +107,7 @@
 @media (min-width: $desktop-width) {
   .information {
     margin-bottom: 0;
-    padding-top: 3px;
+    padding-top: 89px;
   }
 
   .information__flex-container {
@@ -136,7 +136,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 257px;
+    padding-top: 256px;
   }
 
   .information__item:last-child {
@@ -148,8 +148,8 @@
   .information__item-3::before {
     content: "";
     position: absolute;
-    top: -97px;
-    left: 65px;
+    top: -102px;
+    left: 59px;
 
     display: block;
     width: 200px;
@@ -170,8 +170,6 @@
   }
 
   .information__list {
-    z-index: 1;
-
     flex-direction: row;
     justify-content: space-between;
     padding: 0;
@@ -182,10 +180,10 @@
   .information__title {
     width: 228px;
     margin: 0;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
 
     font-size: 30px;
-    line-height: 33px;
+    line-height: 30px;
     text-align: center;
   }
 
@@ -198,7 +196,5 @@
   }
 
   .information__container {
-    padding-top: 0;
-    padding-left: 0;
   }
 }

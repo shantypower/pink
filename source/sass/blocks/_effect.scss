@@ -79,12 +79,28 @@
   }
 
   .effect__container {
+    position: relative;
     padding-bottom: 119px;
   }
 
   .effect__description {
     padding-top: 45px;
-    padding-left: 496px;
+    padding-left: 376px;
+  }
+
+  .effect__description::before {
+    position: absolute;
+    top: -45px;
+    left: 10px;
+    padding-top: 182px;
+    content: "24";
+    box-sizing: border-box;
+    width: 298px;
+    height: 345px;
+    background: url("../img/icon-timer.svg") no-repeat center;
+
+    @include font-set(119px, 14.5px, 700, $red, center);
+
   }
 
   .effect__title {
