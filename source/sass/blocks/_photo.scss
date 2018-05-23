@@ -2,6 +2,7 @@
   position: relative;
 
   margin: 0 auto;
+  margin-bottom: 0;
 }
 
 .photo__text {
@@ -12,12 +13,6 @@
 
   @include font-set(14px, 30px, 600, $darkgrey, center);
 }
-
-.user-photo__user-img--wide img {
-  display: block;
-  width: 100%;
-}
-
 
 .photo__best::before {
   content: "панорама дня";
@@ -41,6 +36,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .photo {
+    margin-bottom: 0;
+  }
+
   .photo__text {
     width: 450px;
     padding-top: 92px;
@@ -75,6 +74,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .photo {
+    margin-bottom: 25px;
+  }
+
   .photo__text {
     width: 600px;
     padding-bottom: 84px;
@@ -82,7 +85,7 @@
 
   .photo__best::before {
     top: 294px;
-    right: 127px;
+    right: 149px;
   }
 
   .photo__item {

@@ -43,11 +43,11 @@
 
 .footer__social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0;
   padding: 0;
+  margin-bottom: 34px;
   list-style: none;
-  margin-bottom: 37px;
 }
 
 .footer__social-link {
@@ -100,8 +100,8 @@
 
 
 .footer__social-item--facebook {
-  margin-right: 12px;
-  margin-left: 12px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .footer__social-item {
@@ -150,6 +150,7 @@
   .footer__social-list {
     align-self: flex-end;
     margin-bottom: 0;
+    width: 200px;
   }
 
   .footer__copyright {
@@ -167,7 +168,7 @@
   .footer {
     width: 940px;
     margin: 0 auto;
-    padding: 74px 10px 74px 10px;
+    padding: 73px 10px 73px 10px;
   }
 
   .footer__logo-mobile-blue {
