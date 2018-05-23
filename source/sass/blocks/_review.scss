@@ -164,19 +164,20 @@
     border: none;
     outline: none;
     cursor: pointer;
+
     .arrow {
       fill: $darkgrey;
       opacity: 0.3;
     }
+
     &:hover .arrow {
       opacity: 0.6;
     }
+
     &:active .arrow {
       opacity: 0.1;
     }
   }
-
-
 
   .review__toggle--prev {
     left: -9px;

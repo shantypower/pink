@@ -61,6 +61,8 @@
 
 .intro__link {
   display: block;
+  width: 46px;
+  height: 57px;
 
   font-size: 0;
   color: $white;
@@ -84,11 +86,6 @@
 .intro__link--android {
   margin-right: 33px;
   margin-left: 33px;
-}
-
-.intro__link {
-  width: 46px;
-  height: 57px;
 }
 
 .intro__description {

@@ -1,11 +1,11 @@
 .information {
   position: relative;
   padding-top: 82px;
-  background:#f2f2f2 url("../img/bg-triangle-white.svg");
+  background: #f2f2f2 url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: 102% auto;
   background-position: 50% 0;
- }
+}
 
 .information__wrapper {
   margin: 0 auto;
@@ -156,7 +156,6 @@
     height: 301px;
   }
 
-
   .information__item-1::before {
     background: url("../img/iphone-screen-desktop1@1x.png") no-repeat center top;
   }
@@ -193,8 +192,5 @@
     font-size: 19px;
     line-height: 30px;
     text-align: center;
-  }
-
-  .information__container {
   }
 }

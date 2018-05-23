@@ -123,14 +123,14 @@
 }
 
 .input-block__input--checkbox:hover + .input-block__checkbox-text::before,
-.input-block__input--radiobutton:hover + .input-block__radio-text::before,
-/*.input-block__input--checkbox:focus + .input-block__checkbox-text::before,
-.input-block__input--radiobutton:focus + .input-block__radio-text::before */{
+.input-block__input--radiobutton:hover + .input-block__radio-text::before {
   border: 2px solid $darkgrey;
 }
 
 .input-block__input--checkbox:active + .input-block__checkbox-text::before,
-.input-block__input--radiobutton:active + .input-block__radio-text::before {
+.input-block__input--radiobutton:active + .input-block__radio-text::before,
+.input-block__input--checkbox:focus + .input-block__checkbox-text::before,
+.input-block__input--radiobutton:focus + .input-block__radio-text::before {
   border: 2px solid $red;
 }
 

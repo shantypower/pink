@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  background: $deepgrey url("../img/bg-back-mobile@1x.jpg")no-repeat;
+  background: $deepgrey url("../img/bg-back-mobile@1x.jpg") no-repeat;
   background-size: 100% auto;
   background-position-y: 266px;
 }
@@ -39,13 +39,14 @@
 
 .header__top--closed {
   background-color: rgba(0, 0, 0, 0.3);
+
   .header__button--cross {
     display: none;
   }
 }
 
 .header__top--opened .header__button--burger {
- display: none;
+  display: none;
 }
 
 .header__top--opened,
@@ -119,9 +120,11 @@
 
 .header__button-svg {
   fill: $white;
+
   &:hover {
     fill: $red;
   }
+
   &:active {
     opacity: 0.3;
   }
@@ -129,7 +132,7 @@
 
 .header__button--hidden {
   visibility: hidden;
-  }
+}
 
 .header__nav--closed .main-nav__list {
   display: none;
@@ -207,12 +210,12 @@
   }
 
   .header__intro {
-    background-color: transparent;
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat;
+    background-color: transparent;
     background-position: -19px bottom;
   }
 
-   .header__text {
+  .header__text {
     width: 475px;
     margin-top: 43px;
 
@@ -242,7 +245,8 @@
     height: 50px;
   }
 
-  .header__main-page, .header {
+  .header__main-page,
+  .header {
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat center 0;
     background-size: cover;
   }

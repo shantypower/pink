@@ -15,10 +15,12 @@
 .photo-upload__svg {
   fill: $darkgrey;
   opacity: 0.3;
+
   &:hover {
     fill: $darkgrey;
     opacity: 0.5;
   }
+
   &:active {
     fill: $red;
     opacity: 1;
@@ -215,9 +217,9 @@
 
   .photo-upload__svg-crop {
     width: 24px;
-     height: auto;
-     fill: $red;
-     opacity: 1;
+    height: auto;
+    fill: $red;
+    opacity: 1;
   }
 
   .photo-upload__svg-fill {
@@ -242,9 +244,6 @@
 
   .photo-upload__btn-item:last-child {
     margin-top: 0;
-  }
-
-  .photo-upload__btn-item:last-child {
     margin-bottom: 0;
   }
 
@@ -386,7 +385,7 @@
 
   .photo-upload__svg-crop {
     width: 48px;
-     height: 48px;
+    height: 48px;
   }
 
   .photo-upload__svg-fill {
@@ -430,7 +429,7 @@
 
   .photo-upload__range-scale:first-child {
     margin-top: 23px;
-}
+  }
 
   .photo-upload__range-scale:nth-child(2) {
     margin: 44px 0;
