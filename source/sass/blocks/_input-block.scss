@@ -277,6 +277,19 @@
     justify-content: flex-start;
   }
 
+  .input-block__checkbox-container {
+    padding-left: 65px;
+  }
+
+  .input-block__checkbox-text::before {
+    top: -5px;
+    left: 5px;
+  }
+
+  .input-block__input--checkbox:checked + .input-block__checkbox-text::after {
+    left: 14px;
+  }
+
   .input-block__contacts-input {
     width: 374px;
   }
@@ -286,8 +299,13 @@
   }
 
   .input-block__item-checkbox {
-    width: 256px;
+    box-sizing: border-box;
     margin-left: 0;
+    margin-right: 50px;
+  }
+
+  .input-block__item-checkbox:last-of-type {
+    margin-right: 0;
   }
 
   .input-block__selfie {

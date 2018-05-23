@@ -156,7 +156,7 @@
   }
 
   .filters-group__achievements .filters-group__title {
-    left: 259px;
+    left: 256px;
   }
 
   .filters-group__emotions .filters-group__title {
@@ -171,6 +171,10 @@
   .filters-group__achievements {
     flex-grow: 1;
     padding-bottom: 8px;
+    .filters-group__wide {
+      padding: 0;
+      padding-left: 53px;
+    }
   }
 
   .filters-group__emotions {
