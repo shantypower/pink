@@ -25,7 +25,7 @@
 
 .intro__btn--white {
   display: block;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   padding-top: 15px;
   padding-bottom: 15px;
 
@@ -52,17 +52,14 @@
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 23px;
 }
 
 .intro__link {
   display: block;
-  width: 46px;
-  height: 57px;
 
   font-size: 0;
   color: $white;
@@ -78,14 +75,14 @@
   outline: inherit;
 }
 
-.intro__logo {
-  width: 46px;
-  height: 57px;
-}
-
 .intro__link--android {
   margin-right: 33px;
   margin-left: 33px;
+  margin-top: 5px;
+}
+
+.intro__link--microsoft {
+  margin-top: 7px;
 }
 
 .intro__description {

@@ -10,11 +10,17 @@
   background-position: 50% 0;
 }
 
+.price .site__wrapper {
+  width: 100%;
+}
+
 .price__list {
   position: relative;
   left: 50%;
 
   display: block;
+  width: 840px;
+  box-sizing: border-box;
   margin-bottom: 38px;
   margin-left: -570px;
 
@@ -118,10 +124,16 @@
 }
 
 .price__value {
-  padding: 12px 0 12px 23px;
+  padding: 12px 18px 12px 23px;
   font-size: 0;
 
   border: 2px solid $lightgrey;
+}
+
+.price__value-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .price__option,
@@ -131,19 +143,6 @@
   border: 2px solid $lightgrey;
 
   @include font-set(14px, 30px, 400, $darkgrey, left);
-}
-
-.price__icon-yes {
-  display: inline-block;
-  vertical-align: middle;
-  width: 29px;
-  margin-right: 0;
-}
-
-.price__option-name {
-  display: inline-block;
-  vertical-align: middle;
-  min-width: 200px;
 }
 
 .price__row:first-of-type .value {
@@ -158,6 +157,7 @@
 
   .price__list {
     margin-left: -318px;
+    width: 620px;
   }
 
   .price__tariff {
