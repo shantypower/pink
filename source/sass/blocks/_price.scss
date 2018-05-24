@@ -219,16 +219,25 @@
 
 @media (min-width: $desktop-width) {
   .price {
-    padding-top: 96px;
-    padding-bottom: 54px;
+    padding-top: 146px;
+    padding-bottom: 59px;
   }
 
   .price__list {
+    width: 940px;
     margin-left: -470px;
   }
 
+  .price__wrapper {
+    margin-left: 0%;
+  }
+
+  .price .site__wrapper {
+    width: 960px;
+  }
+
   .price__tariff {
-    min-width: 231px;
+    min-width: 232px;
     padding-top: 15px;
     padding-bottom: 17px;
 

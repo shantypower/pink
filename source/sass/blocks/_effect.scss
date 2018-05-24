@@ -14,12 +14,13 @@
 
 @media (min-width: $tablet-width) {
   .effect {
-    display: block;
-    margin-bottom: 88px;
+    display: flex;
+    margin-bottom: 46px;
+    padding: 0 20px;
   }
 
   .effect__description {
-    padding-left: 329px;
+    padding: 35px 0 0 71px;
   }
 
   .effect__title {
@@ -29,18 +30,15 @@
     @include font-set(30px, 37px, 700, $black, left);
   }
 
-  .effect__description::before {
+  .effect__timer::before {
     position: absolute;
-    top: -36px;
-    left: 21px;
+    top: 0;
+    left: 0;
     padding-top: 144px;
     content: "24";
     box-sizing: border-box;
     width: 238px;
     height: 276px;
-    background: url("../img/icon-timer.svg") no-repeat center;
-    background-size: 238px 276px;
-
     @include font-set(94px, 14.5px, 700, $red, center);
   }
 
@@ -72,7 +70,7 @@
 @media (min-width: $desktop-width) {
   .effect {
     margin-bottom: 0;
-    padding-top: 37px;
+    padding: 30px 10px 0 10px;
 
     background-color: $grey;
   }
@@ -83,12 +81,24 @@
 
   .effect__container {
     position: relative;
-    padding-bottom: 119px;
+    padding-bottom: 60px;
+  }
+
+  .effect__timer .timer {
+    width: 298px;
+    height:345px;
+  }
+
+  .effect__timer::before {
+    padding-top: 184px;
+    width: 298px;
+    height:345px;
+    font-size: 120px;
   }
 
   .effect__description {
-    padding-top: 45px;
-    padding-left: 376px;
+    padding-top: 93px;
+    padding-left: 67px;
   }
 
   .effect__description::before {
@@ -103,7 +113,7 @@
   }
 
   .effect__title {
-    margin-bottom: 22px;
+    margin-bottom: 19px;
   }
 
   .effect__title br,

@@ -46,7 +46,7 @@
 
 @media (min-width: $tablet-width) {
   .information {
-    margin-bottom: 95px;
+    margin-bottom: 60px;
     padding-top: 70px;
     padding-bottom: 41px;
   }
@@ -108,6 +108,7 @@
   .information {
     margin-bottom: 0;
     padding-top: 89px;
+    padding-bottom: 0;
   }
 
   .information__flex-container {
