@@ -19,6 +19,10 @@
   height: 68px;
 }
 
+.main-nav--nojs .header__button {
+  display: none;
+}
+
 .main-nav__link {
   display: block;
   width: 100%;

@@ -56,7 +56,7 @@
     @include font-set(14.5px, 14.5px, 400, $red, left);
   }
 
-  .effect__link--underline {
+  .effect__underline {
     display: inline-block;
 
     border-bottom: 1px solid $red;

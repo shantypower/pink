@@ -381,6 +381,7 @@
 
   .photo-upload__tool {
     width: 50px;
+    height: 50px;
   }
 
   .photo-upload__svg-crop {
@@ -389,8 +390,10 @@
   }
 
   .photo-upload__svg-fill {
+    display: block;
     width: 48px;
     height: 48px;
+    margin-top: 3px;
   }
 
   .photo-upload__svg-contrast {
@@ -414,7 +417,7 @@
   .photo-upload__btn-item {
     display: flex;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 22px;
     margin-top: 0;
   }
 
