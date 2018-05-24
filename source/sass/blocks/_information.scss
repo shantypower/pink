@@ -143,12 +143,17 @@
 
   .information__item {
     position: relative;
+    min-width: 320px;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     padding-top: 256px;
+  }
+
+  .information__text br {
+      display: none;
   }
 
   .information__item:last-child {
@@ -161,7 +166,7 @@
     content: "";
     position: absolute;
     top: -102px;
-    left: 59px;
+    left: 61px;
 
     display: block;
     width: 200px;
@@ -183,6 +188,7 @@
   .information__list {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
     padding: 0;
 
     background-image: none;
@@ -201,7 +207,7 @@
   .information__text {
     width: 241px;
 
-    font-size: 19px;
+    font-size: 18px;
     line-height: 30px;
     text-align: center;
   }

@@ -1,9 +1,10 @@
-var mapCanvas = document.getElementById('map__canvas');
+var mapCanvas = document.getElementById("map__canvas");
 
 if (mapCanvas) {
 
   function initialize() {
     var myLatLng = new google.maps.LatLng(59.9388916, 30.3234393);
+    var marker = new google.maps.LatLng(59.938528, 30.323401);
     var mapOptions = {
       center: myLatLng,
       zoom: 16.25,
@@ -12,14 +13,14 @@ disableDefaultUI: true
     }
     var map = new google.maps.Map(mapCanvas, mapOptions);
 
-  var image = 'img/icon-map-marker.svg';
+  var image = "img/icon-map-marker.svg";
     var beachMarker = new google.maps.Marker({
-    position: myLatLng,
+    position: marker,
     map: map,
     icon: image
   });
   }
-google.maps.event.addDomListener(window, 'load', initialize);
+google.maps.event.addDomListener(window, "load", initialize);
 }
 
 
