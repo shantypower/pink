@@ -36,6 +36,10 @@
 .information__text {
   margin: 0;
 
+  br{
+    display: none;
+  }
+
   @include font-set(14.5px, 1.7em, 500, $darkgrey, center);
 }
 
@@ -56,14 +60,14 @@
 
     padding-top: 0;
     padding-bottom: 0;
-    padding-left: 318px;
+    padding-left: 316px;
 
     background-image: none;
   }
 
   .information__item {
     width: 316px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 
   .information__container {
@@ -85,14 +89,21 @@
 
   .information__title,
   .information__text {
-    margin-bottom: 9px;
-
     text-align: left;
   }
 
+  .information__title {
+    margin-bottom: 9px;
+  }
+
   .information__text {
-    font-size: 14.5px;
-    line-height: 24.6px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+
+    br {
+      display: block;
+    }
   }
 
   .information__text:last-child {

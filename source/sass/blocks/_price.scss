@@ -161,7 +161,7 @@
 @media (min-width: $tablet-width) {
   .price {
     padding-top: 88px;
-    padding-bottom: 32px;
+    padding-bottom: 27px;
   }
 
   .price__list {
@@ -189,8 +189,7 @@
   }
 
   .price__option {
-    padding: 7px 15px;
-    padding-right: 25px;
+    padding: 7px 15px 8px 13px;
 
     font-weight: 600;
     text-transform: none;
@@ -205,7 +204,8 @@
   }
 
   .price__hit::before {
-    background-size: 62px 61px;
+    left: -4px;
+    background-size: 62px 62px;
   }
 
   .price__hit::after {
