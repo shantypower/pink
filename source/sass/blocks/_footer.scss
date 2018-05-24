@@ -50,12 +50,15 @@
   margin: 0;
   padding: 0;
   margin-bottom: 34px;
+  box-sizing: border-box;
   list-style: none;
 }
 
 .footer__social-link {
-  display: block;
+  display: flex;
   margin: auto;
+  width: 45px;
+  height: 45px;
 
   svg {
     display: block;
@@ -69,8 +72,6 @@
 
 .footer__social-logo {
   text-align: center;
-  width: 18px;
-  height: 14px;
 }
 
 .footer__copyright {
@@ -154,7 +155,6 @@
   .footer__social-list {
     align-self: flex-end;
     margin-bottom: 0;
-    width: 200px;
   }
 
   .footer__copyright {
