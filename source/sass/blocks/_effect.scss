@@ -39,6 +39,7 @@
     box-sizing: border-box;
     width: 238px;
     height: 276px;
+
     @include font-set(94px, 14.5px, 700, $red, center);
   }
 
@@ -86,13 +87,13 @@
 
   .effect__timer .timer {
     width: 298px;
-    height:345px;
+    height: 345px;
   }
 
   .effect__timer::before {
     padding-top: 183px;
     width: 298px;
-    height:345px;
+    height: 345px;
     font-size: 120px;
   }
 

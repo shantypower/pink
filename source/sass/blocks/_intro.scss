@@ -67,7 +67,7 @@
 }
 
 .intro__item:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .intro__link {
@@ -78,11 +78,11 @@
 }
 
 .intro__link--android {
-padding-top: 8px;
+  padding-top: 8px;
 }
 
 .intro__link--microsoft {
-padding-top: 12px;
+  padding-top: 12px;
 }
 
 .intro__description {

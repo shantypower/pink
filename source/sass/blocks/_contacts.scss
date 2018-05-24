@@ -56,7 +56,7 @@
 
 .contacts__adress .contacts__text {
   width: 240px;
- }
+}
 
 .contacts__triangle {
   display: block;
@@ -71,7 +71,7 @@
 }
 
 .contacts__link {
-  display:block;
+  display: block;
   word-wrap: break-word;
 }
 
@@ -163,10 +163,11 @@
 
   .contacts__phone {
     align-self: flex-start;
+
     .contacts__text {
       text-transform: none;
+    }
   }
-}
 
   .contacts__phone .contacts__title {
     margin-bottom: 1px;
