@@ -28,7 +28,7 @@
 
 .information__title {
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 
   @include font-set(18px, 30px, 700, $black, center);
 }
@@ -36,12 +36,12 @@
 .information__text {
   margin: 0;
 
-  @include font-set(14.5px, 24.7px, 500, $darkgrey, center);
+  @include font-set(14.5px, 1.7em, 500, $darkgrey, center);
 }
 
 .information__item {
   width: 267px;
-  margin-bottom: 29px;
+  margin-bottom: 28px;
 }
 
 @media (min-width: $tablet-width) {
@@ -63,7 +63,7 @@
 
   .information__item {
     width: 316px;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
 
   .information__container {

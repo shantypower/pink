@@ -5,7 +5,7 @@
 
   background: $deepgrey url("../img/bg-back-mobile@1x.jpg") no-repeat;
   background-size: 100% auto;
-  background-position-y: 266px;
+  background-position-y: 259px;
 }
 
 .header__container {
@@ -23,7 +23,7 @@
 }
 
 .header__main-page.header__menu--opened {
-  min-height: 992px;
+  min-height: 991px;
   border-bottom: none;
 }
 
@@ -64,10 +64,10 @@
   display: block;
   content: "";
   height: 286px;
-  width: 255px;
+  width: 257px;
   background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
   background-position: left bottom;
-  background-size: 255px 286px;
+  background-size: 257px 286px;
 }
 
 .header__logo {

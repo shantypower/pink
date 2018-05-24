@@ -51,11 +51,23 @@
   position: relative;
 
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-content: center;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.intro__item:first-child {
+  margin-left: 37px;
+}
+
+.intro__item {
+  margin-right: 35px;
+}
+
+.intro__item:last-child {
+  margin-right: 0px;
 }
 
 .intro__link {
@@ -65,28 +77,21 @@
   color: $white;
 }
 
-.intro__link--apple,
-.intro__link--android,
-.intro__link--microsoft {
-  display: block;
+.intro__link--apple{
 
-  background-repeat: no-repeat;
-  background-position: bottom;
-  outline: inherit;
 }
 
 .intro__link--android {
-  margin-right: 33px;
-  margin-left: 33px;
-  margin-top: 5px;
+padding-top: 8px;
 }
 
 .intro__link--microsoft {
-  margin-top: 7px;
+padding-top: 12px;
 }
 
 .intro__description {
   margin: 0;
+  padding-top: 5px;
 
   @include font-set(14px, 24px, 400, $white, center);
 }
