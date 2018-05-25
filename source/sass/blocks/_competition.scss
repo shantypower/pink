@@ -28,7 +28,7 @@
   @include font-set(14px, 30px, 600, $darkgrey, center);
 }
 
-.competition__text--hidden {
+.competition__hidden-text {
   display: none;
 }
 
@@ -102,7 +102,7 @@
     @include font-set(18px, 30px, 600, $darkgrey, center);
   }
 
-  .competition__text--hidden {
+  .competition__hidden-text {
     display: block;
   }
 
@@ -141,8 +141,7 @@
     margin-bottom: 71px;
   }
 
-
-  .competition__text--hidden {
+  .competition__hidden-text {
     display: inline-block;
   }
 
