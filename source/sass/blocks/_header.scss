@@ -40,12 +40,12 @@
 .header__top--closed {
   background-color: rgba(0, 0, 0, 0.3);
 
-  .header__button--cross {
+  .header__button-svg--cross {
     display: none;
   }
 }
 
-.header__top--opened .header__button--burger {
+.header__top--opened .header__button-svg--burger {
   display: none;
 }
 

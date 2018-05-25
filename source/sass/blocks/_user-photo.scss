@@ -72,14 +72,6 @@
   margin-left: 3px;
 }
 
-.user-photo__text {
-  margin: 0 auto;
-  margin-bottom: 21px;
-  padding: 21px 0;
-
-  @include font-set(14px, 30px,600,$darkgrey, center);
-}
-
 @media (min-width: $tablet-width) {
   .user-photo__user-img--wide {
     width: 100%;
