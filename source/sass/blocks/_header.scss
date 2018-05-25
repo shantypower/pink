@@ -6,6 +6,11 @@
   background: $deepgrey url("../img/bg-back-mobile@1x.jpg") no-repeat;
   background-size: 100% auto;
   background-position-y: 259px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 700px auto;
+  }
 }
 
 .header__container {
@@ -163,7 +168,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: 2400px auto;
+      background-size: 1200px auto;
     }
   }
 
@@ -220,6 +225,11 @@
   .header {
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat center 0;
     background-size: 234%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px auto;
+    }
   }
 
   .header__main-page {
