@@ -1,5 +1,17 @@
 .intro {
   padding-top: 396px;
+  margin-top: auto;
+}
+
+.intro::before {
+
+  display: block;
+  content: "";
+  height: 286px;
+  width: 257px;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
+  background-position: left bottom;
+  background-size: 257px 286px;
 }
 
 .intro__title {
@@ -93,8 +105,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .intro::before {
+    display: none;
+  }
+
   .intro {
     padding-top: 129px;
+    background: url("../img/iphone-hand-tablet@1x.png") no-repeat;
+    background-color: transparent;
+    background-position: -19px bottom;
   }
 
   .intro__title {
@@ -149,7 +168,15 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    padding-top: 108px;
+    box-sizing: border-box;
+    min-height: 664px;
+    width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+    margin-top: 80px;
+    background: url("../img/iphone-hand-desktop@1x.png") no-repeat;
+    background-size: 1050px 645px;
+    background-position: 25px bottom;
   }
 
   .intro__wrapper {
@@ -179,4 +206,5 @@
   .intro__description {
     width: 295px;
   }
+
 }
