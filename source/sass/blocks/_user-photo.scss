@@ -12,15 +12,6 @@
   width: 100%;
 }
 
-.user-photo__user-img--wide img {
-  display: block;
-  width: 100%;
-}
-
-.user-photo__user-img--wide {
-  width: 100%;
-}
-
 .user-photo__info {
   margin-bottom: 19px;
   padding: 18px;
@@ -73,15 +64,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .user-photo__user-img--wide {
-    width: 100%;
-    min-height: 506px;
-
-    img {
-      height: 509px;
-    }
-  }
-
   .user-photo--wide {
     display: flex;
     flex-wrap: wrap;
@@ -160,13 +142,5 @@
   .user-photo__text {
     margin-bottom: 26px;
     padding: 40px 0;
-  }
-
-  .user-photo__user-img--wide {
-    height: auto;
-
-    img {
-      height: 506px;
-    }
   }
 }

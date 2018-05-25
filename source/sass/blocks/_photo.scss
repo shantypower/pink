@@ -5,6 +5,15 @@
   margin-bottom: 0;
 }
 
+.photo__wide-img img {
+  display: block;
+  width: 100%;
+}
+
+.photo__wide-img {
+  width: 100%;
+}
+
 .photo__text {
   width: 250px;
   margin: 0 auto;
@@ -44,6 +53,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .photo__wide-img {
+    width: 100%;
+    min-height: 506px;
+
+    img {
+      height: 509px;
+    }
+  }
+
   .photo {
     margin-bottom: 0;
   }
@@ -79,6 +97,10 @@
   .photo__best::before {
     top: 285px;
   }
+
+  .photo__wide-img img {
+    height: 509px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -98,5 +120,13 @@
 
   .photo__item {
     margin-top: 35px;
+  }
+
+  .photo__wide-img {
+    height: auto;
+
+    img {
+      height: 506px;
+    }
   }
 }
