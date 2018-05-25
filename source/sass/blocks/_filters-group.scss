@@ -54,29 +54,24 @@
   }
 
   .filters-group__narrow {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 
   .filters-group__contact-info {
     display: flex;
     width: 100%;
-}
+  }
 
   .filters-group__wide {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-
   }
 
   .filters-group:not(:first-of-type) {
     border: 2px solid $lightgrey;
     border-radius: 2px;
-  }
-
-  .filters-group__contact-info {
-    display: block;
   }
 
   .filters-group.filters-group__fullname {
@@ -101,7 +96,7 @@
   .filters-group__achievements.input-block {
     display: flex;
     flex-direction: column;
-}
+  }
 
   .filters-group__achievements {
     order: 4;
