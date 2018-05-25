@@ -17,7 +17,7 @@
   padding: 23px 20px;
 }
 
-.header__main-page.header__menu--closed {
+.header__main-page.header--closed {
   min-height: 735px;
   background-position-y: top;
 }
@@ -32,7 +32,7 @@
   background-position-y: 261px;
 }
 
-.header__not-main.header__menu--closed {
+.header__not-main.header--closed {
   min-height: 239px;
   background-position-y: top;
 }
@@ -227,7 +227,7 @@
     background-position-y: 255px;
   }
 
-  .header__main-page.header__menu--closed {
+  .header__main-page.header--closed {
     min-height: 728px;
   }
 
@@ -235,7 +235,7 @@
     min-height: 695px;
   }
 
-  .header__not-main.header__menu--closed {
+  .header__not-main.header--closed {
     min-height: 447px;
   }
 }
@@ -299,14 +299,14 @@
   }
 
   .header__main-page.header__menu--opened,
-  .header__main-page.header__menu--closed {
+  .header__main-page.header--closed {
     min-height: 854px;
     background-position: top center;
     background-size: 244%;
   }
 
   .header__not-main.header__menu--opened,
-  .header__not-main.header__menu--closed {
+  .header__not-main.header--closed {
     min-height: 394px;
     background-position-y: top;
   }

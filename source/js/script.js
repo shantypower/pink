@@ -39,7 +39,7 @@ if (navToggle) {
     if (navMain.classList.contains("header__nav--closed")) {
       navMain.classList.remove("header__nav--closed");
       navMain.classList.add("main__nav--opened");
-      headerBg.classList.remove("header__menu--closed");
+      headerBg.classList.remove("header--closed");
       headerBg.classList.add("header__menu--opened");
       headerTop.classList.remove("header__top--closed");
       headerTop.classList.add("header__top--opened");
@@ -47,7 +47,7 @@ if (navToggle) {
       navMain.classList.remove("main__nav--opened");
       navMain.classList.add("header__nav--closed");
       headerBg.classList.remove("header__menu--opened");
-      headerBg.classList.add("header__menu--closed");
+      headerBg.classList.add("header--closed");
       headerTop.classList.remove("header__top--opened");
       headerTop.classList.add("header__top--closed");
     }
