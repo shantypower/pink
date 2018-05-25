@@ -155,16 +155,18 @@
 
   .competition__btn-box {
     width: 940px;
-    margin-bottom: -62px;
+    margin-bottom: 0;
   }
 
   .competition__btn {
     padding-top: 16px;
     padding-bottom: 16px;
+    margin-bottom: 0;
   }
 
   .competition__legend {
     display: flex;
+    margin-bottom: 0;
   }
 
   .competition__legend span {
