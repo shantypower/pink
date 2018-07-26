@@ -1,20 +1,16 @@
-.site__wrapper {
-  box-sizing: border-box;
+.main-page__wrapper {
   width: 320px;
-  padding: 0 20px;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
-  .site__wrapper {
+  .main-page__wrapper {
     width: 660px;
-    padding: 0 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .site__wrapper {
+  .main-page__wrapper {
     width: 960px;
-    padding: 0 10px;
   }
 }

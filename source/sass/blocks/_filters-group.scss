@@ -38,19 +38,40 @@
   margin-bottom: 7px;
 }
 
+.filters-group__achievements {
+  padding-bottom: 46px;
+}
+
+.filters-group__emotions {
+  padding-bottom: 23px;
+  padding-top: 25px;
+}
+
 @media (min-width: $tablet-width) {
   .filters-group {
     margin-bottom: 66px;
     padding: 0;
   }
 
-  .filters-group:not(:first-of-type) {
-    border: 2px solid $lightgrey;
-    border-radius: 2px;
+  .filters-group__narrow {
+    display: flex;
+    flex-direction: column;
   }
 
   .filters-group__contact-info {
-    display: block;
+    display: flex;
+    width: 100%;
+  }
+
+  .filters-group__wide {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .filters-group:not(:first-of-type) {
+    border: 2px solid $lightgrey;
+    border-radius: 2px;
   }
 
   .filters-group.filters-group__fullname {
@@ -72,10 +93,15 @@
     }
   }
 
+  .filters-group__achievements.input-block {
+    display: flex;
+    flex-direction: column;
+  }
+
   .filters-group__achievements {
     order: 4;
-    padding-top: 55px;
-    padding-bottom: 31px;
+    padding-top: 45px;
+    padding-bottom: 42px;
   }
 
   .filters-group__title {
@@ -99,7 +125,7 @@
 
   .filters-group__emotions {
     order: 5;
-    padding: 44px 58px 26px 58px;
+    padding: 44px 58px 35px 58px;
 
     .filters-group__title {
       top: -17px;
@@ -109,8 +135,8 @@
 
   .filters-group__platform {
     order: 2;
-    padding-top: 55px;
-    padding-bottom: 38px;
+    padding-top: 45px;
+    padding-bottom: 27px;
 
     .filters-group__title {
       left: 124px;
@@ -152,7 +178,7 @@
   }
 
   .filters-group__achievements .filters-group__title {
-    left: 259px;
+    left: 256px;
   }
 
   .filters-group__emotions .filters-group__title {
@@ -166,12 +192,17 @@
 
   .filters-group__achievements {
     flex-grow: 1;
-    padding-bottom: 8px;
+    padding-bottom: 18px;
+
+    .filters-group__wide {
+      padding: 0;
+      padding-left: 53px;
+    }
   }
 
   .filters-group__emotions {
     flex-grow: 1;
-    padding: 41px 0 18px 0;
+    padding: 41px 0 25px 0;
   }
 
   .competition__form {

@@ -3,17 +3,25 @@
   z-index: 1;
 
   padding-bottom: 47px;
+  padding-top: 91px;
+  background: $grey url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  background-position: 50% 0;
+}
 
-  background-color: $grey;
+.price .site__wrapper {
+  width: 100%;
+  padding: 0;
 }
 
 .price__list {
   position: relative;
   left: 50%;
-
-  display: block;
-  margin-bottom: 42px;
-  margin-left: -570px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 41px;
+  margin-left: -568px;
 
   border-collapse: collapse;
 
@@ -54,8 +62,8 @@
   position: relative;
 
   min-width: 276px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 16px;
+  padding-bottom: 20px;
 
   text-transform: uppercase;
 
@@ -67,9 +75,10 @@
 .price__cost {
   font-weight: 400;
   font-size: 24px;
+  line-height: 30px;
 }
 
-.price__tariff--empty {
+.price__empty {
   display: block;
   min-width: 150px;
 
@@ -114,23 +123,26 @@
 }
 
 .price__value {
-  padding: 14px 23px;
-
+  padding: 14px 18px 14px 20px;
   font-size: 0;
 
   border: 2px solid $lightgrey;
 }
 
-.price__value--yes {
-  background: url("../img/icon-yes.svg") no-repeat center right;
-  background-position: 227px 17px;
-  background-size: 34px 22px;
+.price__icon-no,
+.price__icon-yes,
+.price__option-name {
+  align-self: center;
 }
 
-.price__value--no {
-  background: url("../img/icon-no.svg") no-repeat center right;
-  background-position: 227px 12px;
-  background-size: 34px 26px;
+.price__icon-no {
+  margin-left: auto;
+}
+
+.price__value-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .price__option,
@@ -139,7 +151,7 @@
 
   border: 2px solid $lightgrey;
 
-  @include font-set(14px, 30px, 400, $darkgrey, left);
+  @include font-set(14px, 30px, 600, $darkgrey, left);
 }
 
 .price__row:first-of-type .value {
@@ -148,20 +160,34 @@
 
 @media (min-width: $tablet-width) {
   .price {
+    padding-top: 88px;
     padding-bottom: 27px;
   }
 
   .price__list {
-    margin-left: -309px;
+    margin-left: -310px;
+    min-width: 620px;
+  }
+
+  .price .site__wrapper {
+    box-sizing: border-box;
+    width: 660px;
+    padding: 0 20px;
   }
 
   .price__tariff {
-    min-width: 151px;
-    padding-top: 12px;
-    padding-bottom: 8px;
+    min-width: 145px;
+    padding-top: 13px;
+    padding-bottom: 4px;
 
     font-size: 16px;
-    line-height: 29px;
+    line-height: 30px;
+  }
+
+  .price__icon-yes,
+  .price__icon-no {
+    display: block;
+    margin: 0 auto;
   }
 
   .price__cost {
@@ -169,33 +195,23 @@
   }
 
   .price__option {
-    padding: 7px 15px;
-    padding-right: 25px;
+    padding: 7px 15px 8px 16px;
 
     font-weight: 600;
     text-transform: none;
   }
 
   .price__option-name {
-    visibility: hidden;
+    display: none;
   }
 
   .price__value {
-    padding: 7px 13px;
-  }
-
-  .price__value--yes {
-    background-position: 62px 12px;
-    background-size: 34px 22px;
-  }
-
-  .price__value--no {
-    background-position: 62px 12px;
-    background-size: 35px 26px;
+    padding: 0 13px;
   }
 
   .price__hit::before {
-    background-size: 62px 61px;
+    left: -4px;
+    background-size: 62px 62px;
   }
 
   .price__hit::after {
@@ -206,8 +222,8 @@
   }
 
   .price__wrapper {
+    display: block;
     margin: 0 auto;
-    margin-left: 3%;
     overflow: visible;
   }
 
@@ -218,16 +234,25 @@
 
 @media (min-width: $desktop-width) {
   .price {
-    padding-top: 61px;
-    padding-bottom: 54px;
+    padding-top: 146px;
+    padding-bottom: 55px;
   }
 
   .price__list {
+    width: 940px;
     margin-left: -470px;
   }
 
+  .price__wrapper {
+    margin-left: 0%;
+  }
+
+  .price .site__wrapper {
+    width: 960px;
+  }
+
   .price__tariff {
-    min-width: 231px;
+    min-width: 232px;
     padding-top: 15px;
     padding-bottom: 17px;
 
@@ -244,14 +269,6 @@
 
     font-size: 14px;
     line-height: 30px;
-  }
-
-  .price__value--yes {
-    background-position: 100px 19px;
-  }
-
-  .price__value--no {
-    background-position: 100px 16px;
   }
 
   .price__option {

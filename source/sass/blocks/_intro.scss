@@ -1,5 +1,21 @@
 .intro {
-  padding-top: 396px;
+  margin-top: auto;
+}
+
+.intro::before {
+
+  display: block;
+  content: "";
+  height: 286px;
+  width: 257px;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
+  background-position: left bottom;
+  background-size: 257px 286px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+    background-size: 257px auto;
+  }
 }
 
 .intro__title {
@@ -12,16 +28,20 @@
 .intro__wrapper {
   padding-top: 28px;
   padding-right: 20px;
-  padding-bottom: 31px;
   padding-left: 20px;
-
+  padding-bottom: 29px;
+  background-color: $deepgrey;
   text-align: center;
+}
+
+.intro__container {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .intro__btn--white {
   display: block;
-  width: 100%;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   padding-top: 15px;
   padding-bottom: 15px;
 
@@ -47,11 +67,23 @@
   position: relative;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 23px;
+  justify-content: flex-start;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-  @include list-reset;
+.intro__item:first-child {
+  margin-left: 37px;
+}
+
+.intro__item {
+  margin-right: 35px;
+}
+
+.intro__item:last-child {
+  margin-right: 0;
 }
 
 .intro__link {
@@ -61,48 +93,36 @@
   color: $white;
 }
 
-.intro__link--apple,
-.intro__link--android,
-.intro__link--microsoft {
-  display: block;
-
-  background-repeat: no-repeat;
-  background-position: bottom;
-  outline: inherit;
-}
-
-.intro__link--apple {
-  width: 46px;
-  height: 57px;
-
-  background-image: url("../img/logo-apple.svg");
-}
-
 .intro__link--android {
-  width: 46px;
-  height: 57px;
-  margin-right: 33px;
-  margin-left: 33px;
-
-  background-image: url("../img/logo-android.svg");
+  padding-top: 8px;
 }
 
 .intro__link--microsoft {
-  width: 46px;
-  height: 57px;
-
-  background-image: url("../img/logo-microsoft.svg");
+  padding-top: 12px;
 }
 
 .intro__description {
   margin: 0;
+  padding-top: 5px;
 
   @include font-set(14px, 24px, 400, $white, center);
 }
 
 @media (min-width: $tablet-width) {
+  .intro::before {
+    display: none;
+  }
+
   .intro {
     padding-top: 129px;
+    background: url("../img/iphone-hand-tablet@1x.png") no-repeat;
+    background-color: transparent;
+    background-position: -19px bottom;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+      background-size: 700px auto;
+    }
   }
 
   .intro__title {
@@ -117,13 +137,26 @@
 
   .intro__wrapper {
     display: block;
-    width: 289px;
-    margin-bottom: 79px;
-    padding-top: 26px;
+    width: 660px;
+    margin-bottom: 80px;
     padding-right: 22px;
     padding-left: 22px;
+    background-color: transparent;
 
     text-align: center;
+  }
+
+  .intro__item:first-child {
+    margin-left: 45px;
+  }
+
+  .intro__link--android {
+    padding-top: 6px;
+  }
+
+  .intro__container {
+    width: 298px;
+    margin-left: 0;
   }
 
   .intro__btn--white {
@@ -132,7 +165,7 @@
   }
 
   .intro__list {
-    margin-bottom: 35px;
+    margin-bottom: 15px;
   }
 
   .intro__description {
@@ -144,21 +177,34 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    padding-top: 108px;
+    box-sizing: border-box;
+    min-height: 664px;
+    width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+    margin-top: 80px;
+    background: url("../img/iphone-hand-desktop@1x.png") no-repeat;
+    background-size: 1050px 645px;
+    background-position: 25px bottom;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+      background-size: 1050px auto;
+    }
   }
 
   .intro__wrapper {
-    margin-top: 3px;
-    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 0;
   }
 
   .intro__title {
-    margin-bottom: 53px;
-    padding-right: 24px;
-    padding-left: 24px;
+    margin-bottom: 52px;
+    padding-right: 27px;
+    padding-left: 27px;
 
     font-size: 50px;
-    line-height: 59px;
+    line-height: 60px;
   }
 
   .intro__btn--white {
@@ -168,7 +214,7 @@
   }
 
   .intro__list {
-    margin-bottom: 57px;
+    margin-bottom: 36px;
   }
 
   .intro__description {

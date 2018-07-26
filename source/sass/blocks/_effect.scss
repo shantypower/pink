@@ -10,18 +10,17 @@
 
 .effect__image {
   min-width: 300px;
-
-  background: url("/source/img/");
 }
 
 @media (min-width: $tablet-width) {
   .effect {
-    display: block;
-    margin-bottom: 88px;
+    display: flex;
+    margin-bottom: 46px;
+    padding: 0 20px;
   }
 
   .effect__description {
-    padding-left: 329px;
+    padding: 35px 0 0 71px;
   }
 
   .effect__title {
@@ -29,6 +28,19 @@
     margin-bottom: 9px;
 
     @include font-set(30px, 37px, 700, $black, left);
+  }
+
+  .effect__timer::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 144px;
+    content: "24";
+    box-sizing: border-box;
+    width: 238px;
+    height: 276px;
+
+    @include font-set(94px, 14.5px, 700, $red, center);
   }
 
   .effect__text {
@@ -45,22 +57,10 @@
     @include font-set(14.5px, 14.5px, 400, $red, left);
   }
 
-  .effect__link--underline {
+  .effect__link .effect__span {
     display: inline-block;
 
     border-bottom: 1px solid $red;
-  }
-
-  .effect__title::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 238px;
-    height: 276px;
-
-    background: url("/source/img/timer-tablet@1x.png");
   }
 
   .effect__wrap {
@@ -71,7 +71,7 @@
 @media (min-width: $desktop-width) {
   .effect {
     margin-bottom: 0;
-    padding-top: 37px;
+    padding: 33px 10px 0 10px;
 
     background-color: $grey;
   }
@@ -81,16 +81,40 @@
   }
 
   .effect__container {
-    padding-bottom: 119px;
+    position: relative;
+    padding-bottom: 60px;
+  }
+
+  .effect__timer .timer {
+    width: 298px;
+    height: 345px;
+  }
+
+  .effect__timer::before {
+    padding-top: 183px;
+    width: 298px;
+    height: 345px;
+    font-size: 120px;
   }
 
   .effect__description {
-    padding-top: 45px;
-    padding-left: 496px;
+    padding-top: 93px;
+    padding-left: 67px;
+  }
+
+  .effect__description::before {
+
+    top: -45px;
+    left: 10px;
+    padding-top: 182px;
+    width: 298px;
+    height: 345px;
+
+    @include font-set(119px, 14.5px, 700, $red, center);
   }
 
   .effect__title {
-    margin-bottom: 22px;
+    margin-bottom: 19px;
   }
 
   .effect__title br,

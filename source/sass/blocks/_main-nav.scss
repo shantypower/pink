@@ -19,6 +19,10 @@
   height: 68px;
 }
 
+.main-nav--nojs .header__button {
+  display: none;
+}
+
 .main-nav__link {
   display: block;
   width: 100%;
@@ -59,6 +63,8 @@
   }
 
   .main-nav__link {
+    padding: 13px 0;
+    padding-top: 17px;
     text-transform: inherit;
 
     background-color: transparent;
