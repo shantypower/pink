@@ -60,6 +60,7 @@
 
   .filters-group__contact-info {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
   }
 
@@ -90,6 +91,7 @@
     .input-block__item {
       flex-direction: column-reverse;
       margin-bottom: 22px;
+      width: 100%;
     }
   }
 
