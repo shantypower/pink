@@ -9,20 +9,19 @@ if (mapCanvas) {
       center: myLatLng,
       zoom: 16.25,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
-disableDefaultUI: true
+      disableDefaultUI: true
     }
     var map = new google.maps.Map(mapCanvas, mapOptions);
 
-  var image = "img/icon-map-marker.svg";
+    var image = "img/icon-map-marker.svg";
     var beachMarker = new google.maps.Marker({
-    position: marker,
-    map: map,
-    icon: image
-  });
+      position: marker,
+      map: map,
+      icon: image
+    });
   }
-google.maps.event.addDomListener(window, "load", initialize);
+  google.maps.event.addDomListener(window, "load", initialize);
 }
-
 
 var navMain = document.querySelector(".header__nav");
 var navToggle = document.querySelector(".header__button");
@@ -35,7 +34,7 @@ headerTop.classList.remove("header__top--nojs");
 navToggle.classList.remove("header__button--hidden");
 
 if (navToggle) {
-  navToggle.addEventListener("click", function() {
+  navToggle.addEventListener("click", function () {
     if (navMain.classList.contains("header__nav--closed")) {
       navMain.classList.remove("header__nav--closed");
       navMain.classList.add("main-nav__list--opened");
