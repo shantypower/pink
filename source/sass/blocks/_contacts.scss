@@ -4,6 +4,13 @@
   padding-top: 42px;
 }
 
+.contacts__container {
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .contacts__map-box {
   position: relative;
 }
@@ -119,6 +126,11 @@
     padding-top: 46px;
   }
 
+  .contacts__container {
+    width: 660px;
+    padding: 0 20px;
+  }
+
   .contacts__map {
     min-height: 374px;
 
@@ -182,6 +194,11 @@
   .contacts {
     padding-top: 67px;
     padding-bottom: 0;
+  }
+
+  .contacts__container {
+    width: 960px;
+    padding: 0 10px;
   }
 
   .contacts__wrapper {

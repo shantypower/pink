@@ -9,8 +9,14 @@
   background-size: 101% auto;
   background-position: 50% 0;
 }
+.price__conainer {
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 
-.price .site__wrapper {
+.price__wrapper {
   width: 100%;
   padding: 0;
 }
@@ -170,7 +176,7 @@
     min-width: 620px;
   }
 
-  .price .site__wrapper {
+  .price__container {
     box-sizing: border-box;
     width: 660px;
     padding: 0 20px;
@@ -248,7 +254,7 @@
     margin-left: 0%;
   }
 
-  .price .site__wrapper {
+  .price__container {
     width: 960px;
   }
 

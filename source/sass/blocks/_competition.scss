@@ -8,10 +8,6 @@
   margin: 0 auto;
 }
 
-.competition__legend span {
-  display: none;
-}
-
 .competition__form {
   display: flex;
   flex-direction: column;
@@ -75,6 +71,10 @@
   text-transform: uppercase;
 
   @include font-set(14px, 30px, 600, $darkgrey, center);
+}
+
+.competition__legend--desktop {
+  display: none;
 }
 
 .competition__footnote {
@@ -163,13 +163,14 @@
     margin-bottom: 0;
   }
 
-  .competition__legend {
+  .competition__legend,
+  .competition__legend--desktop {
     display: flex;
     margin-bottom: 0;
   }
 
-  .competition__legend span {
-    display: flex;
+  .competition__legend--mobile {
+    display: none;
   }
 
   .competition__footnote {
