@@ -90,6 +90,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 24px;
   }
 
   .photo__list .user-photo__info {
@@ -100,6 +101,11 @@
     padding-right: 33px;
     padding-bottom: 23px;
     padding-left: 28px;
+  }
+
+  .photo__user-photo-text {
+    font-size: 18px;
+    margin-bottom: 48px;
   }
 
   .photo__item {
@@ -124,6 +130,12 @@
   .photo__text {
     width: 600px;
     padding-bottom: 84px;
+  }
+
+
+  .photo__user-photo-text {
+    padding-top: 17px;
+    margin-bottom: 45px;
   }
 
   .photo__best::before {
