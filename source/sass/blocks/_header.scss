@@ -172,6 +172,9 @@
       background-size: 1200px auto;
     }
   }
+  .header__top {
+    height:109px;
+  }
 
   .header__logo-container {
     width: 147px;
@@ -210,6 +213,7 @@
 
   .header__not-main.header__menu--opened {
     min-height: 695px;
+    background-position-y: 255px;
   }
 
   .header__not-main.header--closed {
