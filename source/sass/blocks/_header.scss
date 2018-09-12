@@ -19,7 +19,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 23px 20px;
+  padding: 20px 20px;
 }
 
 .header__main-page.header--closed {
@@ -58,6 +58,7 @@
 .header__top--nojs {
   background-color: $darkgrey;
   border-bottom: 1px solid $black;
+  height: 69px;
 }
 
 .header__logo {
