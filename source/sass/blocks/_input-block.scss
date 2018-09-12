@@ -285,6 +285,7 @@
   .input-block__input--textarea {
     width: 100%;
     height: 128px;
+    padding-left: 17px;
   }
 
   .input-block__list {
@@ -325,7 +326,7 @@
   }
 
   .input-block__item-radio {
-    margin-left: 17px;
+    margin-left: 20px;
   }
 
   .input-block__item-checkbox {
@@ -368,9 +369,17 @@
     right: 2px;
   }
 
+  .input-block__radio-text::before {
+    left: 56px;
+  }
+
   .input-block__tower,
   .input-block__hotel {
     flex-shrink: 1;
     margin-right: 0;
+  }
+
+  .input-block__input--radiobutton:checked + .input-block__radio-text::after {
+    left: 67px;
   }
 }

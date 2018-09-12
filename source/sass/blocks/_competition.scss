@@ -167,7 +167,7 @@
   .competition__legend,
   .competition__legend--desktop {
     display: flex;
-    margin-bottom: 0;
+    margin-bottom: -5px;
   }
 
   .competition__legend--mobile {
@@ -175,7 +175,8 @@
   }
 
   .competition__footnote {
-    top: 1.1em;
-    left: -0.9em;
+    top: 1.0em;
+    left: -0.2em;
+    line-height: 0;
   }
 }
