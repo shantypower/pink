@@ -36,7 +36,7 @@
 
 .photo-upload__svg-fill {
   width: 48px;
-  height: 43px;
+  height: 48px;
 }
 
 .photo-upload__svg-contrast {
@@ -105,13 +105,13 @@
 
 .photo-upload__tools {
   margin: 0 20px;
-  padding-bottom: 36px;
+  padding-bottom: 35px;
 }
 
 .photo-upload__tool {
   padding: 0;
   width: 50px;
-  height: 50px;
+  height: 57px;
 
   background-color: transparent;
   border: none;
@@ -133,7 +133,7 @@
   padding: 0;
   list-style: none;
   margin-right: auto;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
   margin-left: auto;
 }
 
@@ -177,7 +177,7 @@
   flex-direction: column;
   padding: 0 20px;
   padding-top: 37px;
-  padding-bottom: 29px;
+  padding-bottom: 26px;
 
   border-top: 1px solid #dddfe0;
 }
@@ -185,7 +185,7 @@
 @media (min-width: $tablet-width) {
   .photo-upload {
     width: 660px;
-    padding: 57px 20px 28px 20px;
+    padding: 57px 20px 27px 20px;
   }
 
   .photo-upload__form {
@@ -338,7 +338,7 @@
   }
 
   .photo-upload__toggle-2 {
-    right: 162px;
+    right: 163px;
   }
 
   .photo-upload__toggle-3 {

@@ -68,6 +68,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .user-photo__info {
+    margin-bottom: 19px;
+  }
+
   .user-photo__info--wide {
     display: flex;
     flex-wrap: wrap;
