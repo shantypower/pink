@@ -4,7 +4,7 @@ if (myMap) {
 
   ymaps.ready(function () {
     myMap = new ymaps.Map('map__canvas', {
-      center: [59.938585, 30.322413],
+      center: [59.938631, 30.323055],
       zoom: 16.25
     }, {
         searchControlProvider: 'yandex#search'
@@ -28,7 +28,7 @@ if (myMap) {
           iconImageSize: [36, 36],
           // Смещение левого верхнего угла иконки относительно
           // её "ножки" (точки привязки).
-          iconImageOffset: [36, -36]
+          iconImageOffset: [-18, -6]
         }),
 
     myMap.geoObjects
