@@ -71,7 +71,7 @@
   position: absolute;
   content: "";
 
-  top: 0;
+  top: -1px;
   z-index: 2;
 
   width: 100%;
@@ -166,7 +166,7 @@
 
   .contacts__item:first-child {
     margin-left: 46px;
-    margin-right: 98px;
+    margin-right: 96px;
   }
 
   .contacts__adress {
@@ -188,6 +188,9 @@
 
   .contacts__wrapper {
     padding-bottom: 0;
+  }
+  .contacts__triangle {
+    top: -14px;
   }
 }
 

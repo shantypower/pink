@@ -200,8 +200,8 @@
 
   .intro__title {
     margin-bottom: 52px;
-    padding-right: 27px;
-    padding-left: 27px;
+    padding-right: 26px;
+    padding-left: 26px;
 
     font-size: 50px;
     line-height: 60px;
@@ -219,5 +219,9 @@
 
   .intro__description {
     width: 295px;
+  }
+
+  .intro__container {
+    margin-left: 3px;
   }
 }

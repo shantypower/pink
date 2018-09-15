@@ -9,6 +9,7 @@
   background-size: 101% auto;
   background-position: 50% 0;
 }
+
 .price__conainer {
   box-sizing: border-box;
   width: 320px;
@@ -167,8 +168,8 @@
 
 @media (min-width: $tablet-width) {
   .price {
-    padding-top: 88px;
-    padding-bottom: 27px;
+    padding-top: 92px;
+    padding-bottom: 29px;
   }
 
   .price__list {
@@ -185,7 +186,7 @@
   .price__tariff {
     min-width: 145px;
     padding-top: 13px;
-    padding-bottom: 4px;
+    padding-bottom: 12px;
 
     font-size: 16px;
     line-height: 30px;
@@ -199,6 +200,7 @@
 
   .price__cost {
     font-size: 18px;
+    line-height: 23px;
   }
 
   .price__option {
