@@ -26,7 +26,7 @@
   left: 50%;
   width: 100%;
   box-sizing: border-box;
-  margin-bottom: 41px;
+  margin-bottom: 38px;
   margin-left: -568px;
 
   border-collapse: collapse;
@@ -67,9 +67,9 @@
 .price__tariff {
   position: relative;
 
-  min-width: 276px;
-  padding-top: 16px;
-  padding-bottom: 20px;
+  min-width: 274px;
+  padding-top: 17px;
+  padding-bottom: 21px;
 
   text-transform: uppercase;
 
@@ -130,7 +130,7 @@
 }
 
 .price__value {
-  padding: 14px 18px 14px 20px;
+  padding: 13px 15px 16px 20px;
   font-size: 0;
 
   border: 2px solid $lightgrey;
