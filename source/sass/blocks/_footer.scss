@@ -172,11 +172,12 @@
   .footer {
     width: 940px;
     margin: 0 auto;
-    padding: 73px 10px 73px 10px;
+    padding: 74px 10px 72px 10px;
   }
 
   .footer__logo {
-    width: 159px;
+    width: 150px;
+    margin-top: -2px;
   }
 
   .footer__logo-mobile-blue {
@@ -193,11 +194,24 @@
     font-size: 18px;
   }
 
+  .footer__social-list {
+    align-self: flex-start;
+  }
+
   .footer__copyright {
-    margin-bottom: 0;
+    margin-bottom: 3px;
   }
 
   .footer__link {
     margin-top: 11px;
+  }
+
+  .footer__social-item--facebook {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .footer__social-item:not(:last-child) {
+  margin-right: 12px;
   }
 }
