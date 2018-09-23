@@ -66,8 +66,8 @@
   border-color: $darkgrey;
 }
 
-.input-block__input:active,
-.input-block__input:focus {
+.input-block__input:focus,
+.input-block__input:active {
   border-color: $red;
   outline: none;
 }
