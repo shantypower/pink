@@ -1,0 +1,7 @@
+@media (min-width: $tablet-width) {
+  .map::before {
+    height: 80px;
+    background-size: 100% 80px;
+  }
+}
+

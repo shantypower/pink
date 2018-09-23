@@ -13,6 +13,19 @@
 
 .contacts__map-box {
   position: relative;
+  z-index: 1;
+}
+
+.contacts__map-box::before {
+  z-index: 1;
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background: url("../img/bg-triangle-white-footer.svg") center top/100% 35px no-repeat;
+
 }
 
 .contacts__wrapper {
@@ -64,18 +77,6 @@
 
 .contacts__adress .contacts__text {
   width: 240px;
-}
-
-.contacts__triangle {
-  display: block;
-  position: absolute;
-  content: "";
-
-  top: -1px;
-  z-index: 2;
-
-  width: 100%;
-  height: auto;
 }
 
 .contacts__link {
@@ -171,7 +172,7 @@
 
   .contacts__adress {
     flex-grow: 1;
-    margin-bottom: 29px;
+    margin-bottom: 18px;
   }
 
   .contacts__phone {
@@ -188,9 +189,6 @@
 
   .contacts__wrapper {
     padding-bottom: 0;
-  }
-  .contacts__triangle {
-    top: 0;
   }
 }
 
@@ -214,6 +212,11 @@
 
     background: url("../img/bg-map-desktop@1x.png") no-repeat center;
     background-size: 100% auto;
+  }
+
+  .contacts__map-box::before {
+    height: 150px;
+    background-size: 100% 150px;
   }
 
   .contacts__svg {
@@ -272,12 +275,5 @@
     align-items: baseline;
     justify-content: flex-start;
     padding-bottom: 20px;
-  }
-
-  .contacts__triangle::before {
-    top: 357px;
-    bottom: auto;
-
-    height: 133px;
   }
 }

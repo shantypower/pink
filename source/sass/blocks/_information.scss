@@ -56,7 +56,7 @@
 @media (min-width: $tablet-width) {
   .information {
     margin-bottom: 60px;
-    padding-top: 85px;
+    padding-top: 71px;
     padding-bottom: 41px;
     background-position: 100% 0;
   }
@@ -84,7 +84,7 @@
   .information__container::before {
     content: "";
     position: absolute;
-    top: 18px;
+    top: 4px;
     left: 20px;
 
     width: 265px;
